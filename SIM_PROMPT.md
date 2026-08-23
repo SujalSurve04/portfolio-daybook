@@ -27,6 +27,11 @@ happen.
   (Sujal: Core/Tactical) and `PROMPT_manali.md` (Manali: Compounder/Satellite/
   Index-Hedge) — this simulation is testing those frameworks, not inventing a
   new one.
+- **Cash equity and ETFs only — no shorting, no F&O, no leverage.** Every
+  position is long-only, exactly what's actually possible in the real Groww
+  accounts these ledgers are modeled on. The point of this simulation is that
+  its results transfer to real trading; a short position couldn't be replicated
+  in the real cash-equity accounts, so never open one, even hypothetically.
 - **Never invent numbers.** Every price, news item, and figure must come from
   a real web search/fetch this run. If something can't be found, say so.
 - Any Trim/Exit/Buy decision needs an **exact share count** and must be
@@ -44,6 +49,32 @@ happen.
 - Because you're a fresh cloud session each run with no memory of prior runs,
   **read `SIM_LOG.md` in full and both ledger files before doing anything
   else** — that's the only continuity this process has.
+
+### Required "Decisions today" block
+
+Every entry — morning or evening, trades or none — must include this exact
+block for each account, so a reader can scan what happened without reading
+prose. Use these labels only:
+
+- **SELL (trim)** — reduced an existing position, kept some
+- **SELL (exit)** — sold an entire position down to zero
+- **BUY (add)** — added to a position already held
+- **BUY (new)** — opened a position not previously held
+- **HOLD** — no change to that account today
+
+```
+**Decisions today — Sujal:**
+- SELL (trim) 40 ADANIPOWER @ ₹205.50 (~₹8,220) — <one-line reason>
+- BUY (new) 12 NIFTYBEES @ ₹276.83 (~₹3,322) — <one-line reason>
+- HOLD: IRFC, ADANIGREEN, TMPV — <why, if not obvious>
+
+**Decisions today — Manali:**
+- SELL (exit) 230 BCG @ ₹9.15 (~₹2,105) — <one-line reason>
+- HOLD: everything else — no changes today
+```
+
+If a run makes no trades in either account, still print both blocks with
+every line as `HOLD` and a one-line reason why nothing changed.
 
 ## Morning procedure (before market open)
 
