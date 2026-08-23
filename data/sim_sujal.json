@@ -1,0 +1,20 @@
+{
+  "account": "sujal",
+  "type": "SIMULATED — paper portfolio, no real trades ever placed",
+  "sim_window": {
+    "start": "2026-08-24",
+    "end": "2026-09-04",
+    "note": "10 trading days (two full weeks), checked before and after market on each"
+  },
+  "cash": 0.00,
+  "holdings": [
+    { "symbol": "IRFC", "quantity": 30, "avg_price": 145.62 },
+    { "symbol": "TMPV", "quantity": 5, "avg_price": 640.30 },
+    { "symbol": "ADANIGREEN", "quantity": 6, "avg_price": 1358.21 },
+    { "symbol": "ADANIPOWER", "quantity": 95, "avg_price": 105.47 },
+    { "symbol": "GOLDBEES", "quantity": 35, "avg_price": 65.75 }
+  ],
+  "trade_log": [],
+  "last_updated_utc": null,
+  "seeded_from": "data/latest_sujal.json as of 2026-08-22 fetch, prices as of Fri 21 Aug 2026 close"
+}
