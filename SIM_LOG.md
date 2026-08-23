@@ -18,6 +18,12 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+## Sun, 23 Aug 2026 (morning check-in) — skipped
+
+skipped — today (Sunday, 23 Aug 2026) is before the simulation window start
+(Monday 24 Aug 2026) and is also a weekend. No research, no trades, no ledger
+changes. First real trading-day check-in is Monday 24 Aug 2026 morning.
+
 ## Day 0 — Sunday, 23 Aug 2026 (kickoff, not a trading day)
 
 **Simulation established.** Both paper ledgers seeded from the real accounts'
