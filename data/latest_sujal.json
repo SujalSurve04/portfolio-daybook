@@ -1,0 +1,96 @@
+{
+  "account": "sujal",
+  "fetched_at_utc": "2026-08-23T07:12:07.461141+00:00",
+  "holdings": [
+    {
+      "isin": "INE053F01010",
+      "trading_symbol": "IRFC",
+      "quantity": 30.0,
+      "average_price": 145.62,
+      "pledge_quantity": 0.0,
+      "demat_locked_quantity": 0.0,
+      "groww_locked_quantity": 0.0,
+      "repledge_quantity": 0.0,
+      "t1_quantity": 0.0,
+      "demat_free_quantity": 30.0,
+      "corporate_action_additional_quantity": 0,
+      "active_demat_transfer_quantity": 0,
+      "tradable_exchanges": [
+        "NSE",
+        "BSE"
+      ]
+    },
+    {
+      "isin": "INE155A01022",
+      "trading_symbol": "TMPV",
+      "quantity": 5.0,
+      "average_price": 640.3,
+      "pledge_quantity": 0.0,
+      "demat_locked_quantity": 0.0,
+      "groww_locked_quantity": 0.0,
+      "repledge_quantity": 0.0,
+      "t1_quantity": 0.0,
+      "demat_free_quantity": 5.0,
+      "corporate_action_additional_quantity": 0,
+      "active_demat_transfer_quantity": 0,
+      "tradable_exchanges": [
+        "NSE",
+        "BSE"
+      ]
+    },
+    {
+      "isin": "INE364U01010",
+      "trading_symbol": "ADANIGREEN",
+      "quantity": 6.0,
+      "average_price": 1358.21,
+      "pledge_quantity": 0.0,
+      "demat_locked_quantity": 0.0,
+      "groww_locked_quantity": 0.0,
+      "repledge_quantity": 0.0,
+      "t1_quantity": 0.0,
+      "demat_free_quantity": 6.0,
+      "corporate_action_additional_quantity": 0,
+      "active_demat_transfer_quantity": 0,
+      "tradable_exchanges": [
+        "NSE",
+        "BSE"
+      ]
+    },
+    {
+      "isin": "INE814H01029",
+      "trading_symbol": "ADANIPOWER",
+      "quantity": 95.0,
+      "average_price": 105.47,
+      "pledge_quantity": 0.0,
+      "demat_locked_quantity": 0.0,
+      "groww_locked_quantity": 0.0,
+      "repledge_quantity": 0.0,
+      "t1_quantity": 0.0,
+      "demat_free_quantity": 95.0,
+      "corporate_action_additional_quantity": 0,
+      "active_demat_transfer_quantity": 0,
+      "tradable_exchanges": [
+        "NSE",
+        "BSE"
+      ]
+    },
+    {
+      "isin": "INF204KB17I5",
+      "trading_symbol": "GOLDBEES",
+      "quantity": 35.0,
+      "average_price": 65.75,
+      "pledge_quantity": 0.0,
+      "demat_locked_quantity": 0.0,
+      "groww_locked_quantity": 0.0,
+      "repledge_quantity": 0.0,
+      "t1_quantity": 0.0,
+      "demat_free_quantity": 35.0,
+      "corporate_action_additional_quantity": 0,
+      "active_demat_transfer_quantity": 0,
+      "tradable_exchanges": [
+        "NSE",
+        "BSE"
+      ]
+    }
+  ]
+}

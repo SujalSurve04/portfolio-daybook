@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio Daybook</title>
+<meta name="description" content="Daily fund-manager-style strategy brief for two Groww portfolios (Sujal's and Manali's), with a running thesis log across days for each.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --ink: #1B2130;
+    --ink-soft: #52596B;
+    --ink-faint: #848C9C;
+    --paper: #EEF1EF;
+    --surface: #FFFFFF;
+    --surface-sunken: #E6E9E6;
+    --line: #D6DAD5;
+    --accent: #96691F;
+    --accent-soft: #F3E7D2;
+    --accent-ink: #6B4A15;
+    --positive: #1E7B52;
+    --positive-soft: #DEEFE6;
+    --negative: #AE3226;
+    --negative-soft: #F6E2DF;
+    --watch: #93650C;
+    --watch-soft: #F5E9D2;
+
+    --series-1: #2a78d6;
+    --series-2: #eb6834;
+    --series-3: #1baf7a;
+    --series-4: #eda100;
+    --series-5: #e87ba4;
+
+    --shadow: 0 1px 2px rgba(27,33,48,0.06), 0 8px 24px -12px rgba(27,33,48,0.18);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ink: #E8EAE3;
+      --ink-soft: #ABB2AA;
+      --ink-faint: #767E79;
+      --paper: #12161B;
+      --surface: #1A1F25;
+      --surface-sunken: #101418;
+      --line: #2B3138;
+      --accent: #D2A24E;
+      --accent-soft: #33291A;
+      --accent-ink: #EBC988;
+      --positive: #49A87D;
+      --positive-soft: #17261F;
+      --negative: #DD6E5F;
+      --negative-soft: #2A1917;
+      --watch: #D9A93F;
+      --watch-soft: #2C2416;
+
+      --series-1: #3987e5;
+      --series-2: #d95926;
+      --series-3: #199e70;
+      --series-4: #c98500;
+      --series-5: #d55181;
+
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 32px -16px rgba(0,0,0,0.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ink: #E8EAE3;
+    --ink-soft: #ABB2AA;
+    --ink-faint: #767E79;
+    --paper: #12161B;
+    --surface: #1A1F25;
+    --surface-sunken: #101418;
+    --line: #2B3138;
+    --accent: #D2A24E;
+    --accent-soft: #33291A;
+    --accent-ink: #EBC988;
+    --positive: #49A87D;
+    --positive-soft: #17261F;
+    --negative: #DD6E5F;
+    --negative-soft: #2A1917;
+    --watch: #D9A93F;
+    --watch-soft: #2C2416;
+
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --series-3: #199e70;
+    --series-4: #c98500;
+    --series-5: #d55181;
+
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 12px 32px -16px rgba(0,0,0,0.6);
+  }
+
+  * { box-sizing: border-box; }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 16px 64px;
+  }
+
+  h1, h2, h3 {
+    font-family: "Source Serif 4", ui-serif, Georgia, serif;
+    font-weight: 600;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .mono {
+    font-family: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  a { color: var(--accent-ink); }
+
+  /* ---------- Account switch ---------- */
+  .account-switch {
+    display: flex;
+    gap: 8px;
+    margin: 18px 0 0;
+  }
+  .switch-btn {
+    flex: 1;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--ink-soft);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 13.5px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+  }
+  .switch-btn[aria-selected="true"] {
+    background: var(--accent-soft);
+    color: var(--accent-ink);
+    border-color: var(--accent);
+  }
+  [data-panel] { display: none; }
+  [data-panel].active { display: block; }
+
+  /* ---------- Header ---------- */
+  header.top {
+    padding: 22px 0 18px;
+    border-bottom: 1px solid var(--line);
+  }
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .eyebrow .day-count { color: var(--accent-ink); font-weight: 600; }
+
+  h1.title {
+    font-size: 26px;
+    letter-spacing: -0.01em;
+  }
+  h1.title .accent-dot { color: var(--accent); }
+
+  .header-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 18px;
+  }
+  .stat {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 10px 12px;
+    box-shadow: var(--shadow);
+  }
+  .stat .label {
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 4px;
+  }
+  .stat .value {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .stat .sub { font-size: 12px; margin-top: 2px; }
+  .up { color: var(--positive); }
+  .down { color: var(--negative); }
+
+  @media (max-width: 460px) {
+    .header-stats { grid-template-columns: 1fr 1fr; }
+    .stat:first-child { grid-column: 1 / -1; }
+  }
+
+  /* ---------- Section shell ---------- */
+  section { margin-top: 28px; }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .section-head h2 { font-size: 18px; }
+  .section-head .hint { font-size: 12px; color: var(--ink-faint); }
+
+  /* ---------- Macro strip ---------- */
+  .macro-card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 16px 18px;
+    box-shadow: var(--shadow);
+  }
+  .macro-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 7px 0;
+    border-bottom: 1px dashed var(--line);
+    gap: 12px;
+  }
+  .macro-row:last-of-type { border-bottom: none; }
+  .macro-row .k { color: var(--ink-soft); font-size: 13px; }
+  .macro-row .v { font-weight: 600; font-size: 14px; text-align: right; }
+  .macro-note {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line);
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+  .macro-note strong { color: var(--ink); }
+
+  /* ---------- Risk callout ---------- */
+  .callout {
+    border: 1px solid var(--watch);
+    background: var(--watch-soft);
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    gap: 12px;
+  }
+  .callout .mark {
+    font-family: "Source Serif 4", serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--watch);
+    line-height: 1;
+  }
+  .callout p { margin: 0; font-size: 13.5px; line-height: 1.6; color: var(--ink); }
+  .callout p + p { margin-top: 6px; }
+  .callout strong { color: var(--accent-ink); }
+
+  /* ---------- Allocation bar ---------- */
+  .alloc-bar {
+    display: flex;
+    height: 14px;
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+  }
+  .alloc-bar span { height: 100%; }
+  .alloc-legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 8px 14px;
+    margin-top: 12px;
+    font-size: 12.5px;
+  }
+  .alloc-legend li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--ink-soft);
+  }
+  .alloc-legend .swatch {
+    width: 9px; height: 9px; border-radius: 2px; flex: none;
+  }
+  .alloc-legend b { color: var(--ink); font-weight: 600; }
+  .alloc-legend .pct { margin-left: auto; font-family: "IBM Plex Mono", monospace; color: var(--ink-faint); }
+
+  /* ---------- Holding cards ---------- */
+  .holdings-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  @media (min-width: 640px) {
+    .holdings-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .card-head .sym {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  .card-head .name {
+    display: block;
+    font-size: 12px;
+    color: var(--ink-faint);
+    font-weight: 400;
+    margin-top: 1px;
+  }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+  .tag {
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 3px 7px;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+  .tag.core { background: var(--surface-sunken); color: var(--ink-soft); }
+  .tag.tactical { background: var(--accent-soft); color: var(--accent-ink); }
+  .tag.index { background: transparent; border: 1px solid var(--ink-faint); color: var(--ink-faint); }
+  .tag.hold { background: var(--positive-soft); color: var(--positive); }
+  .tag.trim { background: var(--watch-soft); color: var(--watch); }
+  .tag.watch { background: var(--negative-soft); color: var(--negative); }
+
+  .figures {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding: 10px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .figures div { text-align: left; }
+  .figures .f-label {
+    font-size: 9.5px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 2px;
+  }
+  .figures .f-value {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .card p.note {
+    margin: 0;
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  .card p.note strong { color: var(--ink); font-weight: 600; }
+  .card .level {
+    font-size: 12.5px;
+    background: var(--surface-sunken);
+    border-radius: 8px;
+    padding: 8px 10px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  .card .level b { color: var(--ink); font-family: "IBM Plex Mono", monospace; }
+  .card .flag {
+    font-size: 12.5px;
+    background: var(--negative-soft);
+    border: 1px solid var(--negative);
+    border-radius: 8px;
+    padding: 8px 10px;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  .card .flag b { color: var(--negative); }
+
+  /* ---------- Holdings table (Manali's 32-position book) ---------- */
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+  table.holdings-table {
+    width: 100%;
+    min-width: 660px;
+    border-collapse: collapse;
+    font-size: 12.5px;
+  }
+  table.holdings-table th, table.holdings-table td {
+    padding: 8px 10px;
+    text-align: left;
+    white-space: nowrap;
+    border-bottom: 1px solid var(--line);
+  }
+  table.holdings-table tr:last-child td { border-bottom: none; }
+  table.holdings-table th {
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+  table.holdings-table td.num, table.holdings-table th.num {
+    font-family: "IBM Plex Mono", monospace;
+    text-align: right;
+  }
+  table.holdings-table .b-compounder { color: var(--ink-soft); }
+  table.holdings-table .b-satellite { color: var(--accent-ink); }
+  table.holdings-table .b-index { color: var(--ink-faint); }
+  table.holdings-table .b-exit { color: var(--negative); font-weight: 600; }
+
+  /* ---------- Thesis tracker ---------- */
+  .log-entry {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  .log-entry + .log-entry { margin-top: 10px; }
+  .log-entry summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 13px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    font-size: 13.5px;
+  }
+  .log-entry summary::-webkit-details-marker { display: none; }
+  .log-entry summary .date { font-weight: 600; }
+  .log-entry summary .tag-line { color: var(--ink-faint); font-size: 12px; }
+  .log-entry summary::after {
+    content: "+";
+    font-family: "IBM Plex Mono", monospace;
+    color: var(--ink-faint);
+    font-size: 16px;
+  }
+  .log-entry[open] summary::after { content: "\2212"; }
+  .log-body {
+    padding: 0 16px 16px;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    line-height: 1.7;
+  }
+  .log-body ul { margin: 6px 0 0; padding-left: 18px; }
+  .log-body li { margin-bottom: 4px; }
+  .log-body strong { color: var(--ink); }
+
+  /* ---------- Footer ---------- */
+  footer {
+    margin-top: 36px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    font-size: 12px;
+    color: var(--ink-faint);
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+
+  <div class="account-switch" role="tablist" aria-label="Choose account">
+    <button type="button" class="switch-btn" data-account="sujal" role="tab" aria-selected="true">Sujal</button>
+    <button type="button" class="switch-btn" data-account="manali" role="tab" aria-selected="false">Manali</button>
+  </div>
+
+  <div data-panel="sujal">
+
+  <header class="top">
+    <div class="eyebrow">
+      <span>Portfolio Daybook &middot; Groww account</span>
+      <span class="day-count">Day 2</span>
+    </div>
+    <h1 class="title">Saturday, 22 Aug 2026<span class="accent-dot">.</span></h1>
+    <div class="header-stats">
+      <div class="stat">
+        <div class="label">Current value</div>
+        <div class="value mono">&#8377;36,182.70</div>
+        <div class="sub up">&#8377;8,142.44 &middot; +29.04% overall</div>
+      </div>
+      <div class="stat">
+        <div class="label">Invested</div>
+        <div class="value mono">&#8377;28,040.26</div>
+        <div class="sub" style="color:var(--ink-faint)">5 holdings</div>
+      </div>
+      <div class="stat">
+        <div class="label">Nifty 50</div>
+        <div class="value mono">24,252.00</div>
+        <div class="sub up">+0.08% Fri close</div>
+      </div>
+    </div>
+  </header>
+
+  <section aria-labelledby="macro-h">
+    <div class="section-head">
+      <h2 id="macro-h">Today&rsquo;s market backdrop</h2>
+      <span class="hint">as of Fri 21 Aug close</span>
+    </div>
+    <div class="macro-card">
+      <div class="macro-row"><span class="k">Sensex</span><span class="v mono">77,540.83 &middot; +3.11 pts</span></div>
+      <div class="macro-row"><span class="k">Sector leaders</span><span class="v">Metal (Welspun Corp +15.3%), Private Banks</span></div>
+      <div class="macro-row"><span class="k">Sector laggards</span><span class="v">IT, FMCG, Auto, Media, Pharma</span></div>
+      <div class="macro-row"><span class="k">India 10-yr yield</span><span class="v">~6.87%, 8-week high (RBI rules out easing)</span></div>
+      <div class="macro-row"><span class="k">Crude</span><span class="v">Brent $94.39 / WTI $87.06 &middot; Hormuz standoff</span></div>
+      <div class="macro-row"><span class="k">Gold (24K, 10g)</span><span class="v mono up">&#8377;1,59,280 Fri close &middot; climbing further over the weekend</span></div>
+      <div class="macro-row"><span class="k">US markets</span><span class="v">Dow +517.80 (+1.0%) to 53,277 &middot; still down on week</span></div>
+      <div class="macro-row"><span class="k">Markets closed</span><span class="v">Weekend &mdash; next session Mon 24 Aug</span></div>
+      <p class="macro-note">Same underlying story as Day 1, confirmed with more precise sourcing: <strong>US&ndash;Iran tension</strong> over the Strait of Hormuz (~8mn bpd of supply estimated disrupted) keeps oil elevated, even as Iran's president signalled Friday that Tehran wants the conflict to end soon. RBI Deputy Governor Poonam Gupta said there's "no scope for further policy easing" and a rate-hike case may emerge this fiscal year &mdash; that's the direct pressure on IRFC. Retail gold rates kept climbing into the weekend (~&#8377;16,300&ndash;16,760/g vs Friday's close), pointing to a likely gap-up for GOLDBEES at Monday's open. FII outflows and US tariff overhang remain a background worry for Indian equities generally.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="risk-h">
+    <div class="section-head">
+      <h2 id="risk-h">Portfolio-level risk</h2>
+    </div>
+    <div class="callout">
+      <span class="mark">!</span>
+      <div>
+        <p><strong>76% of this portfolio sits in two Adani Group stocks</strong> &mdash; Adani Power alone is 54% of total value, Adani Green another 22%. The individual stories differ (thermal power earnings vs. renewables build-out), but both share single-promoter-group risk: financing news, regulatory action, or governance headlines can move both at once.</p>
+        <p>Update: a US federal court dismissed the criminal indictment against Gautam Adani, Sagar Adani, and Vneet Jaain with prejudice on 10 Aug (civil penalties of $6M/$12M were levied instead), and CARE upgraded Adani Power's credit rating to AA+/Stable on 18 Aug. That's real de-risking on the <em>governance</em> side &mdash; but it doesn't touch the <em>sizing</em> problem. 76% in one promoter group is still too concentrated on its own terms, regardless of how clean the legal story now looks.</p>
+        <p>This is a bigger risk to the book right now than any single stock call below &mdash; worth actively sizing down as Adani Power's gain is trimmed, rather than letting concentration ride simply because it's been the winner.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="alloc-h">
+    <div class="section-head">
+      <h2 id="alloc-h">Allocation</h2>
+      <span class="hint">by current value</span>
+    </div>
+    <div class="alloc-bar" role="img" aria-label="Allocation: Adani Power 54.0%, Adani Green 21.8%, GOLDBEES 12.7%, IRFC 7.2%, Tata Motors PV 4.4%">
+      <span style="width:54.0%; background:var(--series-1)"></span>
+      <span style="width:21.8%; background:var(--series-2)"></span>
+      <span style="width:12.7%; background:var(--series-3)"></span>
+      <span style="width:7.2%; background:var(--series-4)"></span>
+      <span style="width:4.4%; background:var(--series-5)"></span>
+    </div>
+    <ul class="alloc-legend">
+      <li><span class="swatch" style="background:var(--series-1)"></span><b>Adani Power</b><span class="pct">54.0%</span></li>
+      <li><span class="swatch" style="background:var(--series-2)"></span><b>Adani Green</b><span class="pct">21.8%</span></li>
+      <li><span class="swatch" style="background:var(--series-3)"></span><b>GOLDBEES</b><span class="pct">12.7%</span></li>
+      <li><span class="swatch" style="background:var(--series-4)"></span><b>IRFC</b><span class="pct">7.2%</span></li>
+      <li><span class="swatch" style="background:var(--series-5)"></span><b>TMPV</b><span class="pct">4.4%</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="holdings-h">
+    <div class="section-head">
+      <h2 id="holdings-h">Holding by holding</h2>
+    </div>
+    <div class="holdings-grid">
+
+      <article class="card">
+        <div class="card-head">
+          <div><span class="sym">IRFC</span><span class="name">Indian Railway Finance Corp</span></div>
+          <div class="tags"><span class="tag core">Core</span><span class="tag watch">Watch closely</span></div>
+        </div>
+        <div class="figures">
+          <div><div class="f-label">Qty</div><div class="f-value">30</div></div>
+          <div><div class="f-label">Avg</div><div class="f-value">145.62</div></div>
+          <div><div class="f-label">LTP</div><div class="f-value">86.35</div></div>
+          <div><div class="f-label">P&amp;L</div><div class="f-value down">&minus;40.7%</div></div>
+        </div>
+        <p class="note">Structural bet on India's railway-capex cycle through a sovereign-backed lender &mdash; near-zero credit risk, but the stock is a bond proxy that hurts when rates rise. IRFC printed a fresh 52-week low of &#8377;85.18 on 19 Aug and is now below every key moving average (5/20/50/100/200-day); RBI Dy. Governor Poonam Gupta said there's "no scope for further easing" and a rate-hike case may emerge this fiscal year &mdash; the rate story got worse, not better.</p>
+        <div class="level">Closed Friday at <b>&#8377;86.35</b>, just above the fresh 52-week low of <b>&#8377;85.18</b> hit 19 Aug. The &#8377;85 level survived its first real test. Hold the thematic position, but a decisive close below &#8377;85 on volume would say this is more than a rate scare &mdash; no fresh buying until rate direction turns.</div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div><span class="sym">ADANIPOWER</span><span class="name">Adani Power</span></div>
+          <div class="tags"><span class="tag tactical">Tactical</span><span class="tag trim">Trim</span></div>
+        </div>
+        <div class="figures">
+          <div><div class="f-label">Qty</div><div class="f-value">95</div></div>
+          <div><div class="f-label">Avg</div><div class="f-value">105.47</div></div>
+          <div><div class="f-label">LTP</div><div class="f-value">205.50</div></div>
+          <div><div class="f-label">P&amp;L</div><div class="f-value up">+94.8%</div></div>
+        </div>
+        <p class="note">Earnings momentum trade &mdash; Q1 FY26 profit +42% YoY, a &#8377;15,000&nbsp;cr fundraise approved, sector bullish on power demand. New: CARE upgraded bank facilities/debentures to AA+/Stable (18 Aug), and the criminal case against Group leadership was dismissed with prejudice (see risk callout) &mdash; credit-positive, but valuation is rich (PE 32.8, PB 26.5) and most of the easy re-rating looks done.</p>
+        <div class="level">Book <b>a third to half</b> of the position to lock in the gain and cut concentration (see risk callout above). Trail the rest with a stop on a close below the 50-day average.</div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div><span class="sym">ADANIGREEN</span><span class="name">Adani Green Energy</span></div>
+          <div class="tags"><span class="tag core">Core</span><span class="tag hold">Hold</span></div>
+        </div>
+        <div class="figures">
+          <div><div class="f-label">Qty</div><div class="f-value">6</div></div>
+          <div><div class="f-label">Avg</div><div class="f-value">1,358.21</div></div>
+          <div><div class="f-label">LTP</div><div class="f-value">1,314.00</div></div>
+          <div><div class="f-label">P&amp;L</div><div class="f-value down">&minus;3.3%</div></div>
+        </div>
+        <p class="note">Long-dated bet on India's renewable build-out, revenue locked in via long-term PPAs. Operational news backs the thesis: 20.1 GW operational capacity as of 30 Jun (+27% YoY), progress on its first pumped-storage project (Chitravathi), and a &#8377;42,000&nbsp;cr FY27 capex plan discussed with analysts on 3 Aug.</p>
+        <div class="level">The <b>&#8377;1,310</b> support level got its first real test Friday &mdash; intraday low was &#8377;1,310.10, closed at &#8377;1,314.00. Held. Thesis intact &mdash; hold; a volume break below &#8377;1,310 would be the first real warning sign.</div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div><span class="sym">TMPV</span><span class="name">Tata Motors Passenger Vehicles</span></div>
+          <div class="tags"><span class="tag core">Core</span><span class="tag watch">Verify cost basis</span></div>
+        </div>
+        <div class="figures">
+          <div><div class="f-label">Qty</div><div class="f-value">5</div></div>
+          <div><div class="f-label">Avg</div><div class="f-value">640.30</div></div>
+          <div><div class="f-label">LTP</div><div class="f-value">317.90</div></div>
+          <div><div class="f-label">P&amp;L</div><div class="f-value down">&minus;50.3%*</div></div>
+        </div>
+        <div class="flag"><b>Data caveat &mdash; escalated:</b> confirmed the demerger mechanics: record date 14&nbsp;Oct&nbsp;2025, the CV business was demerged into a new entity trading as <b>TMCV</b> (listed 12&nbsp;Nov&nbsp;2025, &#8377;472.55 as of 21&nbsp;Aug), 1:1 entitlement per share held on the record date. TMPV kept the original ISIN (INE155A01022 &mdash; this exact holding). Proof it's a bookkeeping artifact: <b>TMPV's entire 52-week range is &#8377;294.30&ndash;&#8377;447.79</b> &mdash; it has never traded near &#8377;640.30. And today's real Groww fetch shows <b>no TMCV holding in the account at all</b> &mdash; if these shares were held before 14&nbsp;Oct&nbsp;2025, ~5 TMCV shares (&#8377;2,362.75 today) should exist but don't appear here. Check Groww's corporate-actions tab or the original contract note; if genuinely missing, raise it with Groww/CDSL directly.</div>
+        <p class="note">Operationally solid regardless: July 2026 sales were 63,760 units, +59% YoY, and price hikes are planned for 1&nbsp;Sep (up to &#8377;25,000/vehicle). The Sanand plant's flood disruption was already resolved by 20&nbsp;Aug. Still trading below both its 50-day (&#8377;343) and 200-day (&#8377;355) averages &mdash; a real technical downtrend on its own terms, separate from the cost-basis question.</p>
+        <div class="level">Hold; don't average down until the TMCV question is resolved <em>and</em> the stock reclaims its 50-day average.</div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div><span class="sym">GOLDBEES</span><span class="name">Nippon India ETF Gold BeES</span></div>
+          <div class="tags"><span class="tag tactical">Tactical</span><span class="tag trim">Trim</span></div>
+        </div>
+        <div class="figures">
+          <div><div class="f-label">Qty</div><div class="f-value">35</div></div>
+          <div><div class="f-label">Avg</div><div class="f-value">65.75</div></div>
+          <div><div class="f-label">LTP</div><div class="f-value">131.32</div></div>
+          <div><div class="f-label">P&amp;L</div><div class="f-value up">+99.7%</div></div>
+        </div>
+        <p class="note">Your portfolio's hedge. The near-double is genuine, not noise &mdash; 24K gold jumped from ~&#8377;15,442/g to ~&#8377;16,048/g in a week as US&ndash;Iran tension, softer yields, and a weaker dollar drove a safe-haven rush to record highs. Retail rates kept climbing over the weekend (~&#8377;16,300&ndash;16,760/g) &mdash; GOLDBEES hasn't traded since Friday's close, so a gap-up looks likely Monday.</p>
+        <div class="level">Moves this vertical rarely hold their full pace. Book partial profits into the strength; keep a smaller core slice as ongoing insurance rather than chasing it further.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section aria-labelledby="log-h">
+    <div class="section-head">
+      <h2 id="log-h">Thesis tracker</h2>
+      <span class="hint">running log &middot; newest first</span>
+    </div>
+
+    <details class="log-entry" open>
+      <summary>
+        <span class="date">Day 2 &middot; Sat, 22 Aug 2026</span>
+        <span class="tag-line">First live automated run &middot; TMCV finding escalated</span>
+      </summary>
+      <div class="log-body">
+        Groww credentials went live; this is the first real automated fetch (Day 1 was a manual dry run). Holdings matched exactly. Still Friday 21 Aug's session &mdash; no new close &mdash; but research surfaced real news. Portfolio up <strong>+29.04%</strong> overall (&#8377;28,040.26 &rarr; &#8377;36,182.70).
+        <ul>
+          <li><strong>TMPV/TMCV &mdash; escalated.</strong> Confirmed TMPV has never traded near &#8377;640.30 (52-week range &#8377;294&ndash;448), and the Groww fetch shows no TMCV holding at all. If these shares predate the 14 Oct 2025 record date, ~5 TMCV shares (&#8377;2,362.75) may be missing from the account &mdash; worth checking directly with Groww/CDSL.</li>
+          <li><strong>Adani legal overhang cleared</strong> &mdash; US court dismissed the criminal case against Group leadership with prejudice (10 Aug); CARE upgraded Adani Power to AA+/Stable (18 Aug). Governance risk down; concentration (76% in the Group) unchanged &mdash; trim call stands.</li>
+          <li><strong>IRFC</strong> hit a fresh 52-week low (&#8377;85.18, 19 Aug) before recovering to &#8377;86.35 &mdash; the &#8377;85 support held on its first real test, but RBI's hawkish tone deepened (Dy. Gov. Gupta: "no scope for further easing").</li>
+          <li><strong>Adani Green &#8377;1,310 support</strong> tested intraday Friday and held, closing &#8377;1,314.00. Thesis reinforced by 20.1 GW capacity milestone (+27% YoY).</li>
+          <li><strong>GOLDBEES</strong> trim call reinforced &mdash; weekend gold rates running well above Friday's close, ETF likely gaps up Monday.</li>
+        </ul>
+      </div>
+    </details>
+    <details class="log-entry">
+      <summary>
+        <span class="date">Day 1 &middot; Sat, 22 Aug 2026</span>
+        <span class="tag-line">Baseline established</span>
+      </summary>
+      <div class="log-body">
+        First read on the book. Portfolio up <strong>+29.17%</strong> overall (&#8377;28,040.26 &rarr; &#8377;36,220.20), carried almost entirely by Adani Power and GOLDBEES while IRFC and TMPV lag.
+        <ul>
+          <li>Opened <strong>watch on IRFC &#8377;85</strong> &mdash; currently &#8377;1.40 above 52-week low.</li>
+          <li>Opened <strong>trim call on Adani Power</strong> &mdash; up 94.8%, now 54% of the book. Concentration is the top risk, not the stock itself.</li>
+          <li>Opened <strong>support watch on Adani Green &#8377;1,310</strong>.</li>
+          <li>Flagged <strong>TMPV cost-basis question</strong> from the Nov 2025 demerger &mdash; needs your confirmation, not yet treated as a real loss.</li>
+          <li>Opened <strong>trim call on GOLDBEES</strong> &mdash; near-vertical move on record gold prices, up 99.7%.</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <footer>
+    Built from your Groww holdings plus public market data for prices and news &mdash; not a substitute for advice from a SEBI-registered investment adviser. This is decision-support for your own research, not a recommendation to buy or sell any security. Figures are as of the last trading session (markets closed on weekends/holidays).
+  </footer>
+
+  </div>
+
+  <div data-panel="manali">
+
+  <header class="top">
+    <div class="eyebrow">
+      <span>Portfolio Daybook &middot; Groww account (Manali)</span>
+      <span class="day-count">Day 1</span>
+    </div>
+    <h1 class="title">Sunday, 23 Aug 2026<span class="accent-dot">.</span></h1>
+    <div class="header-stats">
+      <div class="stat">
+        <div class="label">Current value</div>
+        <div class="value mono">&#8377;4,18,123.80</div>
+        <div class="sub up">&#8377;16,349.49 &middot; +4.07% overall</div>
+      </div>
+      <div class="stat">
+        <div class="label">Invested</div>
+        <div class="value mono">&#8377;4,01,774.31</div>
+        <div class="sub" style="color:var(--ink-faint)">32 holdings</div>
+      </div>
+      <div class="stat">
+        <div class="label">Nifty 50</div>
+        <div class="value mono">24,252.00</div>
+        <div class="sub up">+0.08% Fri close</div>
+      </div>
+    </div>
+  </header>
+
+  <section aria-labelledby="macro-h-m">
+    <div class="section-head">
+      <h2 id="macro-h-m">Today&rsquo;s market backdrop</h2>
+      <span class="hint">as of Fri 21 Aug close</span>
+    </div>
+    <div class="macro-card">
+      <div class="macro-row"><span class="k">Sensex</span><span class="v mono">77,540.83 &middot; +3.11 pts</span></div>
+      <div class="macro-row"><span class="k">Nifty IT (1yr)</span><span class="v down">&minus;28% &mdash; hits TCS &amp; ITBEES directly</span></div>
+      <div class="macro-row"><span class="k">Defense/PSU</span><span class="v up">Strong &mdash; steady orders (HAL, BEL, MAZDOCK)</span></div>
+      <div class="macro-row"><span class="k">India 10-yr yield</span><span class="v">~6.87%, 8-week high (RBI rules out easing)</span></div>
+      <div class="macro-row"><span class="k">Crude</span><span class="v">Brent $94.39 / WTI $87.06 &middot; Hormuz standoff</span></div>
+      <div class="macro-row"><span class="k">Silver</span><span class="v mono up">Record highs in India (~&#8377;2.47&ndash;2.60L/kg, Aug) &mdash; tailwind for SILVERBEES</span></div>
+      <div class="macro-row"><span class="k">US markets</span><span class="v">Dow +517.80 (+1.0%) to 53,277 &middot; still down on week</span></div>
+      <div class="macro-row"><span class="k">Markets closed</span><span class="v">Weekend &mdash; next session Mon 24 Aug</span></div>
+      <p class="macro-note">Two sector stories matter most for this book. <strong>IT weakness is structural</strong> &mdash; AI-disruption and spending-slowdown fears have pulled the Nifty IT index down ~28% over a year, and it's hitting the single <em>largest</em> position (TCS). <strong>Defense/PSU strength is the offsetting story</strong> &mdash; HAL, BEL and MAZDOCK are all "Compounder" holdings here and all benefiting from steady order-book news. Same household macro backdrop as the other account: US&ndash;Iran tension keeps oil elevated, RBI stays hawkish (pressuring IRFC directly), and gold/silver are both running hard into the weekend &mdash; a tailwind for GOLDBEES and SILVERBEES alike.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="risk-h-m">
+    <div class="section-head">
+      <h2 id="risk-h-m">Portfolio-level risk &mdash; and why returns are low</h2>
+    </div>
+    <div class="callout">
+      <span class="mark">!</span>
+      <div>
+        <p><strong>Sizing, not stock-picking, explains the +4.07% return.</strong> Several real winners are sitting in undersized positions &mdash; GOLDBEES +103%, Adani Power +94%, Bajaj Finance +66%, HAL +62%, TMCV +73% &mdash; while the single <em>largest</em> position in the entire book, TCS (10.5%, &#8377;50,803 invested), is a loser (&minus;13.9%) fighting a real sector-wide headwind (Nifty IT &minus;28% over a year, plus a Tata Sons leadership-succession overhang). Good picks, poor sizing discipline.</p>
+        <p><strong>Tata Group concentration, previously invisible:</strong> TCS + TMPV + TMCV together are <strong>20.2% of the portfolio</strong> in one promoter group &mdash; not obvious until the three are put side by side. Not alarming on its own (nowhere near the other account's 76% in Adani), but real enough to name and watch.</p>
+        <p><strong>One holding fails on more than price:</strong> BCG (Brightcom Group) carries a SEBI-confirmed accounting-fraud finding and sits under active surveillance (ASM). Small position (0.5%), but a credibility problem is a different category of risk than an ordinary drawdown &mdash; see the flagged card below.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="alloc-h-m">
+    <div class="section-head">
+      <h2 id="alloc-h-m">Allocation</h2>
+      <span class="hint">by current value &middot; top 5 of 32</span>
+    </div>
+    <div class="alloc-bar" role="img" aria-label="Allocation: TCS 10.5%, SRF 9.2%, Asian Paints 8.2%, HAL 6.0%, NIFTYBEES 6.0%, other 26 holdings 60.1%">
+      <span style="width:10.5%; background:var(--series-1)"></span>
+      <span style="width:9.2%; background:var(--series-2)"></span>
+      <span style="width:8.2%; background:var(--series-3)"></span>
+      <span style="width:6.0%; background:var(--series-4)"></span>
+      <span style="width:6.0%; background:var(--series-5)"></span>
+      <span style="width:60.1%; background:var(--ink-faint)"></span>
+    </div>
+    <ul class="alloc-legend">
+      <li><span class="swatch" style="background:var(--series-1)"></span><b>TCS</b><span class="pct">10.5%</span></li>
+      <li><span class="swatch" style="background:var(--series-2)"></span><b>SRF</b><span class="pct">9.2%</span></li>
+      <li><span class="swatch" style="background:var(--series-3)"></span><b>Asian Paints</b><span class="pct">8.2%</span></li>
+      <li><span class="swatch" style="background:var(--series-4)"></span><b>HAL</b><span class="pct">6.0%</span></li>
+      <li><span class="swatch" style="background:var(--series-5)"></span><b>NIFTYBEES</b><span class="pct">6.0%</span></li>
+      <li><span class="swatch" style="background:var(--ink-faint)"></span><b>Other (26 holdings)</b><span class="pct">60.1%</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="flagged-h-m">
+    <div class="section-head">
+      <h2 id="flagged-h-m">Flagged holdings</h2>
+      <span class="hint">the positions that actually need a decision</span>
+    </div>
+    <div class="holdings-grid">
+
+      <article class="card">
+        <div class="card-head">
+          <div><span class="sym">TCS</span><span class="name">Tata Consultancy Services</span></div>
+          <div class="tags"><span class="tag core">Compounder</span><span class="tag hold">Hold, no add</span></div>
+        </div>
+        <div class="figures">
+          <div><div class="f-label">Qty</div><div class="f-value">19</div></div>
+          <div><div class="f-label">Avg</div><div class="f-value">2,673.82</div></div>
+          <div><div class="f-label">LTP</div><div class="f-value">2,302.00</div></div>
+          <div><div class="f-label">P&amp;L</div><div class="f-value down">&minus;13.9%</div></div>
+        </div>
+        <p class="note">The largest position in the book (10.5%, &#8377;50,803 invested) &mdash; and the main reason overall returns look weak despite several big winners elsewhere. Two live overhangs: the Nifty IT index is down ~28% over the past year on AI-disruption/spending-slowdown fears, and Tata Sons Chairman N. Chandrasekaran said (12 Aug) he won't seek reappointment past Feb 2027, adding leadership uncertainty on top.</p>
+        <div class="level">Still a blue-chip bellwether, not a broken business &mdash; hold. But no fresh buying while both overhangs are live; revisit once the succession question resolves or IT shows a real sector turn.</div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div><span class="sym">IRFC</span><span class="name">Indian Railway Finance Corp</span></div>
+          <div class="tags"><span class="tag core">Satellite</span><span class="tag watch">Watch closely</span></div>
+        </div>
+        <div class="figures">
+          <div><div class="f-label">Qty</div><div class="f-value">185</div></div>
+          <div><div class="f-label">Avg</div><div class="f-value">124.73</div></div>
+          <div><div class="f-label">LTP</div><div class="f-value">86.35</div></div>
+          <div><div class="f-label">P&amp;L</div><div class="f-value down">&minus;30.8%</div></div>
+        </div>
+        <p class="note">Same stock, same rate-driven story as the other account &mdash; just six times the size here (185 vs 30 shares) and a different average price (bought at a different time). Fresh 52-week low of &#8377;85.18 hit 19 Aug, recovered to &#8377;86.35 by Friday's close, now below every key moving average.</p>
+        <div class="level">The &#8377;85 support held its first real test Friday. Hold the thematic position, no fresh buying until rate direction turns &mdash; a decisive close below &#8377;85 on volume would change this call.</div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div><span class="sym">TMPV + TMCV</span><span class="name">Tata Motors, both halves</span></div>
+          <div class="tags"><span class="tag core">Compounder</span><span class="tag hold">Hold as one position</span></div>
+        </div>
+        <div class="figures">
+          <div><div class="f-label">Qty</div><div class="f-value">27 + 33</div></div>
+          <div><div class="f-label">Invested</div><div class="f-value">24,701.16</div></div>
+          <div><div class="f-label">Current</div><div class="f-value">24,177.45</div></div>
+          <div><div class="f-label">P&amp;L</div><div class="f-value down">&minus;2.1%</div></div>
+        </div>
+        <p class="note">In isolation TMPV looks like a &minus;45.2% disaster and TMCV a +72.7% moonshot &mdash; but they're the two halves of one original Tata Motors holding, split by the Oct 2025 demerger (record date 14 Oct 2025, TMCV listed 12 Nov 2025). Read together, this is roughly flat. Unlike the other account, both halves are correctly present here &mdash; a clean confirmation of how this pair should be read once fully reconciled everywhere.</p>
+        <div class="level">No action needed on this pair itself &mdash; just track it as one logical position going forward, not two.</div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div><span class="sym">BCG</span><span class="name">Brightcom Group</span></div>
+          <div class="tags"><span class="tag tactical">Exit candidate</span><span class="tag watch">Exit</span></div>
+        </div>
+        <div class="figures">
+          <div><div class="f-label">Qty</div><div class="f-value">230</div></div>
+          <div><div class="f-label">Avg</div><div class="f-value">15.69</div></div>
+          <div><div class="f-label">LTP</div><div class="f-value">9.15</div></div>
+          <div><div class="f-label">P&amp;L</div><div class="f-value down">&minus;41.7%</div></div>
+        </div>
+        <div class="flag"><b>Regulatory flag, not just a drawdown:</b> SEBI's Feb 2024 confirmatory order found accounting fraud (forged bank statements used in a preferential share allotment) and fined the company/promoters &#8377;34cr. NSE suspended trading in 2024 for non-filing of results before it resumed, and the stock currently sits under Stage-1 ASM surveillance. Treat any reported "turnaround" numbers with real skepticism given the fraud history.</div>
+        <p class="note">Small position (0.5%, &#8377;2,104.50 current value) &mdash; the cost of being wrong either way is low, but holding a stock with a confirmed fraud finding isn't just a financial question.</p>
+        <div class="level">Recommend exiting on the next session rather than holding through more regulatory uncertainty. Manali's call, not automatic.</div>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div><span class="sym">AWL</span><span class="name">AWL Agri Business (ex-Adani Wilmar)</span></div>
+          <div class="tags"><span class="tag core">Satellite</span><span class="tag watch">Watch closely</span></div>
+        </div>
+        <div class="figures">
+          <div><div class="f-label">Qty</div><div class="f-value">17</div></div>
+          <div><div class="f-label">Avg</div><div class="f-value">357.90</div></div>
+          <div><div class="f-label">LTP</div><div class="f-value">188.00</div></div>
+          <div><div class="f-label">P&amp;L</div><div class="f-value down">&minus;47.5%</div></div>
+        </div>
+        <p class="note">NSE sought clarification (7 Aug) on an FSSAI-related media report &mdash; a food-safety regulatory question, a different category from ordinary sector rotation. Worth tracking the specific FSSAI story, not assuming this is just noise.</p>
+        <div class="level">Small position (0.8%) &mdash; hold and watch for the FSSAI clarification outcome before deciding anything further.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section aria-labelledby="table-h-m">
+    <div class="section-head">
+      <h2 id="table-h-m">All 32 holdings</h2>
+      <span class="hint">sorted by current value</span>
+    </div>
+    <div class="table-wrap">
+      <table class="holdings-table">
+        <thead>
+          <tr>
+            <th>Symbol</th><th>Bucket</th><th class="num">Qty</th><th class="num">Avg</th><th class="num">LTP</th><th class="num">P&amp;L</th><th class="num">Alloc%</th><th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>TCS</td><td class="b-compounder">Compounder</td><td class="num">19</td><td class="num">2,673.82</td><td class="num">2,302.00</td><td class="num down">&minus;13.9%</td><td class="num">10.5%</td><td>Hold, no add</td></tr>
+          <tr><td>SRF</td><td class="b-compounder">Compounder</td><td class="num">15</td><td class="num">2,373.72</td><td class="num">2,572.00</td><td class="num up">+8.4%</td><td class="num">9.2%</td><td>Hold</td></tr>
+          <tr><td>ASIANPAINT</td><td class="b-compounder">Compounder</td><td class="num">13</td><td class="num">2,581.74</td><td class="num">2,630.80</td><td class="num up">+1.9%</td><td class="num">8.2%</td><td>Hold</td></tr>
+          <tr><td>HAL</td><td class="b-compounder">Compounder</td><td class="num">5</td><td class="num">3,077.36</td><td class="num">5,000.00</td><td class="num up">+62.5%</td><td class="num">6.0%</td><td>Hold</td></tr>
+          <tr><td>NIFTYBEES</td><td class="b-index">Index/Hedge</td><td class="num">90</td><td class="num">264.21</td><td class="num">276.83</td><td class="num up">+4.8%</td><td class="num">6.0%</td><td>Hold</td></tr>
+          <tr><td>BAJFINANCE</td><td class="b-compounder">Compounder</td><td class="num">20</td><td class="num">660.24</td><td class="num">1,095.00</td><td class="num up">+65.9%</td><td class="num">5.2%</td><td>Hold</td></tr>
+          <tr><td>MAZDOCK</td><td class="b-satellite">Satellite</td><td class="num">7</td><td class="num">2,244.07</td><td class="num">2,552.00</td><td class="num up">+13.7%</td><td class="num">4.3%</td><td>Hold</td></tr>
+          <tr><td>GOLDBEES</td><td class="b-index">Index/Hedge</td><td class="num">135</td><td class="num">64.61</td><td class="num">131.32</td><td class="num up">+103.3%</td><td class="num">4.2%</td><td>Trim into strength</td></tr>
+          <tr><td>BEL</td><td class="b-compounder">Compounder</td><td class="num">40</td><td class="num">404.25</td><td class="num">414.00</td><td class="num up">+2.4%</td><td class="num">4.0%</td><td>Hold</td></tr>
+          <tr><td>IRFC</td><td class="b-satellite">Satellite</td><td class="num">185</td><td class="num">124.73</td><td class="num">86.35</td><td class="num down">&minus;30.8%</td><td class="num">3.8%</td><td>Watch closely</td></tr>
+          <tr><td>HDFCBANK</td><td class="b-compounder">Compounder</td><td class="num">20</td><td class="num">726.76</td><td class="num">731.10</td><td class="num up">+0.6%</td><td class="num">3.5%</td><td>Hold, watch governance</td></tr>
+          <tr><td>TMCV</td><td class="b-compounder">Compounder</td><td class="num">33</td><td class="num">273.59</td><td class="num">472.55</td><td class="num up">+72.7%</td><td class="num">3.7%</td><td>Hold &mdash; read with TMPV</td></tr>
+          <tr><td>ETERNAL</td><td class="b-compounder">Compounder</td><td class="num">36</td><td class="num">237.13</td><td class="num">328.00</td><td class="num up">+38.3%</td><td class="num">2.8%</td><td>Hold</td></tr>
+          <tr><td>HINDCOPPER</td><td class="b-satellite">Satellite</td><td class="num">20</td><td class="num">542.85</td><td class="num">572.70</td><td class="num up">+5.5%</td><td class="num">2.7%</td><td>Hold</td></tr>
+          <tr><td>ADANIPOWER</td><td class="b-satellite">Satellite</td><td class="num">53</td><td class="num">105.66</td><td class="num">205.50</td><td class="num up">+94.5%</td><td class="num">2.6%</td><td>Trim into strength</td></tr>
+          <tr><td>DEEPAKNTR</td><td class="b-compounder">Compounder</td><td class="num">6</td><td class="num">2,120.83</td><td class="num">1,747.00</td><td class="num down">&minus;17.6%</td><td class="num">2.5%</td><td>Hold</td></tr>
+          <tr><td>GROWW</td><td class="b-compounder">Compounder</td><td class="num">50</td><td class="num">187.45</td><td class="num">197.01</td><td class="num up">+5.1%</td><td class="num">2.4%</td><td>Hold</td></tr>
+          <tr><td>TMPV</td><td class="b-compounder">Compounder</td><td class="num">27</td><td class="num">580.47</td><td class="num">317.90</td><td class="num down">&minus;45.2%</td><td class="num">2.1%</td><td>Hold &mdash; read with TMCV</td></tr>
+          <tr><td>CLEAN</td><td class="b-satellite">Satellite</td><td class="num">10</td><td class="num">1,323.93</td><td class="num">826.00</td><td class="num down">&minus;37.6%</td><td class="num">2.0%</td><td>Hold, watch</td></tr>
+          <tr><td>ABCAPITAL</td><td class="b-compounder">Compounder</td><td class="num">20</td><td class="num">374.65</td><td class="num">411.10</td><td class="num up">+9.7%</td><td class="num">2.0%</td><td>Hold</td></tr>
+          <tr><td>LT</td><td class="b-compounder">Compounder</td><td class="num">2</td><td class="num">3,645.95</td><td class="num">4,093.00</td><td class="num up">+12.3%</td><td class="num">2.0%</td><td>Hold</td></tr>
+          <tr><td>SILVERBEES</td><td class="b-index">Index/Hedge</td><td class="num">30</td><td class="num">229.97</td><td class="num">231.31</td><td class="num up">+0.6%</td><td class="num">1.7%</td><td>Hold</td></tr>
+          <tr><td>NTPC</td><td class="b-satellite">Satellite</td><td class="num">19</td><td class="num">349.76</td><td class="num">340.00</td><td class="num down">&minus;2.8%</td><td class="num">1.5%</td><td>Hold</td></tr>
+          <tr><td>DSSL</td><td class="b-compounder">Compounder</td><td class="num">5</td><td class="num">1,482.00</td><td class="num">1,097.00</td><td class="num down">&minus;26.0%</td><td class="num">1.3%</td><td>Hold &mdash; thesis intact</td></tr>
+          <tr><td>BAJAJHFL</td><td class="b-compounder">Compounder</td><td class="num">64</td><td class="num">70.00</td><td class="num">84.85</td><td class="num up">+21.2%</td><td class="num">1.3%</td><td>Hold</td></tr>
+          <tr><td>BERGEPAINT</td><td class="b-compounder">Compounder</td><td class="num">10</td><td class="num">594.65</td><td class="num">524.00</td><td class="num down">&minus;11.9%</td><td class="num">1.3%</td><td>Hold</td></tr>
+          <tr><td>NEWGEN</td><td class="b-compounder">Compounder</td><td class="num">10</td><td class="num">514.05</td><td class="num">523.00</td><td class="num up">+1.7%</td><td class="num">1.3%</td><td>Hold</td></tr>
+          <tr><td>AWL</td><td class="b-satellite">Satellite</td><td class="num">17</td><td class="num">357.90</td><td class="num">188.00</td><td class="num down">&minus;47.5%</td><td class="num">0.8%</td><td>Watch closely</td></tr>
+          <tr><td>BCG</td><td class="b-exit">Exit candidate</td><td class="num">230</td><td class="num">15.69</td><td class="num">9.15</td><td class="num down">&minus;41.7%</td><td class="num">0.5%</td><td><strong>Exit</strong></td></tr>
+          <tr><td>NFL</td><td class="b-satellite">Satellite</td><td class="num">28</td><td class="num">122.41</td><td class="num">70.30</td><td class="num down">&minus;42.6%</td><td class="num">0.5%</td><td>Hold, low conviction</td></tr>
+          <tr><td>RELIANCE</td><td class="b-compounder">Compounder</td><td class="num">1</td><td class="num">1,308.80</td><td class="num">1,316.00</td><td class="num up">+0.6%</td><td class="num">0.3%</td><td>Immaterial (1 share)</td></tr>
+          <tr><td>ITBEES</td><td class="b-index">Index/Hedge</td><td class="num">10</td><td class="num">45.44</td><td class="num">34.07</td><td class="num down">&minus;25.0%</td><td class="num">0.1%</td><td>Immaterial</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="log-h-m">
+    <div class="section-head">
+      <h2 id="log-h-m">Thesis tracker</h2>
+      <span class="hint">running log &middot; newest first</span>
+    </div>
+
+    <details class="log-entry" open>
+      <summary>
+        <span class="date">Day 1 &middot; Sun, 23 Aug 2026</span>
+        <span class="tag-line">Baseline established &mdash; sizing diagnosis</span>
+      </summary>
+      <div class="log-body">
+        First real read on the book, via the newly-added Groww credentials. 32 holdings, &#8377;4,01,774.31 invested, &#8377;4,18,123.80 current value, <strong>+4.07%</strong> overall &mdash; the "major investment, very low returns" case, now with a specific evidenced reason: TCS, the single largest position (10.5%), is a &minus;13.9% loser fighting a real sector headwind, while several genuine winners (GOLDBEES +103%, Adani Power +94%, Bajaj Finance +66%, HAL +62%, TMCV +73%) sit undersized.
+        <ul>
+          <li>Opened <strong>hold-no-add on TCS</strong> &mdash; biggest position, fighting Nifty IT's &minus;28% 1-year sector move plus a Tata Sons succession overhang.</li>
+          <li>Flagged <strong>Tata Group concentration (20.2%)</strong> across TCS/TMPV/TMCV &mdash; previously invisible.</li>
+          <li>Confirmed <strong>TMPV+TMCV combined &asymp; flat (&minus;2.1%)</strong> once read as one position instead of two &mdash; both halves present here, unlike the other account.</li>
+          <li>Recommended <strong>exiting BCG (Brightcom Group)</strong> &mdash; confirmed SEBI fraud finding, not just a drawdown.</li>
+          <li>Opened <strong>watch on IRFC</strong> (same &#8377;85 story as the other account, 6x the size) and <strong>AWL</strong> (FSSAI regulatory question).</li>
+        </ul>
+      </div>
+    </details>
+  </section>
+
+  <footer>
+    Built from Manali's Groww holdings plus public market data for prices and news &mdash; not a substitute for advice from a SEBI-registered investment adviser. This is decision-support for her own research, not a recommendation to buy or sell any security. Figures are as of the last trading session (markets closed on weekends/holidays).
+  </footer>
+
+  </div>
+
+</div>
+
+<script>
+(function () {
+  var KEY = 'daybook-account';
+  var saved = 'sujal';
+  try { saved = localStorage.getItem(KEY) || 'sujal'; } catch (e) {}
+
+  function show(account) {
+    document.querySelectorAll('[data-panel]').forEach(function (p) {
+      p.classList.toggle('active', p.getAttribute('data-panel') === account);
+    });
+    document.querySelectorAll('.switch-btn').forEach(function (b) {
+      b.setAttribute('aria-selected', b.getAttribute('data-account') === account ? 'true' : 'false');
+    });
+    try { localStorage.setItem(KEY, account); } catch (e) {}
+  }
+
+  document.querySelectorAll('.switch-btn').forEach(function (b) {
+    b.addEventListener('click', function () { show(b.getAttribute('data-account')); });
+  });
+
+  show(saved);
+})();
+</script>
+
+</body>
+</html>

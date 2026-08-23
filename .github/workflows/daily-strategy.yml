@@ -1,0 +1,85 @@
+name: Daily Portfolio Strategy
+
+on:
+  schedule:
+    # 06:00 IST = 00:30 UTC. Change the time here if you'd rather run at
+    # 12:30 AM IST (= 19:00 UTC the previous day) or both — just add a
+    # second cron line.
+    - cron: "30 0 * * *"
+  workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-strategy
+  cancel-in-progress: false
+
+jobs:
+  daily-strategy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Groww SDK
+        run: pip install -r requirements.txt
+
+      - name: Fetch Sujal's holdings from Groww
+        env:
+          GROWW_API_KEY_SUJAL: ${{ secrets.GROWW_API_KEY_SUJAL }}
+          GROWW_TOTP_SECRET_SUJAL: ${{ secrets.GROWW_TOTP_SECRET_SUJAL }}
+        run: python scripts/fetch_holdings.py sujal
+
+      - name: Fetch Manali's holdings from Groww
+        env:
+          GROWW_API_KEY_MANALI: ${{ secrets.GROWW_API_KEY_MANALI }}
+          GROWW_TOTP_SECRET_MANALI: ${{ secrets.GROWW_TOTP_SECRET_MANALI }}
+        run: python scripts/fetch_holdings.py manali
+
+      # --- Authentication: pick ONE of the two `with:` blocks below ---
+      # Option A (pay-as-you-go API billing): keep anthropic_api_key.
+      # Option B (uses your existing Claude subscription instead of API
+      #   credits): run `claude setup-token` locally once, save the result
+      #   as the CLAUDE_CODE_OAUTH_TOKEN secret, then swap the line below
+      #   for: claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      - name: Run Claude Code strategy analysis (Sujal)
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Follow the instructions in PROMPT.md exactly, start to finish.
+            Today's freshly fetched holdings are in data/latest_sujal.json.
+            Read LOG.md in full before writing anything new.
+          claude_args: |
+            --allowedTools "WebSearch,WebFetch,Read,Write,Edit"
+            --max-turns 30
+
+      - name: Run Claude Code strategy analysis (Manali)
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            Follow the instructions in PROMPT_manali.md exactly, start to finish.
+            Today's freshly fetched holdings are in data/latest_manali.json.
+            Read LOG_manali.md in full before writing anything new.
+            Both accounts share one dashboard.html with a Sujal/Manali toggle —
+            only touch Manali's <div data-panel="manali"> panel; leave Sujal's
+            panel and the shared toggle markup/script untouched.
+          claude_args: |
+            --allowedTools "WebSearch,WebFetch,Read,Write,Edit"
+            --max-turns 30
+
+      - name: Commit updated logs and dashboard
+        run: |
+          git config user.name "portfolio-daybook-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add LOG.md LOG_manali.md dashboard.html data/
+          git diff --cached --quiet || git commit -m "Daily strategy update: $(date -u +'%Y-%m-%d')"
+          git push

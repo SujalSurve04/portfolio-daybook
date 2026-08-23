@@ -1,0 +1,7 @@
+# Never commit real credentials if you ever test locally with a .env file
+.env
+*.env
+
+# Local Python cruft
+__pycache__/
+*.pyc
