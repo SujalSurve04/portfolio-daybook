@@ -6,15 +6,20 @@
     "end": "2026-09-04",
     "note": "10 trading days (two full weeks), checked before and after market on each"
   },
-  "cash": 0.00,
+  "cash": 223.92,
   "holdings": [
     { "symbol": "IRFC", "quantity": 30, "avg_price": 145.62 },
     { "symbol": "TMPV", "quantity": 5, "avg_price": 640.30 },
     { "symbol": "ADANIGREEN", "quantity": 6, "avg_price": 1358.21 },
-    { "symbol": "ADANIPOWER", "quantity": 95, "avg_price": 105.47 },
-    { "symbol": "GOLDBEES", "quantity": 35, "avg_price": 65.75 }
+    { "symbol": "ADANIPOWER", "quantity": 55, "avg_price": 105.47 },
+    { "symbol": "GOLDBEES", "quantity": 20, "avg_price": 65.75 },
+    { "symbol": "NIFTYBEES", "quantity": 36, "avg_price": 276.83 }
   ],
-  "trade_log": [],
-  "last_updated_utc": null,
+  "trade_log": [
+    { "date": "2026-08-24", "symbol": "ADANIPOWER", "side": "SELL", "quantity": 40, "price": 205.50, "rationale": "Trim into strength — first live test of the open Day 2 'Trim' call. Position was 54.0% of the book alone (75.8% combined with ADANIGREEN), up +94.8%, and richly valued (~PE 33) after the run. Legal overhang eased (US criminal case dismissed 11 Aug, APTEL ruling 20 Aug, CARE upgrade 18 Aug) but that's a risk-quality improvement, not a reason to hold risk-quantity unchanged. Reference price: Fri 21 Aug close; real fill will differ." },
+    { "date": "2026-08-24", "symbol": "GOLDBEES", "side": "SELL", "quantity": 15, "price": 131.32, "rationale": "Trim into strength, per Day 2's open call. Position up +99.7%; research confirms the gold rally is still extending into Monday (spot gold ~$4,600s, silver >$70, no reversal signal), not cooling off — banking gains while keeping a smaller core slice as inflation/geopolitical hedge. Reference price: Fri 21 Aug close." },
+    { "date": "2026-08-24", "symbol": "NIFTYBEES", "side": "BUY", "quantity": 36, "price": 276.83, "rationale": "New Core diversification position, self-funded entirely from the ADANIPOWER + GOLDBEES trim proceeds (₹10,189.80). This is exactly what Day 2's capital note flagged as worth considering ('a broad Nifty 50 index fund/ETF') — executing it now via trim proceeds rather than waiting on fresh capital. Cuts combined Adani Group weight from ~75.8% to ~53.0% of the book. Price sourced from the same Fri 21 Aug NIFTYBEES close already verified in Manali's book (Sujal's book had no prior NIFTYBEES holding to reference)." }
+  ],
+  "last_updated_utc": "2026-08-24T03:15:00Z",
   "seeded_from": "data/latest_sujal.json as of 2026-08-22 fetch, prices as of Fri 21 Aug 2026 close"
 }
