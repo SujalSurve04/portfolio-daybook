@@ -18,6 +18,126 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+## Day 1 — Monday, 24 Aug 2026 (evening check-in)
+
+**Self-check:** today is Monday 24 Aug 2026 — inside the 24 Aug–4 Sep window, a
+weekday, no known NSE/BSE holiday (already confirmed this morning). Proceeding
+with the evening mark-to-market.
+
+**Closing prices researched this evening** (NSE, 24 Aug 2026 close; sources:
+stockanalysis.com historical tables, cross-checked against Groww/Google
+Finance/Business Standard/Investing.com/Tickertape where noted):
+
+| Symbol | Close (₹) | Day chg | Note |
+|---|---|---|---|
+| Nifty 50 | 24,219.05 | −0.14% (−32.95 pts) | cross-verified: Investing.com + Tickertape agree exactly |
+| IRFC | 86.15 | −0.29% | consistent with LOG.md's 52-week-low read (₹85 support) |
+| TMPV | 314.40 | −1.10% | within its confirmed 52-week range ₹294.30–447.79 |
+| TMCV | 475.05 | +0.53% | verified via stockanalysis.com after first source misidentified the page |
+| ADANIGREEN | 1,308.00 | −0.91% | cross-checked live on Groww, matched |
+| ADANIPOWER | 203.06 | −1.19% | |
+| GOLDBEES | 133.02 | +1.29% | rally still extending, as this morning's research flagged |
+| NIFTYBEES | 275.90 | −0.31% | |
+| RELIANCE | 1,307.50 | −0.49% | |
+| LT | 4,085.30 | −0.07% | |
+| ASIANPAINT | 2,631.50 | −0.33% | |
+| HDFCBANK | 729.00 | +0.28% | |
+| HAL | 4,900.00 | −1.76% | |
+| GROWW | 196.30 | −0.43% | |
+| CLEAN | 827.95 | +0.35% | |
+| MAZDOCK | 2,538.00 | −0.57% | |
+| BEL | 408.25 | −1.27% | |
+| DEEPAKNTR | 1,729.65 | −1.05% | |
+| BAJFINANCE | 1,079.40 | −1.26% | |
+| BAJAJHFL | 84.09 | −0.87% | |
+| DSSL (Dynacons Systems, ISIN INE417B01040) | 1,078.00 | −1.74% | confirmed against real ledger's ISIN, not Dee Development Engineers |
+| BERGEPAINT | 515.30 | −1.74% | |
+| TCS | 2,284.10 | −0.78% | |
+| HINDCOPPER | 567.90 | −0.84% | |
+| NEWGEN | 530.50 | +1.49% | |
+| SRF | 2,582.40 | +0.41% | |
+| ABCAPITAL | 413.75 | +0.18% | |
+| AWL | 194.00 | +3.12% | consistent with the already-known −47.5% pre-existing loss |
+| NTPC | 339.10 | −0.26% | |
+| ETERNAL | 328.30 | +0.09% | |
+| NFL | 70.75 | +0.64% | consistent with already-known −42.6% pre-existing loss |
+| ITBEES | 34.02 | +0.44% | |
+| SILVERBEES | 231.86 | −0.46% | |
+| BCG | 9.05 | −1.09% | for buy-and-hold benchmark only — no longer held after today's exit |
+
+**Data-quality caveats:** none of these are certified against NSE's own
+bhavcopy (nseindia.com blocked automated fetches / returned 503 across all
+three research passes); they're triangulated from stockanalysis.com,
+Groww, Google Finance, Business Standard, Investing.com and Tickertape, with
+cross-source agreement noted above where checked. TMCV in particular needed a
+second, independent fetch after the first source flagged its own page match
+as uncertain (it had resolved to a legacy "Tata Motors Ltd" URL) — the
+corrected figure (₹475.05, from stockanalysis.com's dated TMCV history table)
+is used throughout. TCS was cross-verified at ₹2,284.10 after an initial
+₹2,281.00 Google Finance read disagreed slightly with Groww.
+
+### Sujal's paper book — mark-to-market
+
+| | Value | Since Day 0 (₹36,182.70) |
+|---|---|---|
+| **Actual (traded) book** | **₹35,989.52** | **−₹193.18 (−0.53%)** |
+| Buy-and-hold benchmark (no trades) | ₹35,950.90 | −₹231.80 (−0.64%) |
+| Nifty 50-tracking benchmark | ₹36,133.54 | −₹49.16 (−0.14%) |
+
+Buy-and-hold reconstructed from the original Day-0 quantities (IRFC 30,
+TMPV 5, ADANIGREEN 6, ADANIPOWER 95, GOLDBEES 35, 0 cash) marked at today's
+same closes.
+
+**Reading it:** the book fell today, in line with a broadly soft session —
+Nifty 50 itself dropped 0.14%, and Sujal's book, still IRFC/TMPV/ADANIGREEN/
+ADANIPOWER-heavy, lagged the index because those four names fell harder than
+the market average today. But the morning's trim-and-diversify trade *did*
+add value relative to doing nothing: the traded book beat the zero-trade
+buy-and-hold by +₹38.62. That's a small, single-day edge — GOLDBEES (trimmed)
+rose +1.29% today while NIFTYBEES (bought with the proceeds) fell only
+−0.31%, so today's specific price action happened to favor the rebalance —
+not yet a real test of the underlying thesis (de-risking Adani Group
+concentration), which needs more sessions to show up.
+
+### Manali's paper book — mark-to-market
+
+| | Value | Since Day 0 (₹4,18,123.80) |
+|---|---|---|
+| **Actual (traded) book** | **₹4,16,301.64** | **−₹1,822.16 (−0.44%)** |
+| Buy-and-hold benchmark (no trades) | ₹4,16,492.94 | −₹1,630.86 (−0.39%) |
+| Nifty 50-tracking benchmark | ₹4,17,555.60 | −₹568.20 (−0.14%) |
+
+Buy-and-hold reconstructed from the original Day-0 quantities (today's 31
+holdings plus BCG 230 reinstated, GOLDBEES 135, ADANIPOWER 53, BAJFINANCE 20,
+HAL 5, NIFTYBEES 90 — i.e. today's trades reversed) marked at today's same
+closes, including BCG's ₹9.05 close.
+
+**Reading it:** like Sujal's book, Manali's paper portfolio lagged the Nifty
+today (−0.44% vs the index's −0.14%) on broad softness across large-cap
+holdings (TCS −0.78%, HAL −1.76%, DEEPAKNTR −1.05%, BAJFINANCE −1.26% all
+weighed on the book). Unlike Sujal's book, today's rebalance *cost* a little
+versus doing nothing — the traded book trailed the zero-trade buy-and-hold by
+−₹191.30. The mechanics: GOLDBEES and ADANIPOWER (both trimmed this morning)
+rose or fell less than BAJFINANCE (bought this morning, −1.26%) and BCG
+(exited, itself down −1.09% today — so exiting it actually cost a small
+amount versus holding it one more session, purely as a matter of today's
+tape). None of this changes the read on the underlying calls: BCG was exited
+for a confirmed SEBI fraud finding and ASM surveillance, not for its price
+action, and BAJFINANCE/HAL were added because they're structurally
+undersized winners, not because of a one-day view. A single day's P&L noise
+either way is exactly why this simulation runs for ten sessions before
+drawing conclusions, not one.
+
+**Decisions today — Sujal:** (evening check-in — no new decisions, mark-to-market only)
+- HOLD: IRFC, TMPV, ADANIGREEN, ADANIPOWER, GOLDBEES, NIFTYBEES — this
+  evening's run only marks this morning's trades to today's close; no new
+  research finding since this morning changes any position.
+
+**Decisions today — Manali:** (evening check-in — no new decisions, mark-to-market only)
+- HOLD: everything (all 31 remaining holdings) — this evening's run only
+  marks this morning's trades to today's close; no new research finding
+  since this morning changes any position.
+
 ## Day 1 — Monday, 24 Aug 2026 (morning check-in)
 
 **Self-check:** today is Monday 24 Aug 2026 — inside the 24 Aug–4 Sep window, a
