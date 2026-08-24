@@ -76,6 +76,29 @@ prose. Use these labels only:
 If a run makes no trades in either account, still print both blocks with
 every line as `HOLD` and a one-line reason why nothing changed.
 
+## Updating the dashboard's Sim tabs
+
+`dashboard.html` is shared with the real accounts and has two panels for this
+simulation: `<div data-panel="sujal-sim">` and `<div data-panel="manali-sim">`,
+each containing a `table.sim-table` with columns **Day | Decision | Result |
+Risk** — one row per trading day. Only ever touch these two panels (and each
+panel's `header-stats` block); never touch `data-panel="sujal"`,
+`data-panel="manali"`, the `.account-switch` buttons, or the `<script>` block.
+
+- **Morning:** append a new `<tr>` to the relevant `<tbody>` for today —
+  `Day` (e.g. "Day 2<br>Tue 25 Aug"), `Decision` (mirror the "Decisions today"
+  block, condensed to one cell), `Result` as
+  `<td class="sim-pending">Pending — tonight's real close</td>`, `Risk` (what
+  this manages, one or two sentences). Also bump the `<span class="day-count">`
+  eyebrow to the correct "Day N of 10".
+- **Evening:** find today's row (matches today's date) and replace its
+  `Result` cell — remove `class="sim-pending"` and write the actual outcome:
+  day's ₹/% move, and one line on whether the thesis is playing out. Also
+  update that panel's `header-stats` "Paper value" stat to today's real
+  mark-to-market total (value + `sub` line showing ₹/% change vs. Day 0
+  baseline).
+- On a no-op day (weekend/holiday), don't touch the dashboard at all.
+
 ## Morning procedure (before market open)
 
 1. Read both ledgers and `SIM_LOG.md`'s most recent entries.
@@ -84,7 +107,8 @@ every line as `HOLD` and a one-line reason why nothing changed.
 3. Decide today's trades (if any) per the shared rules above, using the most
    recent close price as the reference (note that the actual fill would
    happen at today's open, which will differ).
-4. Update the ledgers and log the plan for the day.
+4. Update the ledgers, log the plan for the day in `SIM_LOG.md`, and append
+   today's row to both sim tabs in `dashboard.html` per the section above.
 
 ## Evening procedure (after market close)
 
@@ -98,7 +122,8 @@ every line as `HOLD` and a one-line reason why nothing changed.
    50's own move — so the log shows whether today's decisions added anything
    beyond doing nothing or beyond the market's own drift.
 4. Note whether this morning's trade thesis (if any) is playing out, and log
-   it — don't just restate the numbers, say what it means.
+   it — don't just restate the numbers, say what it means. Fill in today's
+   `Result` cell in both dashboard Sim tabs per the section above.
 5. **On Friday 4 Sep 2026 evening specifically:** in addition to the normal
    entry, write a clearly-marked **final summary** — total return for each
    paper portfolio over the full 10 trading days vs. both benchmarks, how
@@ -113,10 +138,13 @@ You're a fresh clone of this repo each run with no other memory. At the end
 of every run — including no-op days — commit and push:
 
 ```
-git add SIM_LOG.md data/sim_sujal.json data/sim_manali.json
+git add SIM_LOG.md data/sim_sujal.json data/sim_manali.json dashboard.html
 git commit -m "Sim: <one-line summary of what happened>"
 git push
 ```
+
+If you didn't touch `dashboard.html` this run (a no-op day), omit it from
+`git add` — don't stage a file with no changes.
 
 If the push fails (e.g. a race with the other daily check-in), pull, resolve
 any conflict by keeping both sides' additions (these are append-only files),

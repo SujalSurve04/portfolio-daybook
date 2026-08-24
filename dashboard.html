@@ -132,11 +132,13 @@
   /* ---------- Account switch ---------- */
   .account-switch {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     margin: 18px 0 0;
   }
   .switch-btn {
-    flex: 1;
+    flex: 1 1 calc(50% - 4px);
+    min-width: 130px;
     padding: 10px 14px;
     border-radius: 10px;
     border: 1px solid var(--line);
@@ -148,6 +150,7 @@
     cursor: pointer;
     box-shadow: var(--shadow);
   }
+  .switch-btn.sim-btn { color: var(--accent-ink); }
   .switch-btn[aria-selected="true"] {
     background: var(--accent-soft);
     color: var(--accent-ink);
@@ -443,6 +446,33 @@
   table.holdings-table .b-index { color: var(--ink-faint); }
   table.holdings-table .b-exit { color: var(--negative); font-weight: 600; }
 
+  /* ---------- Sim: Decision / Result / Risk table ---------- */
+  table.sim-table { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 12.5px; }
+  table.sim-table th, table.sim-table td {
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--line);
+    line-height: 1.55;
+  }
+  table.sim-table tr:last-child td { border-bottom: none; }
+  table.sim-table th {
+    font-size: 10px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  table.sim-table .sim-day { font-family: "IBM Plex Mono", monospace; font-weight: 600; white-space: nowrap; }
+  table.sim-table .sim-pending { color: var(--ink-faint); font-style: italic; }
+  .sim-note {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0 0 14px;
+  }
+
   /* ---------- Thesis tracker ---------- */
   .log-entry {
     border: 1px solid var(--line);
@@ -501,6 +531,8 @@
   <div class="account-switch" role="tablist" aria-label="Choose account">
     <button type="button" class="switch-btn" data-account="sujal" role="tab" aria-selected="true">Sujal</button>
     <button type="button" class="switch-btn" data-account="manali" role="tab" aria-selected="false">Manali</button>
+    <button type="button" class="switch-btn sim-btn" data-account="sujal-sim" role="tab" aria-selected="false">Sujal &middot; Sim</button>
+    <button type="button" class="switch-btn sim-btn" data-account="manali-sim" role="tab" aria-selected="false">Manali &middot; Sim</button>
   </div>
 
   <div data-panel="sujal">
@@ -958,6 +990,118 @@
 
   <footer>
     Built from Manali's Groww holdings plus public market data for prices and news &mdash; not a substitute for advice from a SEBI-registered investment adviser. This is decision-support for her own research, not a recommendation to buy or sell any security. Figures are as of the last trading session (markets closed on weekends/holidays).
+  </footer>
+
+  </div>
+
+  <div data-panel="sujal-sim">
+
+  <header class="top">
+    <div class="eyebrow">
+      <span>Paper-trading simulation &middot; Sujal's book</span>
+      <span class="day-count">Day 1 of 10</span>
+    </div>
+    <h1 class="title">No real trades placed<span class="accent-dot">.</span></h1>
+    <div class="header-stats">
+      <div class="stat">
+        <div class="label">Paper value</div>
+        <div class="value mono">&#8377;36,182.70</div>
+        <div class="sub" style="color:var(--ink-faint)">flat &middot; today's close pending</div>
+      </div>
+      <div class="stat">
+        <div class="label">Baseline (Day 0)</div>
+        <div class="value mono">&#8377;36,182.70</div>
+        <div class="sub" style="color:var(--ink-faint)">23 Aug 2026</div>
+      </div>
+      <div class="stat">
+        <div class="label">Window</div>
+        <div class="value mono" style="font-size:14px">24 Aug&ndash;4 Sep</div>
+        <div class="sub" style="color:var(--ink-faint)">10 trading days</div>
+      </div>
+    </div>
+  </header>
+
+  <section aria-labelledby="sim-h-s">
+    <div class="section-head">
+      <h2 id="sim-h-s">Decisions, results &amp; risk &mdash; daily</h2>
+      <span class="hint">real research, paper trades only</span>
+    </div>
+    <p class="sim-note">Separate paper ledger (<code>data/sim_sujal.json</code>) cloned from Sujal's real holdings on Day 0. Nothing here touches the real account &mdash; this exists purely to test the decision framework before trusting it with real trades. One row per trading day: what was decided, how it played out, and what risk it was managing.</p>
+    <div class="table-wrap">
+      <table class="sim-table">
+        <thead>
+          <tr><th>Day</th><th>Decision</th><th>Result</th><th>Risk</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sim-day">Day 1<br>Mon 24 Aug</td>
+            <td>SELL 40 of 95 Adani Power @ &#8377;205.50; SELL 15 of 35 GOLDBEES @ &#8377;131.32 &rarr; BUY 36 NIFTYBEES @ &#8377;276.83 (fully self-funded, &#8377;223.92 left as cash)</td>
+            <td class="sim-pending">Pending &mdash; tonight's real close</td>
+            <td>Cuts combined Adani Group weight from ~75.8% to ~53.0% of the book; banks the GOLDBEES gain (+99.7% since Day 0) while research shows the gold rally still extending, not reversing</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    Paper-only simulation. No real order was placed. Real account (<code>LOG.md</code>, <code>data/latest_sujal.json</code>) is untouched.
+  </footer>
+
+  </div>
+
+  <div data-panel="manali-sim">
+
+  <header class="top">
+    <div class="eyebrow">
+      <span>Paper-trading simulation &middot; Manali's book</span>
+      <span class="day-count">Day 1 of 10</span>
+    </div>
+    <h1 class="title">No real trades placed<span class="accent-dot">.</span></h1>
+    <div class="header-stats">
+      <div class="stat">
+        <div class="label">Paper value</div>
+        <div class="value mono">&#8377;4,18,123.80</div>
+        <div class="sub" style="color:var(--ink-faint)">flat &middot; today's close pending</div>
+      </div>
+      <div class="stat">
+        <div class="label">Baseline (Day 0)</div>
+        <div class="value mono">&#8377;4,18,123.80</div>
+        <div class="sub" style="color:var(--ink-faint)">23 Aug 2026</div>
+      </div>
+      <div class="stat">
+        <div class="label">Window</div>
+        <div class="value mono" style="font-size:14px">24 Aug&ndash;4 Sep</div>
+        <div class="sub" style="color:var(--ink-faint)">10 trading days</div>
+      </div>
+    </div>
+  </header>
+
+  <section aria-labelledby="sim-h-m">
+    <div class="section-head">
+      <h2 id="sim-h-m">Decisions, results &amp; risk &mdash; daily</h2>
+      <span class="hint">real research, paper trades only</span>
+    </div>
+    <p class="sim-note">Separate paper ledger (<code>data/sim_manali.json</code>) cloned from Manali's real holdings on Day 0. Nothing here touches the real account. One row per trading day: what was decided, how it played out, and what risk it was managing.</p>
+    <div class="table-wrap">
+      <table class="sim-table">
+        <thead>
+          <tr><th>Day</th><th>Decision</th><th>Result</th><th>Risk</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="sim-day">Day 1<br>Mon 24 Aug</td>
+            <td>EXIT all 230 BCG @ &#8377;9.15; SELL 45 of 135 GOLDBEES, 18 of 53 Adani Power &rarr; BUY 5 Bajaj Finance, 1 HAL, 4 NIFTYBEES (fully self-funded, &#8377;130.58 left as cash)</td>
+            <td class="sim-pending">Pending &mdash; tonight's real close</td>
+            <td>Removes the one holding with a confirmed regulatory fraud finding (BCG); right-sizes two undersized winners (Bajaj Finance +65.9% at only 5.2%, HAL +62.5% at only 6.0%) &mdash; the "sizing, not stock-picking" thesis put into action</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    Paper-only simulation. No real order was placed. Real account (<code>LOG_manali.md</code>, <code>data/latest_manali.json</code>) is untouched.
   </footer>
 
   </div>
