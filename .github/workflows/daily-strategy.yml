@@ -1,11 +1,13 @@
 name: Daily Portfolio Strategy
 
 on:
-  schedule:
-    # 06:00 IST = 00:30 UTC. Change the time here if you'd rather run at
-    # 12:30 AM IST (= 19:00 UTC the previous day) or both — just add a
-    # second cron line.
-    - cron: "30 0 * * *"
+  # Auto-schedule intentionally OFF while the paper-trading simulation
+  # (SIM_PROMPT.md, 24 Aug - 4 Sep 2026) validates the decision framework.
+  # No Groww secrets are configured yet either, so this would just fail if
+  # it ran. Once ready to go live: add the 4 GROWW_* secrets, then uncomment
+  # the schedule block below (06:00 IST = 00:30 UTC).
+  # schedule:
+  #   - cron: "30 0 * * *"
   workflow_dispatch: {}   # lets you trigger a run manually from the Actions tab
 
 permissions:
