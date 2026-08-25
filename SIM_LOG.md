@@ -18,6 +18,83 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+## Day 2 — Tuesday, 25 Aug 2026 (morning check-in)
+
+**Self-check:** today is Tuesday 25 Aug 2026 — inside the 24 Aug–4 Sep window, a
+weekday. Confirmed via web search (Sahi, Groww, Zerodha, Zeebiz holiday
+calendars) that 25 Aug 2026 is **not** an NSE/BSE trading holiday — the only
+closures this week are the regular weekend days (22–23 Aug) and Onam/Milad-un-Nabi
+is a regional bank holiday in Kerala only, not an exchange holiday. Proceeding.
+Reference prices throughout use Monday 24 Aug's close (per this run's ledgers
+and SIM_LOG); actual fills at today's open will differ.
+
+**Macro backdrop researched this morning:** Mixed, cautious open expected — one
+GIFT Nifty read implied a modest gap-up (~24,290–24,330 vs Monday's 24,219.05
+close, +0.2–0.45%) while another flagged GIFT Nifty down ~0.13%; net read is
+close-to-flat with a slight upward lean, not a strong signal either way. US
+markets closed higher Monday night (S&P 500 +0.4% to 7,674.37, Dow +1.0% to
+53,277.01, Nasdaq +0.4% to 26,180.46) despite fresh US sanctions on Iran
+("Operation Economic Outcast," 24 Aug). Asia is trading weak this morning
+(Hang Seng −2.09%, Nikkei −0.49%). Crude **eased further** — WTI ~$84.89
+(−2.5%), Brent ~$92.06 (−2.5%) — continuing Monday's pullback despite the new
+sanctions. Gold/silver rally **still extending**, no reversal signal: gold
+~$4,590–4,650/oz (15-week high), silver ~$68.90–69.63/oz, domestic 24K gold
+~₹16,397/g (+6.2% in 10 days), driven by Fed dovish-shift expectations and
+ongoing Iran tension. India's 10-yr yield holds ~6.85–6.87%, near a two-month
+high on hawkish RBI minutes (released ~19–20 Aug, open to hikes if inflation
+broadens) plus elevated Brent. India VIX at 11.54 (24 Aug), up ~2.9% —
+above-average volatility flagged for today. One technical/flow catalyst: the
+Nifty IT August F&O monthly expiry falls today, 25 Aug — relevant to ITBEES
+and TCS specifically, a volatility event rather than a fundamental one.
+
+**Symbol-level research (all 6 Sujal + all 30 Manali holdings checked):** no
+fresh, material company-specific news dated after Monday 24 Aug's close was
+found for any held symbol in either book. Specifically:
+- **TMPV**: the ₹25,000 price hike (effective 1 Sept) was announced Friday 21
+  Aug — already known/priced, not a new trigger today.
+- **ADANIGREEN / ADANIPOWER**: no new news; only forward-looking items
+  (investor meets late Aug/early Sept, an EGM notice for 3 Sep) — nothing that
+  changes yesterday's now-executed de-risking calls.
+- **GOLDBEES / SILVERBEES**: rally momentum confirmed still running, not
+  reversing — consistent with, not a new trigger beyond, yesterday's partial
+  trim.
+- **MAZDOCK** (Manali): the ~₹70,000cr Project 75(I) submarine deal has
+  Finance Ministry approval and is awaiting final CCS sign-off "in coming
+  weeks" — genuinely price-moving if/when it lands, but unconfirmed as of this
+  check. **New watch item** — no action today, nothing to trade on yet.
+- **TCS** (Manali): clarified that the "succession" reporting circulating is
+  about the **Tata Sons chairmanship** (Chandrasekaran not seeking
+  reappointment past Feb 2027; T V Narendran a cited frontrunner), not the TCS
+  CEO seat — doesn't change the "hold, no add" read on TCS itself, and isn't
+  fresh (reporting from ~13–15 Aug).
+- **IRFC**: no new news; remains technically weak, unchanged read.
+- Every other symbol (RELIANCE, LT, ASIANPAINT, HDFCBANK, HAL, GROWW, CLEAN,
+  BEL, BERGEPAINT, DEEPAKNTR, BAJFINANCE, BAJAJHFL, DSSL, HINDCOPPER, NEWGEN,
+  SRF, ABCAPITAL, AWL, NTPC, ETERNAL, NFL, ITBEES, NIFTYBEES): no new news
+  found dated 24–25 Aug.
+
+**Decision:** with no new information changing any open thesis, and both
+books having just executed their major rebalancing yesterday, today is a
+straightforward hold for both accounts — the framework explicitly says not to
+flag Core/Compounder holdings on ordinary noise, and there's no noise here to
+react to, let alone a real event. Yesterday's trims (Adani Power, GOLDBEES,
+BCG) and adds (NIFTYBEES, BAJFINANCE, HAL) remain unresolved calls that need
+more sessions, not more turnover, to show whether they were right.
+
+**Decisions today — Sujal:**
+- HOLD: IRFC, TMPV, ADANIGREEN, ADANIPOWER, GOLDBEES, NIFTYBEES — no new
+  research finding since yesterday's trades changes any position; yesterday's
+  de-risking (Adani Group weight ~75.8% → ~53.0%) is a call still being
+  tested, not something to add to on zero new information.
+
+**Decisions today — Manali:**
+- HOLD: everything (all 31 remaining holdings) — no new news for any symbol.
+  MAZDOCK's pending P-75(I) CCS submarine-deal approval is a new watch item
+  (Finance Ministry cleared, CCS sign-off still pending "in coming weeks") —
+  flagged for the next check-in, not actionable yet. Nifty IT's Aug F&O
+  expiry today is a volatility event for ITBEES/TCS to note, not a reason to
+  trade.
+
 ## Day 1 — Monday, 24 Aug 2026 (evening check-in)
 
 **Self-check:** today is Monday 24 Aug 2026 — inside the 24 Aug–4 Sep window, a
