@@ -18,6 +18,159 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+## Day 3 — Wednesday, 26 Aug 2026 (evening check-in)
+
+**Self-check:** today is Wednesday 26 Aug 2026 — inside the 24 Aug–4 Sep window, a
+weekday. Re-confirmed via web search that 26 Aug 2026 is a **settlement-only**
+holiday for Eid-e-Milad (Id-E-Milad) — NSE/BSE cash-equity and F&O trading
+proceeded normally all session; only clearing/settlement and the
+currency-derivatives segment were closed, neither of which affects this
+simulation's marking. Proceeding with the evening mark-to-market.
+
+**Closing prices researched this evening** (NSE, 26 Aug 2026 close; sources:
+stockanalysis.com historical tables as primary, cross-checked against a second
+independent source — Groww, Tickertape, IndMoney, or Business Standard — per
+symbol below):
+
+| Symbol | Close (₹) | Day chg | Confidence | Note |
+|---|---|---|---|---|
+| Nifty 50 | 24,207.75 | −0.52% (−126.80 pts) | High | Sensex −0.24% to 77,472.94; IT/FMCG/auto weakest sectors, banking/metals outperformed |
+| IRFC | 85.70 | +0.29% | High (2-source) | No fresh company news found today |
+| TMPV | 313.10 | −0.37% | High (2-source) | |
+| TMCV | 483.75 | +1.86% | High (2-source) | No dated article found explaining the move |
+| ADANIGREEN | 1,303.20 | −2.02% | High (2-source) | A Bernstein/SocGen target cut to ₹980 was reported but the note's date is **unconfirmed as today** — treated as a watch item, not a same-day catalyst |
+| ADANIPOWER | 207.20 | +0.42% | High (2-source) | |
+| GOLDBEES | 132.37 | −0.31% | High (2-source) | |
+| NIFTYBEES | 277.02 | +0.03% | High (2-source) | |
+| RELIANCE | 1,298.00 | −1.44% | High (2-source) | |
+| LT | 4,038.10 | −1.96% | High (2-source) | |
+| ASIANPAINT | 2,626.50 | −0.50% | High (2-source) | |
+| HDFCBANK | 727.20 | −0.04% | High (2-source) | |
+| HAL | 4,865.50 | −0.70% | High (2-source) | |
+| GROWW | 196.24 | **−3.33%** | High (2-source) | Two large block deals today; Ribbit Capital reported as likely seller of ~1.6% stake; most active stock on NSE today (Business Standard, dated 26 Aug) |
+| CLEAN | 829.45 | +0.92% | High (2-source) | |
+| MAZDOCK | 2,625.00 | +0.57% | High (2-source) | |
+| BEL | 406.90 | −1.54% | High (2-source) | |
+| DEEPAKNTR | 1,776.70 | +1.47% | High (2-source) | |
+| BAJFINANCE | 1,085.00 | −0.22% | High (2-source) | |
+| BAJAJHFL | 84.07 | +0.06% | High (2-source) | |
+| DSSL | 1,073.50 | −1.44% | High (2-source) | |
+| BERGEPAINT | 503.70 | −1.21% | High (2-source) | |
+| TCS | 2,270.00 | −1.14% | High (2-source) | Fell with Nifty IT (day's weakest sector), FII selling ahead of Nvidia earnings/US PCE |
+| HINDCOPPER | 556.05 | **+4.39%** | High (2-source) | Rebounded from yesterday's −7.23% OFS-driven drop — stabilization, confirms yesterday's supply/technical read |
+| NEWGEN | 524.35 | −0.23% | Low (single-sourced) | |
+| SRF | 2,583.00 | +0.31% | Low (single-sourced) | |
+| ABCAPITAL | 410.00 | −0.21% | Low (single-sourced) | |
+| AWL | 201.90 | +0.63% | High (2-source) | |
+| NTPC | 334.60 | −1.54% | Low (single-sourced) | Broad power-sector weakness (Power Grid −1.77%) |
+| ETERNAL | 327.00 | −1.21% | Low (single-sourced) | |
+| NFL | 71.80 | −0.83% | Low (single-sourced) | |
+| ITBEES | 33.76 | −0.47% | Low (single-sourced) | Consistent with Nifty IT as day's weakest sector |
+| SILVERBEES | 230.13 | +0.49% | Low (single-sourced) | |
+| BCG | 9.07 | −0.22% | High (2-source) | For buy-and-hold benchmark only — not held after Day 1's exit |
+
+**Data-quality caveats:** none of these are certified against NSE's own
+bhavcopy. Seven symbols (NEWGEN, SRF, ABCAPITAL, NTPC, ETERNAL, NFL, ITBEES,
+SILVERBEES) rest on stockanalysis.com alone — the research agent could not
+independently verify a genuinely date-matched second source for these via
+general web search (one search summary misattributed a Brightcom/BCG price
+from 26 Aug **2025** as if dated 2026 — caught and discarded before use, a
+reminder to treat AI search summaries skeptically). None of the day's moves on
+these seven exceeded the ±2% cross-check threshold, so this is flagged rather
+than blocking the run, per `SIM_PROMPT.md`'s guidance for the 32-name book.
+ADANIGREEN's cited analyst target cut has an unconfirmed date and is treated
+as a watch item, not a same-day cause, per the "never invent numbers" rule.
+
+### Sujal's paper book — mark-to-market
+
+| | Value | Since Day 0 (₹36,182.70) |
+|---|---|---|
+| **Actual (traded) book** | **₹36,195.74** | **+₹13.04 (+0.04%)** |
+| Buy-and-hold benchmark (no trades) | ₹36,272.65 | +₹89.95 (+0.25%) |
+| Nifty 50-tracking benchmark | ₹36,116.68 | −₹66.02 (−0.18%) |
+
+Day's move: −₹63.60 (−0.18%) vs yesterday's ₹36,259.34 close — roughly in line
+with the Nifty's own −0.52% today (the book fell less, proportionally), as
+ADANIPOWER (+0.42%) held up while ADANIGREEN (−2.02%, on an unconfirmed-date
+analyst target cut) and TMPV (−0.37%) dragged. Buy-and-hold reconstructed from
+the original Day-0 quantities (IRFC 30, TMPV 5, ADANIGREEN 6, ADANIPOWER 95,
+GOLDBEES 35, 0 cash) marked at today's same closes.
+
+**Reading it:** third straight session where the cumulative gap between the
+traded book and doing nothing widened in buy-and-hold's favor — now **−₹76.91**
+(buy-hold +0.25% vs actual +0.04%), up from Day 2's −₹104.06 gap but still
+negative overall since Day 0. The pattern across three days is consistent:
+ADANIPOWER, the trimmed position, keeps outperforming NIFTYBEES, the position
+it was partly replaced with, on days when Adani-specific sentiment is calm.
+Today ADANIGREEN's target-cut-driven drop actually worked in the de-risking
+trade's favor at the ADANIGREEN leg specifically (untouched, so no P&L
+difference there vs buy-and-hold), while ADANIPOWER's own gain is what's
+costing the reallocation. Three sessions is still short of a real read on a
+risk-management call — the framework's bet is that lower single-stock
+concentration (Adani combined now ~53% of holdings value vs ~76% pre-trade)
+pays off in tail scenarios, not in an ordinary up-day for the name that was
+trimmed. Nothing in today's research changes that read. Also notable: the
+traded book (+0.04% cumulative) beats the Nifty-tracking benchmark (−0.18%)
+even while trailing the do-nothing buy-and-hold (+0.25%) — Sujal's book
+overall (IRFC/TMPV/ADANIGREEN/ADANIPOWER-heavy) has simply held up better
+than the broad index over the last three sessions, a separate effect from
+whether the trade itself added value versus not trading at all.
+
+### Manali's paper book — mark-to-market
+
+| | Value | Since Day 0 (₹4,18,123.80) |
+|---|---|---|
+| **Actual (traded) book** | **₹4,16,444.19** | **−₹1,679.61 (−0.40%)** |
+| Buy-and-hold benchmark (no trades) | ₹4,16,687.38 | −₹1,436.42 (−0.34%) |
+| Nifty 50-tracking benchmark | ₹4,17,360.89 | −₹762.91 (−0.18%) |
+
+Day's move: −₹522.43 (−0.13%) vs yesterday's ₹4,16,966.62 close — again beat
+the Nifty's own −0.52% today, cushioned by HINDCOPPER's +4.39% rebound from
+yesterday's OFS-driven drop (20 shares, a real if modest offset) even as
+several large-cap holdings fell with the broad market (LT −1.96%, RELIANCE
+−1.44%, TCS −1.14%, BEL −1.54%, NTPC −1.54%). Buy-and-hold reconstructed from
+the original Day-0 quantities (today's 31 holdings plus BCG 230 reinstated,
+GOLDBEES 135, ADANIPOWER 53, BAJFINANCE 20, HAL 5, NIFTYBEES 90 — i.e.
+Monday's trades reversed) marked at today's same closes, including BCG's
+₹9.07 close.
+
+**Reading it:** the day's most consequential new development is **GROWW
+−3.33%** on two large institutional block deals (Ribbit Capital reported as
+likely seller of ~1.6% of the company, confirmed via Business Standard dated
+today) — this is an ownership/supply event, not a disclosed change in
+GROWW's own fundamentals, similar in kind to yesterday's HINDCOPPER OFS.
+Flagging as a new watch item, not acting on it tonight, but worth confirming
+tomorrow whether more block-deal supply follows or whether this was a
+one-off exit by a single early investor. Monday's rebalance continues to cost
+a little against doing nothing: the traded book trailed buy-and-hold by an
+incremental −₹32.91 today (cumulative gap widened from Day 2's −₹210.28 to
+today's **−₹243.19**) — the GOLDBEES/ADANIPOWER trims and BAJFINANCE/HAL adds
+are a slight net drag so far, though the gap remains small relative to the
+book's ₹4.18L size (−0.058% of book value). HINDCOPPER's rebound today
+supports treating yesterday's OFS-driven drop as supply/technical rather than
+a fundamental deterioration, consistent with the read logged then. MAZDOCK's
+Project 75(I) CCS sign-off remains unconfirmed. Like Sujal's book, Manali's
+traded book (−0.40% cumulative) is trailing its own buy-and-hold twin
+(−0.34%), and both are trailing the Nifty-tracking benchmark (−0.18%) — this
+book's largely non-index composition has now lagged the index across all
+three sessions, independent of any trade made; the trades' own effect
+(actual vs buy-and-hold) remains the smaller, separate signal being tracked.
+
+**Decisions today — Sujal:** (evening check-in — no new decisions, mark-to-market only)
+- HOLD: IRFC, TMPV, ADANIGREEN, ADANIPOWER, GOLDBEES, NIFTYBEES — this
+  evening's run only marks positions to today's close. ADANIGREEN's
+  single-source, unconfirmed-date analyst target cut is noted as a watch
+  item, not an action trigger tonight.
+
+**Decisions today — Manali:** (evening check-in — no new decisions, mark-to-market only)
+- HOLD: everything (all 31 remaining holdings) — this evening's run only
+  marks positions to today's close. GROWW's block-deal-driven −3.33% drop
+  (confirmed institutional stake sale, not a fundamentals event) is a new
+  watch item for the next check-in, not an action trigger tonight.
+  HINDCOPPER's +4.39% rebound confirms yesterday's OFS was supply/technical,
+  not fundamental — no longer an open concern. MAZDOCK's CCS sign-off remains
+  unconfirmed.
+
 ## Day 3 — Wednesday, 26 Aug 2026 (morning check-in)
 
 **Self-check:** today is Wednesday 26 Aug 2026 — inside the 24 Aug–4 Sep window,
