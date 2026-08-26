@@ -18,6 +18,86 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+## Day 3 — Wednesday, 26 Aug 2026 (morning check-in)
+
+**Self-check:** today is Wednesday 26 Aug 2026 — inside the 24 Aug–4 Sep window,
+a weekday. Confirmed via web search (Angel One, Business Standard, Zerodha
+holiday calendar, Sunday Guardian, Goodreturns) that 26 Aug 2026 is **not** an
+NSE/BSE trading holiday — both exchanges remain open for regular trading. It
+*is* a clearing/settlement holiday for Id-E-Milad (Eid Milad-un-Nabi), meaning
+orders execute normally today but settlement of today's trades is deferred to
+the next settlement day, and the currency-derivatives segment specifically is
+closed. Neither affects this cash-equity simulation. Proceeding. Reference
+prices throughout use Tuesday 25 Aug's close (per Day 2's evening entry,
+already researched and logged); actual fills at today's open will differ.
+
+**Macro backdrop researched this morning:** Modestly positive open indicated —
+GIFT Nifty ~24,474 (Nifty futures ~24,333.5) implies Nifty opening ~35 pts
+above yesterday's close, a small positive gap. US markets closed higher
+overnight: S&P 500 +0.32% to 7,677.28, Dow +0.30% to 53,579.94, Nasdaq +0.6%
+(tech/healthcare led). Asia is trading mixed-to-lower this morning as
+investors turn cautious ahead of a data-heavy week — Nvidia reports Q2 FY27
+earnings after today's US close, US July PCE inflation data is due Wednesday,
+and Fed Chair Kevin Warsh gives his first Jackson Hole speech this week — all
+event risk to watch, none of it India-stock-specific. Crude continued easing:
+Brent fell ~3% to ~$89.5/bbl and WTI ~2.5% to ~$84.89 on Monday/Tuesday, as
+signs of possible Iran–US diplomatic progress eased supply-disruption
+concerns — a further unwind of the tension that drove Monday's sanctions
+news, not a new spike. Gold's rally (spot ~$4,650–4,676/oz Tuesday) is
+projected by at least one forecast to ease today ahead of the PCE print and
+Warsh's speech, but no reversal has actually happened yet — treating this as
+a forecast, not a fact, per the "never invent numbers" rule. India VIX closed
+Tuesday at 11.53 (+2.95%), still elevated but not alarming.
+
+**Symbol-level research (all 6 Sujal + all 31 Manali holdings checked for
+anything new since yesterday's close):**
+- **IRFC**: received a GST show-cause notice dated 24 Aug 2026, provisional
+  demand ₹549.32 crore (₹305.38cr alleged excess input tax credit for FY23
+  plus interest/penalties) — company states no immediate financial impact and
+  plans to reply. This is genuinely new since Day 2's checks, but it's a
+  show-cause notice (not a confirmed liability) on a name already held at
+  reduced conviction (technically weak, below all MAs) — noting it as a watch
+  item, not a trigger; nothing in the framework calls for exiting on an
+  unresolved tax notice with an explicit "no immediate impact" management
+  read.
+- **ADANIPOWER / ADANIGREEN**: only the already-known August investor
+  presentation and scheduled investor-meet calendar (Mumbai/Chennai/London,
+  late Aug–Sep) — nothing new changing yesterday's de-risking read.
+- **HINDCOPPER** (Manali only): the government's 6% OFS continues today —
+  retail investors' bidding day (institutional tranche was 3.41x
+  oversubscribed Tuesday; DIPAM confirmed exercising the full green-shoe
+  option). Confirms this is a clean supply/technical event, not a
+  fundamental one — remains a watch item, still no action.
+- **MAZDOCK** (Manali): Project 75(I) submarine deal (~₹70,000cr) still
+  awaiting final CCS sign-off; multiple reports place it "on fast-track" with
+  contract conclusion targeted by September — still unconfirmed, still not
+  actionable.
+- **TCS, BAJFINANCE, HAL, TMPV/TMCV, AWL** and the remaining Manali holdings:
+  no fresh, dated news found since yesterday's close beyond items already
+  logged in prior entries.
+- **GOLDBEES / SILVERBEES**: no reversal in the underlying rally has actually
+  occurred; one forecast source flags a possible pullback today around the
+  PCE/Warsh event risk, not yet realized.
+
+**Decision:** no confirmed, material new information changes any open thesis
+in either book today. IRFC's GST notice is the one genuinely new item, and
+it's explicitly a "no immediate impact" show-cause notice, not a reason to
+act on a name already held at reduced conviction. Both books' most recent
+trades (Day 1's de-risking and sizing moves) remain the open calls under
+test — today adds a third data point, not a reason for more turnover.
+
+**Decisions today — Sujal:**
+- HOLD: IRFC, TMPV, ADANIGREEN, ADANIPOWER, GOLDBEES, NIFTYBEES — no new
+  research finding changes any position; IRFC's GST show-cause notice is
+  noted as a watch item (company says no immediate impact), not a trigger.
+
+**Decisions today — Manali:**
+- HOLD: everything (all 31 remaining holdings) — no new research finding
+  changes any position. HINDCOPPER's government OFS reaches its retail day
+  today, confirming it as a supply/technical event, not a fundamental one —
+  still a watch item, not an action trigger. MAZDOCK's CCS sign-off remains
+  pending.
+
 ## Day 2 — Tuesday, 25 Aug 2026 (evening check-in)
 
 **Self-check:** today is Tuesday 25 Aug 2026 — inside the 24 Aug–4 Sep window, a
