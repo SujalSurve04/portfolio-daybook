@@ -18,6 +18,102 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+## Day 4 — Thursday, 27 Aug 2026 (morning check-in)
+
+**Self-check:** today is Thursday 27 Aug 2026 — inside the 24 Aug–4 Sep window, a
+weekday. Confirmed via web search (Angel One, business-standard "stocks to
+watch" pieces dated today) that 27 Aug 2026 is **not** an NSE/BSE trading
+holiday — normal market operations resume fully across all segments (26 Aug's
+settlement-only Eid-e-Milad closure doesn't recur). Proceeding. Reference
+prices throughout use Wednesday 26 Aug's close (already researched and logged
+in yesterday evening's entry); actual fills at today's open will differ.
+
+**Macro backdrop researched this morning:** Cautious, gap-down open indicated —
+GIFT Nifty pointing to roughly −40 points, a negative lean after Wednesday's
+Nifty close of 24,207.75 (−0.52%) and Sensex 77,472.94 (−0.24%), a session in
+which IT stocks dragged the index amid US visa-appointment uncertainty (see
+below). US markets were mixed overnight: S&P 500 flat (−0.02% to 7,675.70),
+Dow +0.3% to 53,577.40, Nasdaq +0.7% to 26,151.30, with tech/communication
+services the biggest gainers ahead of Nvidia's results. **Nvidia reported Q2
+FY27 earnings after Wednesday's US close** and beat decisively — revenue
+$96.2bn vs $92.4bn consensus (+106% YoY), EPS $2.22, Q3 guidance of $108bn vs
+$104.2bn consensus — a strong global AI-capex signal, though historically
+NVDA itself has drifted lower in the week following a beat, so the market
+reaction into today's Asia/India session is not yet confirmed one way or the
+other. Crude continued easing — Brent ~$86/bbl, WTI ~$80/bbl, both −2.5% — no
+new supply-shock signal. Gold (~$4,650/oz) and silver (~$70/oz) remain
+elevated with no confirmed reversal yet, consistent with prior sessions.
+**New macro item since yesterday's close:** the US administration paused visa
+appointment scheduling worldwide (consular staff undergoing fresh
+screening/training) alongside a separately proposed ~$103,265 fee on H-1B
+cap-subject applications — reported as a contributor to Wednesday's IT-sector
+weakness on the Nifty (margin-pressure concerns for Indian IT exporters). This
+is a sector-wide immigration/cost overhang, not a TCS-specific event, and nothing
+about it is a confirmed earnings or contract impact yet — flagging as a watch
+item for TCS (Manali) and ITBEES (Manali), not an action trigger.
+
+**Symbol-level research (all 6 Sujal + all 31 Manali holdings checked for
+anything new since yesterday's close):**
+- **IRFC**: no update since Sunday's/24 Aug's GST show-cause notice
+  (₹549.32cr, company says no immediate impact) — remains a watch item, not a
+  trigger; no new filing or regulatory follow-up found.
+- **ADANIGREEN**: no fresh, dated news found since yesterday's close; the
+  analyst target cut flagged Tuesday remains unconfirmed as to date and is
+  still just a watch item.
+- **ADANIPOWER**: no new material news beyond already-known items (CARE's 18
+  Aug upgrade to AA+/Stable, the August investor presentation, and scheduled
+  investor interactions through late Aug/Sept) — nothing changing the
+  de-risking read.
+- **GROWW** (Manali): confirmed the block deal reported yesterday was
+  Ribbit Capital entities selling ~2.1% of Billionbrains Garage Ventures
+  (~₹2,500cr, floor ₹195, 30-day lock-in on the buyer) — consistent with
+  yesterday's read, no escalation or second wave of selling found today.
+  Still a watch item, not an action trigger — the stake sale doesn't touch
+  GROWW's own fundamentals.
+- **MAZDOCK** (Manali): Project 75(I) (~₹70,000cr) still awaiting final CCS
+  sign-off; contract conclusion still targeted for September per multiple
+  reports — unchanged since yesterday, still unconfirmed, still not
+  actionable.
+- **BEL** (Manali): genuinely new since yesterday — has secured additional
+  defence orders worth ~₹730cr since 10 Aug (communication equipment, radar,
+  avionics, tank sub-systems). Incrementally positive, consistent with the
+  existing "hold" thesis on an already-well-regarded defense PSU holding; not
+  large enough relative to BEL's order book to be a standalone trigger.
+- **TCS**: no company-specific news beyond the sector-wide US visa-pause
+  overhang noted above; the succession story (Tata Sons chairmanship) remains
+  unchanged from prior checks.
+- **HINDCOPPER**: no new news; yesterday's +4.39% rebound already confirmed
+  the government OFS was a supply/technical event, not fundamental — no
+  longer an open concern.
+- Every other symbol (TMPV, TMCV, NIFTYBEES, GOLDBEES, RELIANCE, LT,
+  ASIANPAINT, HDFCBANK, HAL, CLEAN, DEEPAKNTR, BAJFINANCE, BAJAJHFL, DSSL,
+  BERGEPAINT, NEWGEN, SRF, ABCAPITAL, AWL, NTPC, ETERNAL, NFL, ITBEES,
+  SILVERBEES): no fresh, dated news found since yesterday's close in this
+  morning's research.
+
+**Decision:** no confirmed, material new information changes any open thesis
+in either book today. The US visa-appointment pause is a real, dated,
+sector-wide item (new since yesterday's close) but it's a macro overhang on
+Indian IT broadly, not a company-specific catalyst on TCS, and doesn't change
+the existing "hold, no add" read there. BEL's incremental new order flow is
+mildly positive but immaterial next to its scale. Both books' most recent
+trades (Day 1's de-risking and sizing moves) remain the open calls under
+test — today adds a fourth data point, not a reason for turnover.
+
+**Decisions today — Sujal:**
+- HOLD: IRFC, TMPV, ADANIGREEN, ADANIPOWER, GOLDBEES, NIFTYBEES — no new
+  research finding changes any position; IRFC's GST notice and ADANIGREEN's
+  unconfirmed-date target cut remain watch items only.
+
+**Decisions today — Manali:**
+- HOLD: everything (all 31 remaining holdings) — no new research finding
+  changes any position. BEL's ~₹730cr in fresh defence orders since 10 Aug is
+  mildly positive, not a trigger. GROWW's block-deal-driven stake sale
+  remains a watch item, confirmed as an ownership event rather than a
+  fundamentals one. MAZDOCK's CCS sign-off remains pending. The US
+  visa-appointment pause is a new sector-wide watch item for TCS/ITBEES, not
+  an action trigger today.
+
 ## Day 3 — Wednesday, 26 Aug 2026 (evening check-in)
 
 **Self-check:** today is Wednesday 26 Aug 2026 — inside the 24 Aug–4 Sep window, a
