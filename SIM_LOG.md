@@ -18,6 +18,143 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+## Day 5 — Friday, 28 Aug 2026 (evening check-in)
+
+**Self-check:** today is Friday 28 Aug 2026 — inside the 24 Aug–4 Sep window, a
+weekday, and already confirmed this morning (via 5paisa pre-open coverage and
+market-holiday pieces) as **not** an NSE/BSE trading holiday. Proceeding with
+the evening mark-to-market.
+
+**Closing prices researched this evening** (NSE, 28 Aug 2026 close; sources:
+Tickertape, Groww, stockanalysis.com as primary, cross-checked against a
+second source per symbol; index/backdrop cross-checked against Business
+Standard's live market-wrap and BusinessToday's Nifty-IT-rally coverage):
+
+| Symbol | Close (₹) | Day chg | Confidence | Note |
+|---|---|---|---|---|
+| Nifty 50 | 24,175.65 | +0.35% (+84.80 pts) | High (3-source) | Sensex +0.43% to 77,264.51; snapped a two-session losing streak. Breadth positive (2,385 advances vs 1,932 declines on BSE). Driver: Nifty IT surged +3.51% on Nvidia's Q2 beat reigniting AI-capex optimism (Coforge +5.93%, LTIMindtree +4.73%, TCS +4.16%, Persistent +3.73%, Tech Mahindra +3.12%, Infosys +2.9%); pharma and metals also advanced. FMCG, consumer durables, and some heavyweight banks lagged. Firm crude and caution ahead of Fed Chair Kevin Warsh's Jackson Hole address capped further gains. |
+| IRFC | 83.90 | −0.89% | High (2-source) | No new dated catalyst; GST show-cause notice remains the only open item |
+| TMPV | 319.40 | +1.08% | High (2-source) | No dated catalyst found |
+| TMCV | 466.30 | −1.44% | High (2-source) | No dated catalyst found |
+| ADANIGREEN | 1,311.00 | −1.32% | High (2-source) | No fresh company-specific news; giving back some of the week's gains |
+| ADANIPOWER | 212.63 | −1.10% | High (2-source) | No fresh catalyst; first down session after three straight up days |
+| GOLDBEES | 130.85 | +0.62% | High (2-source) | Tracks gold, still elevated |
+| NIFTYBEES | 275.62 | −0.04% | High (2-source) | Roughly flat despite Nifty's +0.35% — tracking basis/timing noise |
+| RELIANCE | 1,287.00 | +0.37% | High (2-source) | No dated catalyst |
+| LT | 4,045.80 | +0.47% | High (2-source) | No dated catalyst |
+| ASIANPAINT | 2,608.70 | −0.85% | High (2-source) | No dated catalyst |
+| HDFCBANK | 720.30 | +1.31% | High (2-source) | No dated catalyst |
+| HAL | 4,861.10 | −0.77% | High (2-source) | No dated catalyst |
+| GROWW | 191.46 | −2.73% | High (2-source) | Continuation of the known Ribbit Capital/Cayman GW Holdings block-deal overhang (~₹979cr sale at ₹196.06, disclosed 27 Aug) — not a new event, but the selling pressure has not fully stabilized as Wednesday/Thursday's price action suggested; watch item reopened, not closed |
+| CLEAN | 836.45 | +0.77% | High (2-source) | No dated catalyst |
+| MAZDOCK | 2,555.00 | −1.28% | High (2-source) | Project 75(I) CCS sign-off still pending; no news today |
+| BEL | 411.90 | +0.22% | High (2-source) | No dated catalyst |
+| DEEPAKNTR | 1,762.90 | +0.58% | High (2-source) | No dated catalyst |
+| BAJFINANCE | 1,079.90 | −0.29% | High (2-source) | No dated catalyst |
+| BAJAJHFL | 85.00 | −0.34% | High (2-source) | No dated catalyst |
+| DSSL | 1,069.90 | −0.75% | High (2-source) | No dated catalyst |
+| BERGEPAINT | 494.35 | −1.33% | High (2-source) | No dated catalyst |
+| TCS | 2,342.00 | +4.16% | High (2-source) | Nifty IT rally (Nvidia Q2 beat/AI-capex optimism) — sector-wide move, not a TCS-specific event, but the book's best single-day move this week |
+| HINDCOPPER | 533.55 | −0.51% | High (2-source) | OFS fully settled; no longer an open item |
+| NEWGEN | 567.10 | +8.43% | High (2-source) | Jefferies raised target to ₹630 citing license-revenue growth and AI-driven productivity gains, riding the same-day IT/AI rally — a genuine, dated, company-specific catalyst |
+| SRF | 2,589.90 | −0.58% | High (2-source) | No dated catalyst |
+| ABCAPITAL | 405.55 | −1.09% | High (2-source) | No dated catalyst |
+| AWL | 196.27 | −1.74% | High (3-source) | No dated catalyst |
+| NTPC | 330.05 | −0.26% | High (2-source) | No dated catalyst |
+| ETERNAL | 328.00 | −0.15% | High (2-source) | No dated catalyst |
+| NFL | 71.09 | −0.38% | High (2-source) | No dated catalyst |
+| ITBEES | 34.70 | +2.94% | High (2-source) | Tracks the Nifty IT rally |
+| SILVERBEES | 230.31 | ~+1.9% | Medium (2-source, ~0.05% spread on the exact print — both agree on direction/magnitude) | Tracks silver, still elevated |
+| BCG | 9.05 | +0.22% | High (2-source) | For buy-and-hold benchmark only — not held after Day 1's exit; traded normally |
+
+**Data-quality caveats:** all 33 symbols returned genuine same-day (28 Aug)
+data — no stale fallback needed this evening. Only SILVERBEES carries Medium
+confidence, from a ~0.05% spread between two sources on the exact closing
+print (230.31 vs 230.42); both agree on direction and rough magnitude, so the
+₹230.31 print (stockanalysis.com) is used below without materially affecting
+either book's total. TCS (+4.16%) and NEWGEN (+8.43%) crossed the
+notable-move threshold and both have genuine, dated, sector- or
+company-specific catalysts (the Nifty IT/Nvidia rally, and Jefferies' target
+raise on NEWGEN respectively) — not unexplained moves.
+
+### Sujal's paper book — mark-to-market
+
+| | Value | Since Day 0 (₹36,182.70) |
+|---|---|---|
+| **Actual (traded) book** | **₹36,437.89** | **+₹255.19 (+0.71%)** |
+| Buy-and-hold benchmark (no trades) | ₹36,759.60 | +₹576.90 (+1.59%) |
+| Nifty 50-tracking benchmark | ₹36,068.79 | −₹113.91 (−0.31%) |
+
+Day's move: −₹269.49 (−0.73%) vs yesterday's ₹36,707.38 close — the book fell
+today even as the Nifty rose +0.35%, because Nifty's rally was concentrated in
+IT (a sector this book doesn't hold directly) while ADANIPOWER (−1.10%) and
+ADANIGREEN (−1.32%) gave back some of the week's gains. Buy-and-hold
+reconstructed from the original Day-0 quantities (IRFC 30, TMPV 5, ADANIGREEN
+6, ADANIPOWER 95, GOLDBEES 35, 0 cash) marked at today's same closes.
+
+**Reading it:** for the first time in five sessions, the de-risking trim
+*helped* rather than hurt on a down day for ADANIPOWER — the cumulative
+actual-vs-buy-hold gap **narrowed** from Day 4's −₹443.92 to today's
+**−₹321.71**, because buy-and-hold's larger 95-share ADANIPOWER stake fell by
+more in rupee terms than the traded book's trimmed 55-share stake. This is
+exactly the scenario the trim was insuring against, just on a much smaller
+scale than a genuine tail event — a single ordinary down day, not a crash.
+It's a useful data point but doesn't yet flip the four-session pattern: the
+traded book (+0.71% since Day 0) still trails buy-and-hold (+1.59%) by close
+to a full percentage point, so today's move only slowed the drag, it didn't
+reverse the cumulative story. Against the Nifty-tracking benchmark
+(−0.31%), the traded book continues to look better than the broad index,
+same as every prior session — this book's ADANIPOWER/ADANIGREEN-heavy
+composition has simply outrun the index all week, a separate effect from the
+trim decision itself.
+
+### Manali's paper book — mark-to-market
+
+| | Value | Since Day 0 (₹4,18,123.80) |
+|---|---|---|
+| **Actual (traded) book** | **₹4,15,723.17** | **−₹2,400.63 (−0.57%)** |
+| Buy-and-hold benchmark (no trades) | ₹4,16,026.60 | −₹2,097.20 (−0.50%) |
+| Nifty 50-tracking benchmark | ₹4,16,807.46 | −₹1,316.34 (−0.31%) |
+
+Day's move: +₹809.68 (+0.20%) vs yesterday's ₹4,14,913.49 close — a modest gain
+that undersells how strong the day was for one holding: TCS (+4.16%) was the
+book's standout on the Nifty IT/Nvidia rally, but the gain was mostly offset
+by GROWW (−2.73%, continuing block-deal pressure), ADANIGREEN-adjacent
+softness elsewhere, AWL (−1.74%), MAZDOCK (−1.28%) and BERGEPAINT (−1.33%).
+NEWGEN's +8.43% (Jefferies target raise) added a small but real boost given
+its modest 10-share weight. Buy-and-hold reconstructed from the original
+Day-0 quantities (today's 31 holdings plus BCG 230 reinstated, GOLDBEES 135,
+ADANIPOWER 53, BAJFINANCE 20, HAL 5, NIFTYBEES 90 — i.e. Monday's trades
+reversed) marked at today's same closes, including BCG's ₹9.05 close.
+
+**Reading it:** the cumulative actual-vs-buy-hold gap widened only slightly,
+from Day 4's −₹300.18 to today's **−₹303.43** — essentially flat, the
+smallest incremental change of the week. TCS's rally today isn't attributable
+to the trade thesis (TCS was never touched), so it doesn't validate or
+challenge the BCG-exit/sizing-adds call either way; it's simply a reminder
+that this book's real driver day to day is its 31-name diversification, not
+any single rebalancing decision. GROWW's renewed weakness (−2.73%) reopens a
+watch item that looked to be stabilizing on Wednesday/Thursday — worth
+another session's confirmation before calling it resolved either way.
+HINDCOPPER's OFS overhang is now fully closed out. Like Sujal's book,
+Manali's traded book (−0.57% cumulative) and its buy-and-hold twin (−0.50%)
+both continue to sit close to the Nifty-tracking benchmark (−0.31%) — the
+five-session pattern of small, consistent index-tracking with a modest
+trade-related drag remains intact.
+
+**Decisions today — Sujal:** (evening check-in — no new decisions, mark-to-market only)
+- HOLD: IRFC, TMPV, ADANIGREEN, ADANIPOWER, GOLDBEES, NIFTYBEES — this
+  evening's run only marks positions to today's close; no research finding
+  changes any position.
+
+**Decisions today — Manali:** (evening check-in — no new decisions, mark-to-market only)
+- HOLD: everything (all 31 remaining holdings) — this evening's run only
+  marks positions to today's close. GROWW's renewed −2.73% move reopens
+  (doesn't newly create) an existing watch item; TCS's +4.16% is a sector-wide
+  IT rally, not a company-specific catalyst; NEWGEN's +8.43% (Jefferies
+  target raise) is genuinely positive but not large enough at a 10-share
+  weight to be an action trigger; MAZDOCK's CCS sign-off remains pending.
+
 ## Day 5 — Friday, 28 Aug 2026 (morning check-in)
 
 **Self-check:** today is Friday 28 Aug 2026 — inside the 24 Aug–4 Sep window, a
