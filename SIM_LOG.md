@@ -18,6 +18,90 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+## Day 5 — Friday, 28 Aug 2026 (morning check-in)
+
+**Self-check:** today is Friday 28 Aug 2026 — inside the 24 Aug–4 Sep window, a
+weekday. Confirmed via web search (5paisa's "what to expect" pre-open piece;
+market-holiday coverage confirming NSE/BSE/MCX trade normally today despite
+Raksha Bandhan, pre-open from 9:00am, regular session 9:15am–3:30pm) that 28
+Aug 2026 is **not** an NSE/BSE trading holiday. Proceeding. Reference prices
+throughout use Thursday 27 Aug's close (already researched and logged in
+yesterday evening's entry); actual fills at today's open will differ.
+
+**Macro backdrop researched this morning:** GIFT Nifty indicates a roughly
+flat-to-slightly-negative open (~8 points), a cautious continuation after
+Thursday's Nifty close of 24,090.85 (−0.48%) and Sensex 76,933.59 (−0.70%) —
+the second straight down session, on metals/PSU-bank/cement weakness.
+Overnight, US markets closed higher across the board — S&P 500 +0.42% to
+7,673.04, Dow +0.83% to 53,195.36, Nasdaq +0.39% to 26,168.46 — as investors
+digested hot US inflation data and continued to price in Wednesday's Nvidia
+beat (Q2 FY27 revenue $96.2bn vs $92.4bn consensus, Q3 guidance $108bn vs
+$104.2bn), a supportive global AI-capex signal. Crude continues easing —
+Brent ~$86.5/bbl, a fourth straight down session, no new supply-shock signal.
+Gold (~$4,606/oz) and silver (~$69/oz) remain elevated and roughly flat vs
+Thursday, no confirmed reversal. Pre-open commentary flags the same
+tug-of-war as recent sessions: persistent FII selling pressure capping
+upside, offset by robust DII inflows cushioning declines — a continuation,
+not a new dynamic. Net read: firm US closes give some underlying support,
+but GIFT Nifty itself points to a flat-to-cautious open, not a clear
+directional cue either way.
+
+**Symbol-level research (all 6 Sujal + all 31 Manali holdings checked for
+anything new since Thursday's close):**
+- **IRFC**: no update since the 24 Aug GST show-cause notice (₹549.32cr);
+  company's "no immediate impact" position unchanged. Still a watch item, not
+  a trigger.
+- **ADANIGREEN**: no fresh, dated news since Thursday's close; investor
+  roadshows (Mumbai, Chennai, London — Elara Conference, Adani Annual
+  Conference) remain scheduled for late Aug/Sept, already known. The
+  Bernstein/SocGen target cut is confirmed old news (dated 18 Aug).
+- **ADANIPOWER**: no new material news beyond the already-known August
+  investor presentation; nothing changing the de-risking read.
+- **GROWW** (Manali): AGM (24 Aug) passed routine resolutions
+  (financial-statement adoption, auditor appointment, MOA capital-clause
+  amendment) — no surprises. No second wave of block-deal selling confirmed
+  since Tuesday's Ribbit Capital sale; this watch item continues to look
+  stabilized, not escalating.
+- **MAZDOCK** (Manali): Project 75(I) submarine deal still awaiting final
+  Cabinet Committee on Security sign-off — reports as of mid-Aug put deal
+  value estimates anywhere from ~₹70,000cr to ~₹90,000cr depending on source
+  (the spread itself suggests nothing is finalized yet); still unconfirmed,
+  still not actionable.
+- **TCS**: no company-specific catalyst. A TCS-linked staffing vendor's job
+  posting drew scrutiny (dated 26–27 Aug) for appearing to require H-1B
+  status specifically — this is a third-party recruitment vendor's posting
+  practice, not a TCS filing, contract, or workforce decision; noted but not
+  treated as a TCS-specific event.
+- **HINDCOPPER**: no new news. The government's OFS (3%, green-shoe fully
+  exercised to 6%, floor ₹514) fully settled T+2 as of Thursday; the
+  supply/technical read from earlier this week stands confirmed and this is
+  no longer an open watch item.
+- Every other symbol (TMPV, TMCV, NIFTYBEES, GOLDBEES, RELIANCE, LT,
+  ASIANPAINT, HDFCBANK, HAL, CLEAN, DEEPAKNTR, BAJFINANCE, BAJAJHFL, DSSL,
+  BERGEPAINT, NEWGEN, SRF, ABCAPITAL, AWL, NTPC, ETERNAL, BEL, NFL, ITBEES,
+  SILVERBEES): no fresh, dated news found since Thursday's close in this
+  morning's research.
+
+**Decision:** no confirmed, material new information changes any open thesis
+in either book today. GIFT Nifty's flat-to-cautious indication, firm-but-old
+US closes, and an unremarkable news sweep across all 37 held names (6 + 31)
+give no trigger for a Buy, Sell, Trim, or Exit. Both books' Day 1 trades
+(Sujal's de-risking, Manali's BCG exit and sizing adds) remain the open calls
+under test — today adds a fifth data point, not a reason for turnover.
+
+**Decisions today — Sujal:**
+- HOLD: IRFC, TMPV, ADANIGREEN, ADANIPOWER, GOLDBEES, NIFTYBEES — no new
+  research finding changes any position; IRFC's GST notice remains a watch
+  item only.
+
+**Decisions today — Manali:**
+- HOLD: everything (all 31 remaining holdings) — no new research finding
+  changes any position. MAZDOCK's Project 75(I) CCS sign-off remains
+  pending and unconfirmed; GROWW's block-deal aftermath continues to look
+  stabilized with no second wave; HINDCOPPER's OFS is now fully settled and
+  no longer an open item; TCS's H-1B story is a third-party vendor matter,
+  not company-specific.
+
 ## Day 4 — Thursday, 27 Aug 2026 (evening check-in)
 
 **Self-check:** today is Thursday 27 Aug 2026 — inside the 24 Aug–4 Sep window, a
