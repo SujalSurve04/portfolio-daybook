@@ -18,6 +18,169 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+## Day 6 — Monday, 31 Aug 2026 (evening check-in)
+
+**Self-check:** today is Monday 31 Aug 2026 — inside the 24 Aug–4 Sep window, a
+weekday. Re-confirmed via web search (Zerodha's 2026 holiday calendar) that
+there is no NSE/BSE trading holiday between 24 Aug and 4 Sep 2026 (next
+holiday is Ganesh Chaturthi, 14 Sep) — already established this morning,
+reconfirmed here. Proceeding with the evening mark-to-market.
+
+**Closing prices researched this evening** (NSE, 31 Aug 2026 close; two
+parallel research passes covering Sujal's 6 + part of Manali's book and the
+rest of Manali's book respectively, each cross-checking stockanalysis.com
+against a second source — Groww, Kotak Neo, Business Standard, or a direct
+page fetch — per symbol; two follow-up searches run directly this evening to
+resolve a conflicting ADANIPOWER print and confirm GOLDBEES):
+
+| Symbol | Close (₹) | Day chg | Confidence | Note |
+|---|---|---|---|---|
+| Nifty 50 | 24,080.40 | −0.39% (−95.25 pts) | High (2-source) | Sensex −0.40% to 76,957.27. Mildly risk-off session — Metal, Realty, Media and IT sectors underperformed, Auto and Private Banks relative outperformers, broader market mixed (Nifty MidCap +0.24%, SmallCap −0.74%). Stated macro driver: rising crude (Brent ~$89–90) and bond yields on escalating US–Iran tension, raising Sept Fed rate-hike odds (also the driver behind gold/silver's fall today). The day's single biggest story: per Bloomberg, the **Adani group lost ~₹1.4 lakh crore (~$15B) in market value — the largest such drop in ~21 months** — as a scheduled **MSCI India index rebalancing drove unusually volatile swings in the NSE's closing auction**; all 9 listed Adani firms closed lower, three by more than 6% each (Adani Enterprises −9.8%, Adani Energy Solutions >10%). This is a market-structure/index-mechanics event, not a fundamentals deterioration at either Adani holding held in these books. |
+| IRFC | 83.34 | −0.67% (−0.56) | Medium (single genuine same-day source, internally consistent with the day's ₹82.90–84.15 range) | No dated catalyst found; GST show-cause notice remains the only open item. |
+| TMPV | 308.85 | −3.30% (−10.55) | High (2-source agree exactly) | No single dated catalyst found; continues a multi-week slide (a fresh 52-week low this week, −10.4% over 7 days) since its 2025 demerger — not linked to today specifically. |
+| ADANIGREEN | 1,214.90 | −7.33% (−96.10) | High (2-source agree exactly) | Group-wide Adani/MSCI-rebalancing closing-auction event described above — not company-specific. |
+| ADANIPOWER | 198.00 | −6.88% (−14.63) | Medium→High (an earlier intraday print showed ₹208.10/−2.07%, pre-auction; the ₹198.00/−6.88% figure is the settled close, corroborated by a second independent web search this evening and consistent with Bloomberg's report that three Adani firms fell >6% each) | Same group-wide Adani/MSCI closing-auction event as ADANIGREEN. |
+| GOLDBEES | 127.32 | −2.70% (−3.53) | High (confirmed via a direct Groww page fetch this evening in addition to stockanalysis.com — both agree exactly; prev close ₹130.85 matches Friday's logged figure) | Gold fell a 3rd straight session on rising Sept Fed rate-hike odds. |
+| NIFTYBEES | 274.87 | −0.27% (−0.75) | Medium-High (single direct source, cross-checks well against Nifty's own −0.39% move) | Tracks index. |
+| RELIANCE | 1,277.00 | −0.78% (−10.00) | High (2-source) | No dated catalyst; below notable-move threshold. |
+| LT | 4,044.90 | −0.02% (−0.90) | Medium (single source, other hits stale) | Essentially flat. |
+| ASIANPAINT | 2,653.60 | +1.72% (+44.90) | High (2-source) | No dated catalyst found. |
+| HDFCBANK | 709.00 | −1.57% (−11.30) | High (multiple sources converge) | No dated catalyst found; move runs counter to Private Banks being a same-day outperforming sector, so likely stock-specific, but no explaining article surfaced. Post-split price level (10:1 cumulative split ~Aug 2025) confirmed legitimate, not a data error. |
+| HAL | 4,801.60 | −1.22% (−59.50) | High (2-source) | No dated catalyst; below notable-move threshold. |
+| GROWW | 192.06 | +0.31% (+0.60) | High (2-source) | No new block-deal-selling news found; continues the stabilized read logged this morning. |
+| TMCV | 471.10 | +1.03% (+4.80) | Medium (single source, other hits stale) | No dated catalyst found. |
+| CLEAN | 822.85 | −1.63% (−13.60) | High (2-source) | No dated catalyst found. |
+| MAZDOCK | 2,480.00 | −2.94% (−75.00) | Medium (consistent with a same-day intraday snapshot; no second full-close source found) | No dated catalyst; Project 75(I) CCS sign-off still pending. |
+| BEL | 414.45 | +0.62% (+2.55) | High (2-source) | No dated catalyst found. |
+| DEEPAKNTR | 1,749.40 | −0.77% (−13.50) | High (2-source) | No dated catalyst found. |
+| BAJFINANCE | 1,057.00 | −2.12% (−22.90) | High (2-source) | No dated catalyst; financials broadly mixed in a soft market. |
+| BAJAJHFL | 84.02 | −1.15% (−0.98) | High (2-source) | No dated catalyst found. |
+| DSSL | 1,041.30 | −2.67% (−28.60) | High (2-source) | No same-day dated catalyst (SOC 2 certification 19 Aug and Q1 earnings call 14 Aug are stale); consistent with general IT/small-cap softness today. |
+| BERGEPAINT | 497.75 | +0.69% (+3.40) | High (2-source) | No dated catalyst found. |
+| TCS | 2,399.30 | +2.45% (+57.30) | High (2-source) | Notable outperformance against a weak Nifty IT sector; reporting around a Porsche IT-consulting-arm (MHP, ~€320m) acquisition and continued AI-deal news flow is the best-supported context found but wasn't pinned to a same-day (31 Aug) press release — treated as plausible context, not a confirmed same-day trigger. |
+| HINDCOPPER | 525.35 | −1.54% (−8.20) | High (2-source) | Broad metals/mining-sector weakness today; no company-specific dated news found. |
+| NEWGEN | 528.85 | −6.74% (−38.25) | High (2-source) | CEO Virender Jeet's resignation reaches its formal effective date (last working day) today per regulatory filing — flagged this morning as old news reaching its known date, not a new trigger — compounded by broad IT-sector softness; a genuine, if largely anticipated, dated catalyst. |
+| SRF | 2,560.40 | −1.14% (−29.50) | High (2-source) | No dated catalyst found. |
+| ABCAPITAL | 409.40 | +0.95% (+3.85) | High (2-source) | No dated catalyst found. |
+| AWL | 192.55 | −1.90% (−3.72) | High (2-source) | No dated catalyst found. |
+| NTPC | 327.40 | −0.80% (−2.65) | High (2-source) | No dated catalyst found. |
+| ETERNAL | 328.10 | +0.03% (+0.10) | Medium (two direct price sources agree closely — 328.10 vs 328.00 — but a same-day market-wrap live-blog described it as a "top loser," likely an intraday-snapshot artifact rather than the final close) | No dated catalyst found; the discrepancy is flagged but the net move is immaterial either way. |
+| NFL | 70.37 | −1.01% (−0.72) | High (2-source) | No dated catalyst found. |
+| ITBEES | 34.32 | −1.10% (−0.38) | High (2-source) | Tracks Nifty IT, a market laggard today. |
+| SILVERBEES | 223.22 | −3.12% (−7.20) | High (2-source, plus multiple news roundups) | Silver sold off with gold on rising Sept Fed rate-hike odds; silver ETFs broadly fell up to ~4% market-wide today. |
+| BCG | 9.04 | −0.11% (−0.01) | High (2-source) | For buy-and-hold benchmark only — not held after Day 1's exit. |
+
+**Data-quality caveats:** two figures needed extra verification tonight and
+were resolved before use: (1) **ADANIPOWER** — an initial pass surfaced a
+conflicting intraday print (₹208.10, −2.07%, pre-auction) alongside the
+settled close (₹198.00, −6.88%); a direct follow-up search this evening
+confirmed ₹198.00 as the closing price, consistent with Bloomberg's
+same-day report that three Adani group firms fell more than 6% each in the
+MSCI-rebalancing-driven closing auction — used as the mark. (2)
+**GOLDBEES** — confirmed via a direct Groww page fetch this evening
+(matching stockanalysis.com exactly, and consistent with Friday's logged
+₹130.85 previous close), upgraded from the research pass's single-source
+Low–Medium read to High. **ETERNAL**'s close is solid (two sources within a
+paisa) but one live market-wrap piece's "top loser" framing doesn't match
+the ~flat final print — flagged, not blocking, and immaterial to either
+book's total. No price tonight is certified against NSE's own bhavcopy.
+
+### Sujal's paper book — mark-to-market
+
+| | Value | Since Day 0 (₹36,182.70) |
+|---|---|---|
+| **Actual (traded) book** | **₹34,889.49** | **−₹1,293.21 (−3.57%)** |
+| Buy-and-hold benchmark (no trades) | ₹34,600.05 | −₹1,582.65 (−4.37%) |
+| Nifty 50-tracking benchmark | ₹35,926.68 | −₹256.02 (−0.71%) |
+
+Day's move: −₹1,548.40 (−4.25%) vs Friday's ₹36,437.89 close (no Saturday/
+Sunday trading) — by far the book's worst single-session move in six
+sessions, driven almost entirely by the Adani-group selloff: ADANIGREEN
+−7.33% and ADANIPOWER −6.88%, both caught in the MSCI-rebalancing-driven
+closing-auction volatility described above, plus GOLDBEES −2.70% falling
+with gold. Buy-and-hold reconstructed from the original Day-0 quantities
+(IRFC 30, TMPV 5, ADANIGREEN 6, ADANIPOWER 95, GOLDBEES 35, 0 cash) marked
+at today's same closes.
+
+**Reading it:** this is the session the Day 1 de-risking trim was insuring
+against, and for the first time in six sessions it clearly paid off. The
+cumulative actual-vs-buy-hold gap **flipped from −₹321.71 to +₹289.44** — a
+same-day swing of +₹611.15 — because buy-and-hold's untrimmed 95-share
+ADANIPOWER stake absorbed nearly twice the rupee loss that the traded
+book's trimmed 55-share stake did on today's −6.88% move. The actual book
+is now genuinely *ahead* of doing nothing since Day 0, reversing a pattern
+that had held (with one small exception on Day 5) for five straight
+sessions. It's worth being precise about what today validates and what it
+doesn't: the trigger was index-mechanics/MSCI-rebalancing volatility in the
+NSE closing auction, not a fundamentals deterioration at either Adani
+holding — so this isn't proof the "Adani Group is overvalued/risky"
+thesis was right, only proof that *reducing single-stock concentration
+before a violent one-day move, for whatever reason, reduces the damage
+when that move happens*. That is exactly what the trim was built to do.
+Against the Nifty-tracking benchmark (−0.71%), the traded book now trails
+for the first time this week (−3.57% vs −0.71%) — unsurprising, since
+today's damage was concentrated in two names this book is overweight and
+the broad index isn't. One very bad day for a concentrated position is not
+by itself proof the multi-day pattern before it (four straight sessions of
+buy-and-hold outperforming) was wrong either — four sessions of small cost
+plus one session of large benefit is a very different distribution than
+either extreme alone, and that's the actual, honest read six sessions in.
+
+### Manali's paper book — mark-to-market
+
+| | Value | Since Day 0 (₹4,18,123.80) |
+|---|---|---|
+| **Actual (traded) book** | **₹4,13,057.60** | **−₹5,066.20 (−1.21%)** |
+| Buy-and-hold benchmark (no trades) | ₹4,13,113.54 | −₹5,010.26 (−1.20%) |
+| Nifty 50-tracking benchmark | ₹4,15,165.28 | −₹2,958.52 (−0.71%) |
+
+Day's move: −₹2,665.57 (−0.64%) vs Friday's ₹4,15,723.17 close — the book's
+worst single-day move in six sessions, on the same Adani-group selloff
+(ADANIPOWER −6.88%, a much smaller 35-share/~1.7% weight here than in
+Sujal's book) plus SILVERBEES −3.12% and NEWGEN −6.74% (CEO transition
+reaching its formal effective date) adding drag; TCS +2.45% was the lone
+large offset. Buy-and-hold reconstructed from the original Day-0 quantities
+(today's 31 holdings plus BCG 230 reinstated, GOLDBEES 135, ADANIPOWER 53,
+BAJFINANCE 20, HAL 5, NIFTYBEES 90 — i.e. Day 1's trades reversed) marked
+at today's same closes, including BCG's ₹9.04 close.
+
+**Reading it:** the same mechanism that flipped Sujal's book today shows up
+here too, just diluted across 31 other holdings. The cumulative
+actual-vs-buy-hold gap **narrowed sharply, from −₹303.43 to −₹55.94** — the
+largest one-day improvement of the week — because buy-and-hold's larger
+53-share ADANIPOWER stake (vs the traded book's 35) took more of today's
+−6.88% hit, and its reinstated 230-share BCG position added a further tiny
+drag (BCG itself was flat, −0.11%, so this was a minor factor). At −0.014%
+of book value, the remaining gap is now close to noise-level — six
+sessions in, this book's BAJFINANCE/HAL sizing adds and ADANIPOWER/GOLDBEES
+trims have gone from a small, consistent cost to essentially breakeven
+against doing nothing, with today's Adani-driven session being the clearest
+single piece of evidence yet that the trims add value on bad days for the
+stock, not just cost on ordinary ones. As with Sujal's book, this book's
+Nifty-tracking benchmark (−0.71%) is now beaten by both the actual book
+(−1.21%, worse) and — for the first time — is worse than both real
+readings' cumulative position, since this session's damage (Adani, silver,
+NEWGEN) hit assets this book holds and the index doesn't weight the same
+way. GROWW's watch item continues unresolved but not worsening; MAZDOCK's
+CCS sign-off remains pending; NEWGEN's CEO transition is now a closed,
+non-recurring item (its formal effective date has passed).
+
+**Decisions today — Sujal:** (evening check-in — no new decisions, mark-to-market only)
+- HOLD: IRFC, TMPV, ADANIGREEN, ADANIPOWER, GOLDBEES, NIFTYBEES — this
+  evening's run only marks positions to today's close. Today's Adani-group
+  selloff (MSCI-rebalancing-driven closing-auction volatility, not a
+  fundamentals event) is exactly the scenario the Day 1 trim was designed
+  to cushion, and it did — no reason to trade further on a single index-
+  mechanics event.
+
+**Decisions today — Manali:** (evening check-in — no new decisions, mark-to-market only)
+- HOLD: everything (all 31 remaining holdings) — this evening's run only
+  marks positions to today's close. Same Adani-selloff read as Sujal's
+  book, at a much smaller relative weight; GROWW's watch item continues
+  unresolved but not worsening; MAZDOCK's CCS sign-off remains pending;
+  NEWGEN's CEO transition has now reached its already-known effective date
+  and is no longer an open item.
+
 ## Day 6 — Monday, 31 Aug 2026 (morning check-in)
 
 **Self-check:** today's real date is Monday 31 Aug 2026 — inside the 24 Aug–4
