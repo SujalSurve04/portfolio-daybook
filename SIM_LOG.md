@@ -18,6 +18,87 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+## Day 6 — Monday, 31 Aug 2026 (morning check-in)
+
+**Self-check:** today's real date is Monday 31 Aug 2026 — inside the 24 Aug–4
+Sep window, a weekday. Verified the weekday independently via both the shell
+`date` command and Python's `datetime` (both confirm Monday), since an initial
+web-search summary incorrectly claimed 31 Aug 2026 falls on a Sunday — that
+claim is wrong and was discarded rather than trusted. Confirmed via Zerodha's
+2026 holiday calendar that there is no NSE/BSE trading holiday between 24
+Aug–4 Sep 2026 (the next holiday is Ganesh Chaturthi, 14 Sep). Proceeding.
+Reference prices throughout use Friday 28 Aug's close (already researched and
+logged in that evening's entry); actual fills at today's open will differ.
+Weekend (29–30 Aug) required no entries — outside the trading calendar.
+
+**Macro backdrop researched this morning:** Cautious, flat-to-slightly-negative
+open indicated — pre-open commentary flags crude still above $91/bbl, rising
+global bond yields, and ongoing West Asia tension as headwinds, with Nifty
+consolidating near its 24,200 pivot (resistance 24,250–24,300 on call writing,
+support 24,150–24,200) and only a close above 24,380 seen as a real shift to
+the upside. Friday's US close was mildly negative on the day but a positive
+week overall — S&P 500 −0.2% to 7,711.76, Dow flat (−0.02%) to 53,559.99,
+Nasdaq −0.5% to 26,402.42 — as Fed Chair Kevin Warsh's first Jackson Hole
+keynote was read as mildly hawkish (flagging that recent inflation prints
+don't yet show underlying trends meaningfully improving, without giving
+forward policy guidance). Gold sits flat near $4,600/oz (a marginal weekly
+decline after three straight up weeks); silver holds near $69, eyeing a
+possible break above $72; crude (Brent ~$91, WTI ~$85) ticked up from
+two-week lows on West Asia developments (Qatar–Iran talks on mine-clearing to
+reopen Strait of Hormuz tanker routes) — no fresh spike, no confirmed
+reversal in gold/silver's elevated levels either.
+
+**Symbol-level research (all 6 Sujal + all 31 Manali holdings checked for
+anything new since Friday's close):**
+- **IRFC**: no update found since the 24 Aug GST show-cause notice (₹549.32cr,
+  company's "no immediate impact" position unchanged) — remains a watch item
+  only.
+- **ADANIGREEN / ADANIPOWER**: no fresh, dated company-specific news found for
+  the weekend or this morning; nothing changing the existing read.
+- **GROWW** (Manali): no second wave of block-deal selling confirmed since
+  Friday's renewed −2.73% weakness — the only items found dated this weekend
+  are routine (392,613 ESOP options granted 28 Aug under the existing 2024
+  scheme) or mildly positive (Groww/Billionbrains named among 10 Indian stocks
+  in FTSE's September 2026 index review, not yet effective). Watch item
+  continues, not escalating, not closing.
+- **MAZDOCK** (Manali): Project 75(I) still awaiting final CCS sign-off;
+  reporting continues to target contract conclusion by September — unchanged,
+  still unconfirmed, still not actionable.
+- **NEWGEN** (Manali): CEO Virender Jeet's resignation takes effect today
+  (close of business, 31 Aug) — but this was announced 9 June 2026, and
+  successor Tarun Nandwani has already been CEO since 1 Aug. Old, fully-priced
+  news reaching its formal effective date, not a new trigger.
+- **TCS**: no company-specific news found since Friday; Friday's rally was
+  the sector-wide Nifty IT/Nvidia move already logged, not company-specific.
+- **HINDCOPPER**: OFS remains fully settled; no new news.
+- Every other symbol (TMPV, TMCV, NIFTYBEES, GOLDBEES, RELIANCE, LT,
+  ASIANPAINT, HDFCBANK, HAL, CLEAN, BEL, DEEPAKNTR, BAJFINANCE, BAJAJHFL,
+  DSSL, BERGEPAINT, SRF, ABCAPITAL, AWL, NTPC, ETERNAL, NFL, ITBEES,
+  SILVERBEES): no fresh, dated news found since Friday's close in this
+  morning's research, including a general "stocks to watch Monday" sweep that
+  surfaced nothing involving any held name.
+
+**Decision:** no confirmed, material new information changes any open thesis
+in either book today. The macro backdrop (cautious/flat GIFT Nifty, a mildly
+hawkish Jackson Hole read, firm-but-not-spiking crude) gives no directional
+trigger either. GROWW's watch item continues unresolved but not worsening;
+MAZDOCK's CCS sign-off remains pending; NEWGEN's CEO change is a
+long-announced, already-effective transition, not new information. Both
+books' Day 1 trades remain the open calls under test — today adds a sixth
+data point, not a reason for turnover.
+
+**Decisions today — Sujal:**
+- HOLD: IRFC, TMPV, ADANIGREEN, ADANIPOWER, GOLDBEES, NIFTYBEES — no new
+  research finding changes any position; IRFC's GST notice remains a watch
+  item only.
+
+**Decisions today — Manali:**
+- HOLD: everything (all 31 remaining holdings) — no new research finding
+  changes any position. GROWW's block-deal aftermath continues as an open,
+  non-escalating watch item; MAZDOCK's CCS sign-off remains pending;
+  NEWGEN's CEO transition is old news reaching its already-known effective
+  date, not an action trigger.
+
 ## Day 5 — Friday, 28 Aug 2026 (evening check-in)
 
 **Self-check:** today is Friday 28 Aug 2026 — inside the 24 Aug–4 Sep window, a
