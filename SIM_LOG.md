@@ -18,6 +18,93 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+## Day 7 — Tuesday, 1 Sep 2026 (morning check-in)
+
+**Self-check:** today's real date is Tuesday 1 Sep 2026 — inside the 24 Aug–4
+Sep window, a weekday. Confirmed via the shell `date` command that 1 Sep 2026
+is a Tuesday. Re-confirmed via web search that there is no NSE/BSE trading
+holiday in this stretch (next holiday remains Ganesh Chaturthi, 14 Sep 2026;
+September's only other closures are weekends). Proceeding. Reference prices
+throughout use Monday 31 Aug's close (already researched and logged in that
+evening's entry); actual fills at today's open will differ.
+
+**Macro backdrop researched this morning:** Risk-off leaning open indicated.
+Monday 31 Aug's US close was negative (S&P 500 −0.33% to 7,686; Dow −0.70% to
+53,186; Nasdaq −0.12% to 26,371) on fresh US strikes on Iranian targets near
+the Strait of Hormuz plus hawkish Fed commentary from Chair Kevin Warsh —
+market-implied odds of a September Fed hike rose to ~57% (from ~40% a week
+earlier) on a run of hawkish remarks and firming yields (US 10Y ~4.7%, up
+three straight sessions). Brent crude jumped ~3.2% to ~$90.91/bbl Monday on
+the Iran strikes; gold pulled back overnight (~$4,530→$4,457, ~−1.3%); silver
+last confirmed ~$67.11 Monday, +1.09% that session, no fresh overnight move
+confirmed. GIFT Nifty signals were mixed but net cautious-to-mildly-negative
+(one read −51 to −105 points on "risk-off" mood, a second read only
+marginally positive); India VIX had jumped ~4.8% in Monday's session.
+Specifically checked for follow-up on Monday's Adani-group MSCI-rebalancing
+selloff (~₹1.4 lakh crore market-cap loss as the scheduled quarterly MSCI
+reshuffle collided with NSE's newer Closing Auction Session, driving ~40x
+normal closing-auction turnover): no adverse follow-up, regulatory statement,
+or fresh company-specific news found; one analyst (Geojit's Anand James) was
+quoted characterizing it as a flows-driven, expected, stock-specific event,
+not systemic — consistent with Monday evening's read that this was
+index-mechanics, not a fundamentals deterioration. No confirmed rebound data
+for today's open was found in this pre-market pass (research agents can't see
+live intraday prints) — worth confirming at the actual open, but nothing
+found changes the standing read.
+
+**Symbol-level research (all 6 Sujal + all 31 Manali holdings checked for
+anything new since Monday's close, split across two parallel research
+passes):** no genuinely new, dated company-specific catalyst was found for
+any of the 32 unique symbols held across both books. Specifically:
+- **IRFC**: no update on the ₹549.32cr GST show-case notice since the 24 Aug
+  filing — still "evaluating notice, filing reply," remains a watch item only.
+- **ADANIGREEN / ADANIPOWER**: no fresh company-specific news; only pre-existing
+  calendar items (ADANIGREEN EGM 3 Sep). Adani-group MSCI-selloff follow-up
+  covered under macro above.
+- **TMPV**: a previously-announced (21 Aug) price hike of up to ₹25,000 takes
+  effect today — scheduled, not a fresh catalyst.
+- **GROWW** (Manali): no second wave of block-deal selling confirmed since the
+  27 Aug Ribbit Capital/Cayman GW Holdings disclosure (~₹979cr/2.1% stake);
+  watch item continues, not escalating.
+- **MAZDOCK** (Manali): Project 75(I) CCS sign-off still pending; no news.
+- **NEWGEN** (Manali): CEO transition (Jeet's resignation effective 31 Aug,
+  Nandwani already CEO since 1 Aug) is now fully closed — no further
+  development found, no longer an open item.
+- **AWL** (Manali): FSSAI watch item unchanged, nothing new since the 7 Aug
+  clarification.
+- **HINDCOPPER, TCS, HDFCBANK, HAL, L&T, BEL** and every other symbol in both
+  books: no fresh, dated news found in this morning's sweep, including
+  re-checked stale-looking headlines (an HDFCBANK chairman-resignation item
+  is from 18 Mar 2026, an L&T "ultra-mega" ADNOC order is from 4 Aug 2026, an
+  HAL Tejas-Mk2 CCS-approval headline is from Sep 2022 — all confirmed old,
+  not new triggers).
+
+**Decision:** no confirmed, material new information changes any open thesis
+in either book today. The macro backdrop (Iran-strait oil spike, hawkish Fed,
+firming yields, cautious GIFT Nifty) is a risk-off condition affecting the
+whole index, not a single-name signal calling for a trade — and Monday's
+Adani-group selloff, while showing no adverse follow-up, also has no
+confirmed rebound data available pre-open to act on. GROWW's watch item
+continues unresolved but not worsening; MAZDOCK's CCS sign-off remains
+pending; NEWGEN's CEO transition is now a closed, non-recurring item; AWL's
+FSSAI question remains open, not escalating. Both books' Day 1 trades remain
+the open calls under test — today adds a seventh data point, not a reason for
+turnover.
+
+**Decisions today — Sujal:**
+- HOLD: IRFC, TMPV, ADANIGREEN, ADANIPOWER, GOLDBEES, NIFTYBEES — no new
+  research finding changes any position; today's backdrop is a market-wide
+  risk-off macro condition (oil, Fed, yields), not a single-name catalyst, and
+  Monday's Adani-group MSCI-selloff shows no adverse follow-up but also no
+  confirmed rebound data pre-open to act on yet.
+
+**Decisions today — Manali:**
+- HOLD: everything (all 31 remaining holdings) — no new research finding
+  changes any position. GROWW's block-deal aftermath continues as an open,
+  non-escalating watch item; MAZDOCK's CCS sign-off remains pending; NEWGEN's
+  CEO transition is now fully closed; AWL's FSSAI question remains open, not
+  escalating.
+
 ## Day 6 — Monday, 31 Aug 2026 (evening check-in)
 
 **Self-check:** today is Monday 31 Aug 2026 — inside the 24 Aug–4 Sep window, a
