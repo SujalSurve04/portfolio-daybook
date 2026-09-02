@@ -18,6 +18,116 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+## Day 8 — Wednesday, 2 Sep 2026 (morning check-in)
+
+**Self-check:** today's real date is Wednesday 2 Sep 2026 — inside the 24
+Aug–4 Sep window, a weekday. Confirmed via the shell `date` command that 2
+Sep 2026 is a Wednesday. Re-confirmed via web search (Zerodha's 2026 holiday
+calendar) that there is no NSE/BSE trading holiday in this stretch — the
+next holiday is Ganesh Chaturthi, Monday 14 Sep 2026 (also newly confirmed:
+Labor Day in the US falls on Monday 7 Sep 2026, not 31 Aug, since the first
+Monday of September 2026 is the 7th — 31 Aug was a normal US trading Monday,
+so no gap in the US-close reference chain used this week). Proceeding.
+Reference prices throughout use Tuesday 1 Sep's close (already researched
+and logged in that evening's entry); actual fills at today's open will
+differ.
+
+**Macro backdrop researched this morning:** Cautious-to-negative overnight
+read. US markets fell across the board on Tuesday 1 Sep — S&P 500 −0.35% to
+~7,659.79, Dow −0.79% to ~52,766.88, Nasdaq −1.03% to ~26,099.77 — a
+tech-led selloff, the Nasdaq's decline roughly triple the S&P's. GIFT Nifty
+had been indicating a mild positive lean earlier Tuesday evening IST
+(~24,129.50, +0.33% vs a ~24,051 reference) before the US close turned
+negative, so today's actual open is more likely flat-to-cautious once that
+overnight weakness is priced in — no clean single-direction signal found
+pre-open. Gold extended its slide, falling to ~$4,358.74/oz (~−1.9% on the
+day, near two-week lows) and silver to ~$64.80/oz, both still pressured by
+hawkish Fed-hike expectations (Chair Kevin Warsh) and firm yields — bearish
+carryover for GOLDBEES/SILVERBEES. Brent crude held elevated (~$91–92/bbl),
+consistent with the past week's West Asia-tension premium, no fresh spike
+or reversal.
+
+**Symbol-level research (all 6 Sujal + all 31 Manali holdings checked for
+anything new since Tuesday's close):**
+- **IRFC**: no update since the 24 Aug GST show-cause notice (₹549.32cr,
+  Section 73 CGST Act, excess ITC claim FY22-23); still "evaluating notice,
+  no immediate financial impact" — unchanged, watch item only.
+- **ADANIGREEN**: EGM scheduled for tomorrow, 3 Sep 2026 (remote e-voting
+  window 30 Aug–2 Sep, closing today) — already-known calendar item, not a
+  new trigger. Continuing investor-meeting roadshow (Mumbai, Chennai, Elara
+  Conference, London Adani Annual Conference) also already known. A
+  promoter-entity share-purchase item (Adani Infra, ~1.03% stake at ~₹1,400/
+  share) surfaced in search results without a clear date and at a price
+  well above yesterday's ₹1,257.90 close — could not confirm this is recent;
+  not acted on given the dating uncertainty.
+- **ADANIPOWER**: no fresh company-specific news since Tuesday's rebound;
+  no adverse follow-up to last week's MSCI-rebalancing selloff found.
+- **HDFCBANK** (Manali): found a genuinely new-to-this-log item on
+  investigation — CEO Sashidhar Jagdishan announced (in a Saturday 29 Aug
+  exchange filing) he will not seek reappointment and retires 26 Oct 2026,
+  wanting a "clean slate" for his successor; board has fast-tracked the
+  succession search. This is 4 days old, not a same-day catalyst — and it
+  plausibly explains Monday 31 Aug's unexplained −1.57% HDFCBANK move
+  (flagged that day as "runs counter to the sector, no explaining article
+  surfaced"), which has already been followed by a +0.41% recovery on
+  Tuesday. Treated as informational (closes a previously open question, no
+  longer unexplained) rather than a new trigger — the market has already
+  digested and partly reversed the reaction.
+- **RELIANCE**: Jio Platforms received SEBI's observation letter on its
+  IPO DRHP — a process step (was already filed, expected), not a fresh
+  surprise; no same-day price-moving reaction confirmed.
+- **GROWW** (Manali): no second wave of block-deal selling found since the
+  27 Aug Ribbit Capital disclosure (~2.1% stake, ~₹2,500cr); same
+  not-escalating watch item as prior days.
+- **MAZDOCK** (Manali): Project 75(I) — Finance Ministry approval
+  (~₹70,000cr) already reported; final CCS sign-off still the outstanding
+  step, still targeted around September, still not confirmed. No change.
+- **AWL** (Manali): no new development found on yesterday's logged Delhi HC/
+  FSSAI Fortune-labeling item (next hearing 5 Nov); remains open, not
+  escalating.
+- **RBI's NBFC revolving-credit draft proposal** (affects BAJFINANCE,
+  BAJAJHFL, Manali): the stakeholder-comment window closed 28 Aug 2026;
+  still in draft/consultation, no finalised rule and no new development
+  since — unchanged overhang, not actionable.
+- Every other symbol (TMPV, TMCV, GOLDBEES, NIFTYBEES, LT, ASIANPAINT, HAL,
+  CLEAN, BEL, DEEPAKNTR, DSSL, BERGEPAINT, TCS, HINDCOPPER, NEWGEN, SRF,
+  ABCAPITAL, NTPC, ETERNAL, NFL, ITBEES, SILVERBEES): no fresh, dated
+  catalyst found since Tuesday's close in this morning's sweep, including a
+  general "stocks to watch Wednesday" search that surfaced nothing
+  involving any held name (day's actual highlights were an IPO debut and a
+  DCM Shriram plant commissioning, neither held here). TCS's Tata Sons
+  succession story is unchanged since mid-Aug (Chandrasekaran's non-renewal
+  already known; board meeting still expected ~17 Sep).
+
+**Decision:** no confirmed, material new information changes any open
+thesis in either book today. The HDFCBANK CEO-succession item is the one
+genuinely new finding this morning, but it's several days old, already
+reflected (and partly reversed) in price action, and a leadership-transition
+announcement at a large, well-capitalised private bank isn't by itself a
+sell/trim trigger under either framework — logged as a closed information
+gap, not an action item. Gold/silver's continued slide is a real but
+market-wide macro drag on GOLDBEES/SILVERBEES, not a name-specific signal;
+both books already trimmed into the gold rally on Day 1 and are holding
+smaller residual positions deliberately. Both books' Day 1 trades remain the
+open calls under test — today adds an eighth data point, not a reason for
+turnover.
+
+**Decisions today — Sujal:**
+- HOLD: IRFC, TMPV, ADANIGREEN, ADANIPOWER, GOLDBEES, NIFTYBEES — no new
+  research finding changes any position; IRFC's GST notice remains a watch
+  item only; ADANIGREEN's EGM (tomorrow) and roadshow calendar are
+  already-known, non-actionable items.
+
+**Decisions today — Manali:**
+- HOLD: everything (all 31 remaining holdings) — no new research finding
+  changes any position. HDFCBANK's CEO-succession news (Jagdishan retiring
+  26 Oct) is newly logged here but is several days old and already priced
+  in, not an action trigger. GROWW's block-deal aftermath continues as an
+  open, non-escalating watch item; MAZDOCK's CCS sign-off remains pending;
+  AWL's FSSAI Delhi HC item remains open, not escalating; RBI's NBFC
+  revolving-credit draft remains an unfinalised overhang on BAJFINANCE/
+  BAJAJHFL, not a fresh trigger.
+
 ## Day 7 — Tuesday, 1 Sep 2026 (evening check-in)
 
 **Self-check:** today's real date is Tuesday 1 Sep 2026 — inside the 24 Aug–4
