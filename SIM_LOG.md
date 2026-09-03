@@ -18,6 +18,161 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+## Day 9 — Thursday, 3 Sep 2026 (evening check-in)
+
+**Self-check:** today's real date is Thursday 3 Sep 2026 — inside the 24
+Aug–4 Sep window, a weekday, no NSE/BSE holiday (confirmed this morning;
+next holiday remains Ganesh Chaturthi, Mon 14 Sep 2026). Proceeding with the
+evening mark-to-market. No trades were made today (see this morning's
+entry) — this is a pure valuation pass. Tomorrow, Friday 4 Sep 2026, is the
+final scheduled day of the 10-day window; tomorrow evening's entry will
+carry the final summary.
+
+**Closing prices researched this evening** (NSE, 3 Sep 2026 close; four
+parallel research passes split across Sujal's 6 + part of Manali's book,
+another slice, another slice, and the remainder of Manali's book plus
+Nifty 50/BCG — each cross-checking stockanalysis.com against Groww,
+Tickertape, IndMoney, 5paisa, Dhan, or Google Finance; official
+nseindia.com quote pages returned 503/blocked in every pass, so all figures
+rest on third-party aggregators cross-checked against each other rather
+than the exchange's own feed). Day-change % below is computed against this
+log's own confirmed Wed 2 Sep close, consistent with prior entries:
+
+| Symbol | Close (₹) | Day chg vs Wed's logged close | Confidence | Note |
+|---|---|---|---|---|
+| Nifty 50 | 23,873.45 | −0.17% (−41.00 pts) | High (2-source exact match) | Anticipated GIFT Nifty gap-up didn't hold through the session — IT, Auto, FMCG, Pharma and Consumer Durables were the weak sectors; Realty and Financials (Bank Nifty +0.36–0.92%) outperformed. Sector rotation, no single dominant story. |
+| IRFC | 82.68 | +0.28% | High (2-source, within ₹0.05) | No dated catalyst; GST show-cause notice remains the only open item. |
+| TMPV | 312.00 | 0.00% | High (3-source exact match) | No dated catalyst found. |
+| ADANIGREEN | 1,283.70 | −0.63% | Medium-High (2-source, within ₹0.60) | EGM held today (independent-director reappointments — Romesh Sobti, Neera Saggi, Dr Anup Shah), a routine, already-known calendar item confirmed dated today; not a plausible driver of the modest decline. |
+| ADANIPOWER | 208.29 | +0.72% | Medium (3 of 4 sources agree; 1 outlier discarded) | No dated catalyst found; no follow-up on Tuesday's Bangladesh dispatch-cut item. |
+| GOLDBEES | 126.19 | +2.12% | High (2-source, within ₹0.08) | Gold rallied sharply today — MCX gold +1.2–1.25%, spot gold above $4,400/oz, rebounding after three down sessions on a weaker USD and easing US Treasury yields (multiple India bullion outlets, dated today). Macro-driven, not company-specific. |
+| NIFTYBEES | 272.59 | +0.01% | Medium — flagged anomaly | Essentially flat despite Nifty 50 falling −0.17% same session; two trackers agree with each other but not with the index move, suggesting a data-freshness lag in the sources rather than a real divergence. Used as researched, per the no-invented-numbers rule; flagged as an open data-quality item, not corrected. |
+| RELIANCE | 1,302.50 | −0.81% | High (2-source exact match) | No dated catalyst found; the Texas-refinery/SKIMS stories in circulation are dated 6 Aug, not today. |
+| LT | 3,975.00 | −0.36% | High (2-source exact match) | No dated catalyst found; recent order-win news is late-Aug, not today. |
+| ASIANPAINT | 2,544.00 | +0.65% | High (2-source exact match) | No dated catalyst found. |
+| HDFCBANK | 707.70 | +0.95% | Medium (2-source spread ~₹2, midpoint used) | No dated catalyst; Jagdishan-retirement/succession coverage in circulation is dated 31 Aug, not today. |
+| HAL | 4,770.00 | −0.14% | Medium (4-source spread ~₹21, midpoint-ish figure used) | Genuinely dated-today item found (The Week): CCS approval for the ₹13,500cr IMRH helicopter program reported "nearing," Safran Aravalli engine contract said finalized — but the stock was flat/slightly down, so the market isn't yet pricing this as confirmed; logged as an advancing watch item, not an action trigger. |
+| GROWW | 190.24 | +0.19% | High (2-source exact match) | No new block-deal news found; continues the stabilized read. |
+| TMCV | 456.08 | +1.93% | Low/Medium — real 2% source spread (460.35 vs 451.80), midpoint used | No dated catalyst found for either reading. |
+| CLEAN | 851.95 | −1.28% | Medium (cluster 850.95–852.95, one 876.9 outlier discarded) | No dated-today news found explaining this week's earlier unexplained rally; a dividend-record-date item surfaced but conflicting sources disagree whether it lands today (3 Sep) or 5 Sep — not confirmed, still an open watch item. |
+| MAZDOCK | 2,474.00 | +0.88% | High (2-source exact match) | No dated catalyst; Project 75(I) CCS sign-off still pending, still targeted for September. |
+| BEL | 408.50 | +0.75% | High (3-source agree) | No dated catalyst found. |
+| DEEPAKNTR | 1,726.10 | −0.46% | High (2-source, within ₹1.60) | No dated catalyst found. |
+| BAJFINANCE | 1,050.15 | −0.47% | High (2-source, within ₹2.30) | No dated catalyst; RBI's NBFC revolving-credit draft remains unfinalised since the 28 Aug comment-window close. |
+| BAJAJHFL | 82.99 | +0.17% | High (2-source, within ₹0.07) | Same RBI-draft overhang as BAJFINANCE, unchanged. |
+| DSSL | 1,005.90 | −0.95% | Medium (2-source spread ~₹5.80) | No dated catalyst; most recent disclosure is a 2 Sep board meeting (AGM date, CMD reappointment), not a today item. **Data-quality flag:** research this evening surfaced that NSE ticker DSSL corresponds to Dynacons Systems & Solutions, not Dee Development Engineers (which trades as DEEDEV) — this log's DSSL prices have consistently tracked Dynacons Systems throughout the window, so continuity is preserved, but the security's identity is worth a human double-check against the real Groww holding this ledger models. |
+| BERGEPAINT | 490.35 | +0.47% | Medium (2-source spread ~₹2.10) | No dated catalyst found. |
+| TCS | 2,333.90 | −0.43% | High (2-source exact match, 1 outlier discarded) | No new Tata Sons chairmanship development dated today; Narendran-frontrunner story remains unofficial, board meeting still expected ~17 Sep. |
+| HINDCOPPER | 518.27 | −0.69% | High (3-source converge within ₹0.70) | No dated-today catalyst; only a dividend record-date notice (16 Sep) surfaced, not a plausible same-day mover. |
+| NEWGEN | 517.65 | −0.60% | Medium (2-source exact match, 1 stale outlier discarded) | CRISIL reaffirmed Newgen's A1 short-term rating on ₹125cr bank facilities today — neutral/mildly positive, not a driver of the modest decline. |
+| SRF | 2,617.50 | +1.22% | High (2-source, within ₹1) | No dated catalyst found. |
+| ABCAPITAL | 402.00 | +1.69% | High (2-source exact match) | No dated catalyst found. |
+| AWL | 190.53 | −0.25% | Medium (2-source, within ₹0.53) | Checked specifically for a new Delhi HC/FSSAI update dated today — none found; most recent coverage (Centre/FSSAI jurisdiction objection rejected, 4-week response ordered) is dated 1 Sep, already logged; next hearing still 5 Nov. |
+| NTPC | 330.83 | +0.51% | High (2-source, within ₹0.15) | No dated catalyst; note NTPC's ₹3.50/share dividend paid 2 Sep, not today. |
+| ETERNAL | 324.80 | −0.52% | High (2-source exact match, 1 stale outlier discarded) | No dated catalyst found. |
+| NFL | 70.28 | +0.34% | Medium (single clear source) | No dated catalyst found. |
+| ITBEES | 34.29 | −0.29% | High (2-source exact match) | Tracks continued Nifty IT softness, consistent with TCS's decline today. |
+| SILVERBEES | 219.88 | +1.99% | Medium-High (single primary source, internally consistent) | Silver rallied alongside gold today — multiple India bullion outlets (dated today) report a rebound to ~₹2,37,790/kg on a weaker USD and easing yields, directly explaining the move. |
+| BCG | 9.03 | +0.89% | Medium (2-source, within ₹0.06) | For buy-and-hold benchmark only — not held after Day 1's exit. **Data-quality flag:** research this evening confirmed NSE ticker BCG corresponds to Brightcom Group Ltd (matches this log's price range throughout), not Baazar Style Retail (which trades as STYLEBAAZA, ~₹395) — this log's BCG has consistently tracked Brightcom Group, so continuity is preserved, but the security's identity is worth a human double-check against the real Groww holding this ledger models. |
+
+**Data-quality note:** four names (HDFCBANK, HAL, TMCV, CLEAN) had genuine
+cross-source spreads tonight rather than simple rounding noise, and
+NIFTYBEES's flat print doesn't square with Nifty 50's own −0.17% move —
+all used as researched with Medium confidence flagged, none corrected or
+guessed at, consistent with the "never invent numbers" rule. Two long-
+running ticker-identity questions (DSSL, BCG) were resolved this evening —
+both map to the securities this log has been pricing all along (Dynacons
+Systems and Brightcom Group respectively), so no historical figures need
+restating, but both are worth a one-time human check against the real
+Groww account holdings before this framework is trusted with real trades.
+
+### Sujal's paper book — mark-to-market
+
+| | Value | Since Day 0 (₹36,182.70) |
+|---|---|---|
+| **Actual (traded) book** | **₹35,759.51** | **−₹423.19 (−1.17%)** |
+| Buy-and-hold benchmark (no trades) | ₹35,946.80 | −₹235.90 (−0.65%) |
+| Nifty 50-tracking benchmark | ₹35,617.92 | −₹564.78 (−1.56%) |
+
+Day's move: +₹92.94 (+0.26%) vs yesterday's ₹35,666.57 close — GOLDBEES
+(+2.12%) and ADANIPOWER (+0.72%) drove the gain, ADANIGREEN (−0.63%) was
+the lone drag. Buy-and-hold reconstructed from the original Day-0
+quantities (IRFC 30, TMPV 5, ADANIGREEN 6, ADANIPOWER 95, GOLDBEES 35, 0
+cash) marked at today's same closes.
+
+**Reading it:** the cumulative actual-vs-buy-hold gap **widened again,
+from −₹90.23 to −₹187.29** — today's gold rally is the same mechanism as
+the Adani rebound sessions: buy-and-hold's larger 35-share GOLDBEES stake
+(vs the trimmed book's 20 shares) and larger 95-share ADANIPOWER stake (vs
+55) both captured more of today's up-move than the traded book did. Nine
+sessions in, the trim has now cost more than it's saved outside Monday's
+single crash day. Against the Nifty-tracking benchmark, though, the
+picture flips the other way: the actual book's cumulative −1.17% is now
+**well ahead** of the pure-index benchmark's −1.56% (a gap that didn't
+exist yesterday, when actual and Nifty-tracking were both around −1.4%) —
+today's gold and Adani-Power strength is exactly the kind of single-name
+return the index itself doesn't capture, so even the trimmed, diversified
+book still benefits from stock selection over simply holding Nifty. The
+open read for tomorrow's final entry: this book beats a pure-index
+allocation either way (concentrated or trimmed), but the specific trim
+decision made on Day 1 has been a net cost against not trading at all.
+
+### Manali's paper book — mark-to-market
+
+| | Value | Since Day 0 (₹4,18,123.80) |
+|---|---|---|
+| **Actual (traded) book** | **₹4,09,127.34** | **−₹8,996.46 (−2.15%)** |
+| Buy-and-hold benchmark (no trades) | ₹4,09,390.32 | −₹8,733.48 (−2.09%) |
+| Nifty 50-tracking benchmark | ₹4,11,597.30 | −₹6,526.50 (−1.56%) |
+
+Day's move: +₹1,289.34 (+0.32%) vs yesterday's ₹4,07,838.00 close — a
+broadly firmer session led by SILVERBEES (+1.99%), ABCAPITAL (+1.69%),
+SRF (+1.22%), TMCV (+1.93%) and HDFCBANK (+0.95%), partly offset by CLEAN
+(−1.28%), HINDCOPPER (−0.69%) and NEWGEN (−0.60%). Buy-and-hold
+reconstructed from the original Day-0 quantities (today's 31 holdings plus
+BCG 230 reinstated, GOLDBEES 135, ADANIPOWER 53, BAJFINANCE 20, HAL 5,
+NIFTYBEES 90 — i.e. Day 1's trades reversed) marked at today's same
+closes, including BCG's ₹9.03 close.
+
+**Reading it:** the cumulative actual-vs-buy-hold gap **widened again,
+from −₹68.95 to −₹262.98** — the same gold-rally mechanism as Sujal's
+book: buy-and-hold's larger 135-share GOLDBEES stake and 53-share
+ADANIPOWER stake both captured more of today's gains than the trimmed
+book's smaller 90 and 35 shares. As on most sessions this window, though,
+this book's day-to-day return is still driven overwhelmingly by its
+diversification (today: SILVERBEES, ABCAPITAL, SRF, TMCV, HDFCBANK) rather
+than by the Day 1 trade thesis, whose net cumulative cost (~0.06% of book
+value) remains close to noise-level relative to the book's size. Against
+the Nifty-tracking benchmark, the book again underperforms both today
+(+0.32% vs the index's −0.17%, a rare day it beats the index outright on
+the strength of gold/silver/financials exposure the index itself doesn't
+carry) and cumulatively (−2.15% vs −1.56%) — the same heavier tilt toward
+financials, paints and TCS that has lagged the index most sessions this
+window.
+
+**Watch items carried forward, unchanged or advanced today:** CLEAN's
+still-unexplained rally (dividend-date conflict unresolved), GROWW's
+block-deal aftermath (stabilized), MAZDOCK's CCS sign-off (still pending),
+AWL's FSSAI Delhi HC hearing (next 5 Nov), RBI's NBFC revolving-credit
+draft overhang on BAJFINANCE/BAJAJHFL (still unfinalised), and HAL's IMRH
+CCS approval (reported nearing today, not yet confirmed or priced).
+
+**Decisions today — Sujal:** (evening check-in — no new decisions,
+mark-to-market only)
+- HOLD: IRFC, TMPV, ADANIGREEN, ADANIPOWER, GOLDBEES, NIFTYBEES — today's
+  gold rally and mixed Adani-group move are the same trim/give-back
+  dynamic already under test since Day 1; ADANIGREEN's EGM was a routine,
+  already-known calendar item. No research finding today changes any open
+  thesis.
+
+**Decisions today — Manali:** (evening check-in — no new decisions,
+mark-to-market only)
+- HOLD: everything (all 31 remaining holdings) — today's gain was driven
+  by diversified factors (SILVERBEES, ABCAPITAL, SRF, TMCV, HDFCBANK)
+  unrelated to any open Day 1 call. HAL's IMRH CCS-approval report is
+  positive but not yet confirmed enough to act on; CLEAN, GROWW, MAZDOCK,
+  AWL and the RBI NBFC draft remain open, non-escalating watch items.
+
 ## Day 9 — Thursday, 3 Sep 2026 (morning check-in)
 
 **Self-check:** today's real date is Thursday 3 Sep 2026 — inside the 24
