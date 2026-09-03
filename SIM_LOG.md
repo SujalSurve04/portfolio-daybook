@@ -18,6 +18,122 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+## Day 9 — Thursday, 3 Sep 2026 (morning check-in)
+
+**Self-check:** today's real date is Thursday 3 Sep 2026 — inside the 24
+Aug–4 Sep window, a weekday. Verified via shell `date` that 3 Sep 2026 is a
+Thursday. No NSE/BSE trading holiday in this stretch — confirmed on prior
+runs (Zerodha's 2026 holiday calendar) that the next holiday is Ganesh
+Chaturthi, Monday 14 Sep 2026; nothing has changed that. Proceeding.
+Reference prices throughout use Wednesday 2 Sep's close (already researched
+and logged in that evening's entry); actual fills at today's open will
+differ.
+
+**Macro backdrop researched this morning:** Firmer, gap-up open indicated.
+US markets rebounded Wednesday 2 Sep after two straight down sessions — S&P
+500 +0.46% to 7,666.60, Dow +0.56% to 53,061.95, Nasdaq +0.45% to 26,217.83
+— as Treasury yields paused their climb. GIFT Nifty points to a modest
+gap-up open, ~+0.55% (~24,095–24,096; one outlier +4.28% print from a
+single source was discarded as unreliable after two independent sources —
+ICICI Direct, Upstox — corroborated the smaller move). Brent crude holds
+near recent highs (~$95.50/bbl, essentially flat today) after spiking ~5%
+earlier in the week on US strikes near the Strait of Hormuz following
+tanker attacks — elevated but not accelerating further today. Gold
+(~$4,409/oz, +0.51%) and silver (~$66/oz, near two-week lows) are little
+changed. Fed Chair Kevin Warsh's hawkish Jackson Hole stance continues to
+dominate — markets now pricing ~70% odds of a 15–16 Sep rate hike — keeping
+global bond yields at multi-year highs; a tightening-conditions backdrop,
+not a single-name signal.
+
+**Symbol-level research (all 6 Sujal + all 31 Manali holdings checked for
+anything new since Wednesday's close, split across two parallel research
+passes):**
+- **ADANIGREEN**: an EGM is happening today, 3 Sep 2026, 11:00am IST
+  (remote e-voting closed 2 Sep) — reappointment of independent directors,
+  an already-known, routine calendar item, not a trigger. Also found: a
+  promoter entity (Adani Infra) bought a further ~1.03% stake (~₹2,380cr) on
+  Monday 1 Sep, and the stock rose ~3% Tuesday after commissioning a 139MW
+  Khavda solar project — both incrementally positive but neither new-since-
+  Wednesday nor large enough to be an action trigger on their own.
+- **ADANIPOWER**: a genuinely new operational item — Adani reduced power
+  dispatch to Bangladesh from its Godda plant on 2 Sep due to a coal-
+  transport (rail) disruption. A real, dated item, but an operational
+  hiccup at one plant's export volume, not a fundamentals or regulatory
+  event — logged as a watch item, not actionable today.
+- **IRFC**: no update since the 24 Aug GST show-cause notice (₹549.32cr);
+  still "evaluating notice, no immediate financial impact" — unchanged.
+- **LT** (Manali): a live order-win streak — two large plus two significant
+  orders (up to ₹15,000cr combined) announced in 4 of the last 5 sessions,
+  part of a broader ~$11.6bn Middle-East-led order run since July. Positive
+  and genuinely dated, but a continuation of an already-known pattern
+  (order wins have been a recurring, not new, theme for L&T this window),
+  not a fresh discrete trigger.
+- **HAL** (Manali): a report (dated to Sep 2026, exact day unconfirmed) says
+  CCS approval for HAL's ₹13,500cr IMRH helicopter design plan is nearing,
+  with the Safran Aravalli engine contract finalized. Plausible and
+  positive but the date isn't pinned to today specifically — flagged, not
+  acted on, consistent with the "never invent numbers" rule.
+- **GROWW** (Manali): no new block-deal wave found since 27 Aug's Ribbit
+  Capital sale (~2.1% stake, ~₹2,500cr) — unchanged, non-escalating watch
+  item.
+- **MAZDOCK** (Manali): Project 75(I) — Finance Ministry's ~₹70,000cr
+  clearance (28 May) stands; CCS sign-off still not confirmed as of today,
+  contract conclusion still targeted for September — unchanged.
+- **AWL** (Manali): confirmed detail on the already-known Delhi HC/FSSAI
+  Fortune-brand labeling case — the court rejected the Centre/FSSAI's
+  jurisdiction objection and ordered a response within 4 weeks; next
+  hearing remains 5 Nov. Procedural detail on an open item, not an
+  escalation or new trigger.
+- **RBI's NBFC revolving-credit draft proposal** (BAJFINANCE, BAJAJHFL,
+  Manali): still in draft/consultation; comment window closed 28 Aug with
+  no finalised rule found since — unchanged overhang.
+- **CLEAN** (Manali): Tuesday evening's unexplained +5.09% rally to ₹863
+  remains without a confirmed same-day catalyst after another dedicated
+  search — only routine items found (₹4/share dividend ex-date 4 Sep, AGM
+  12 Sep). Still logged as an open, unexplained watch item, not acted on.
+- **HDFCBANK** (Manali): no new development on CEO Jagdishan's planned 26
+  Oct retirement/succession search beyond the original 29 Aug filing — no
+  successor named, unchanged.
+- **TCS / Tata Sons** (Manali): no new development on the chairmanship
+  succession story; board meeting still expected ~17 Sep, unchanged since
+  mid-Aug.
+- Every other symbol (TMPV, TMCV, GOLDBEES, NIFTYBEES, RELIANCE,
+  ASIANPAINT, BEL, DEEPAKNTR, BAJFINANCE, BAJAJHFL, DSSL, BERGEPAINT,
+  HINDCOPPER, NEWGEN, SRF, ABCAPITAL, NTPC, ETERNAL, NFL, ITBEES,
+  SILVERBEES): no fresh, dated catalyst found since Wednesday's close in
+  this morning's sweep — includes the four ETFs, checked for fund-level
+  news and finding only routine pricing/AUM data.
+
+**Decision:** no confirmed, material new information rises to a Buy/Sell/
+Trim/Exit trigger in either book today. ADANIGREEN's EGM is a routine,
+already-known calendar item; ADANIPOWER's Bangladesh dispatch cut is a
+real but minor operational item at one plant, not a fundamentals or
+regulatory event; LT's order-win streak and HAL's possible CCS approval are
+both positive but continuations of already-known patterns or insufficiently
+dated to act on. The macro backdrop (firmer US close, gap-up GIFT Nifty,
+elevated-but-flat oil, still-hawkish Fed) is a broad tailwind, not a
+single-name signal. CLEAN's rally remains a genuine open question with no
+answer found; GROWW, MAZDOCK, AWL and the RBI NBFC draft all remain
+open, non-escalating watch items. Both books' original Day 1 trades remain
+the open calls under test — today adds a ninth data point, not a reason
+for turnover.
+
+**Decisions today — Sujal:**
+- HOLD: IRFC, TMPV, ADANIGREEN, ADANIPOWER, GOLDBEES, NIFTYBEES — no new
+  research finding rises to an action trigger. ADANIGREEN's EGM (today) is
+  routine; ADANIPOWER's Bangladesh dispatch cut is a minor operational
+  item, not a fundamentals signal; IRFC's GST notice remains a watch item
+  only.
+
+**Decisions today — Manali:**
+- HOLD: everything (all 31 remaining holdings) — no new research finding
+  rises to an action trigger. LT's continuing order-win streak and HAL's
+  possible (undated) CCS approval on the IMRH program are both positive but
+  not fresh discrete triggers. GROWW, MAZDOCK's CCS sign-off, AWL's FSSAI
+  case (procedural update only) and the RBI NBFC draft remain open,
+  non-escalating watch items; CLEAN's unexplained rally is still
+  unresolved.
+
 ## Day 8 — Wednesday, 2 Sep 2026 (evening check-in)
 
 **Self-check:** today's real date is Wednesday 2 Sep 2026 — inside the 24
