@@ -18,6 +18,103 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+## Day 10 — Friday, 4 Sep 2026 (morning check-in)
+
+**Self-check:** today's real date is Friday 4 Sep 2026 — the final scheduled
+day of the 24 Aug–4 Sep window, a weekday, no NSE/BSE trading holiday
+(confirmed on prior runs; next holiday remains Ganesh Chaturthi, Mon 14 Sep
+2026). Proceeding. This is the final morning check-in; tonight's evening
+entry will carry the required final summary for the full 10-day window.
+Reference prices throughout use Thursday 3 Sep's close (already researched
+and logged in that evening's entry); actual fills at today's open will
+differ.
+
+**Macro backdrop researched this morning:** US markets rose Thursday 3 Sep
+for a second straight session on AI-stock strength and easing Treasury
+yields — S&P 500 +0.5% to 7,666.60, Dow +0.6% to 53,061.95, Nasdaq +0.5% to
+26,217.83. GIFT Nifty signals were mixed/stale in this morning's search (one
+read flat vs Thursday's close, another indicating a modest ~76-point
+positive gap) — direction leans modestly positive but the specific figure is
+unconfirmed for today's pre-open. Context: the underlying market has fallen
+four straight sessions (Nifty −41pts/−0.17% to 23,873.45, Sensex −417pts/
+−0.55% Thursday), dragged by IT and auto weakness; India VIX +4.78% to
+11.19. Brent crude ~$95.82–96.24/bbl, elevated and volatile on the ongoing
+Iran/Strait of Hormuz conflict (US strikes 1–2 Sep, escorted tanker convoys
+through the Strait). Gold (~$4,477–4,491/oz, +2%+ Thursday) and silver
+(~$65–67/oz) continue to rally on a weaker dollar, easing yields and
+Iran-linked safe-haven demand — no cooling signal as of Thursday's close,
+though a US jobs report was flagged as a swing factor for today. **Notable
+discrepancy flagged, not resolved:** this morning's research shows Fed-rate
+markets now pricing ~85–90% odds of a 25bp *cut* at the September meeting —
+a marked shift from Thursday evening's own logged read of "~70% odds of a
+*hike*" under Fed Chair Warsh's hawkish Jackson Hole stance. Both reads come
+from real searches on their respective days; rather than silently picking
+one, this is logged as a genuine cross-day narrative shift (or a
+data-quality artifact) worth a human's attention, consistent with the
+never-invent-numbers rule. Either way, treated as market-wide backdrop, not
+a single-name signal.
+
+**Symbol-level research (all 6 Sujal + all 31 Manali holdings checked for
+anything new since Thursday's close, split across three parallel research
+passes):**
+- **ADANIGREEN**: the 3 Sep EGM's remote e-voting concluded (30 Aug–2 Sep),
+  but formal results were not yet published on exchange filings as of this
+  check — a watch item to re-check once BSE/NSE posts the outcome, not
+  actionable pre-open on its own (it was always a routine director-
+  reappointment item, low-stakes regardless of outcome).
+- **ADANIPOWER**: the Godda (Bangladesh) coal-transport/rail disruption
+  first flagged 2 Sep continues, unresolved but not escalating — no update
+  overnight confirming resolution or worsening.
+- **IRFC**: no update since the 24 Aug GST show-cause notice; unchanged.
+- **HAL** (Manali): a 3 Sep report (The Week) still frames CCS approval for
+  the ₹13,500cr IMRH helicopter program as "nearing," not confirmed —
+  flagged as imminent and worth an intraday re-check, not acted on today.
+- **MAZDOCK** (Manali): Project 75(I) CCS sign-off still pending, still
+  described as "expected soon" / targeted for September — unchanged.
+- **CLEAN** (Manali): this week's unexplained rally remains without a
+  confirmed same-day catalyst after another dedicated search; only an
+  older, undated company clarification ("volume surge is market-driven, no
+  undisclosed price-sensitive information") was found.
+- **BAJFINANCE / BAJAJHFL** (Manali): the RBI NBFC revolving-credit draft
+  remains unfinalized; a 3 Sep Business Standard piece shows industry body
+  FIDC still lobbying the RBI to rethink the blanket ban — incremental
+  color, not a resolution.
+- **AWL** (Manali): Delhi HC/FSSAI status unchanged since Wednesday; next
+  hearing still 5 Nov.
+- **TCS** (Manali): Tata Sons chairmanship succession story unchanged;
+  Narendran remains the unofficial frontrunner, board meeting still
+  expected ~17 Sep.
+- Every other symbol (TMPV, TMCV, GOLDBEES, NIFTYBEES, RELIANCE, LT,
+  ASIANPAINT, HDFCBANK, GROWW, DEEPAKNTR, BAJFINANCE/BAJAJHFL (RBI item
+  aside), DSSL, BERGEPAINT, HINDCOPPER, NEWGEN, SRF, ABCAPITAL, NTPC,
+  ETERNAL, NFL, ITBEES, SILVERBEES): no fresh, dated catalyst found since
+  Thursday's close in this morning's sweep.
+
+**Decision:** no confirmed, material new information rises to a Buy/Sell/
+Trim/Exit trigger in either book on this final scheduled morning. Several
+items remain genuinely open and worth watching into tonight's final
+mark-to-market — ADANIGREEN's EGM result (undisclosed), HAL's CCS approval
+(reported imminent), MAZDOCK's CCS sign-off (reported imminent), CLEAN's
+still-unexplained rally, and the RBI NBFC draft (still unfinalized) — but
+none crossed from "pending/nearing" to confirmed as of this check, so none
+is actionable pre-open. Both books' original Day 1 trades remain the open
+calls this simulation has been testing; today adds a tenth and final data
+point, not a reason for last-minute turnover.
+
+**Decisions today — Sujal:**
+- HOLD: IRFC, TMPV, ADANIGREEN, ADANIPOWER, GOLDBEES, NIFTYBEES — no new
+  research finding rises to an action trigger. ADANIGREEN's EGM voting
+  result is still undisclosed (a routine item either way); ADANIPOWER's
+  Godda/Bangladesh dispatch disruption continues but hasn't escalated;
+  IRFC's GST notice remains a watch item only.
+
+**Decisions today — Manali:**
+- HOLD: everything (all 31 remaining holdings) — no new research finding
+  rises to an action trigger. HAL's CCS approval and MAZDOCK's CCS sign-off
+  are both reported as imminent but unconfirmed; CLEAN's rally remains
+  unexplained; the RBI NBFC draft remains unfinalized despite continued
+  industry lobbying; AWL and TCS open items are unchanged.
+
 ## Day 9 — Thursday, 3 Sep 2026 (evening check-in)
 
 **Self-check:** today's real date is Thursday 3 Sep 2026 — inside the 24
