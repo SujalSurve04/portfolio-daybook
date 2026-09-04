@@ -18,7 +18,251 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
-## Day 10 — Friday, 4 Sep 2026 (morning check-in)
+## Day 10 — Friday, 4 Sep 2026 (evening check-in) — FINAL DAY, window complete
+
+**Self-check:** today's real date is Friday 4 Sep 2026 — the final scheduled day of the
+24 Aug–4 Sep window, a weekday, no NSE/BSE trading holiday (confirmed on every prior run
+this window; next holiday remains Ganesh Chaturthi, Mon 14 Sep 2026). Proceeding with the
+final evening mark-to-market. No trades were made today (see this morning's entry) — this
+is a pure valuation pass, followed by the required final summary for the full 10-day window.
+
+**Closing prices researched this evening** (NSE, 4 Sep 2026 close; four parallel research
+passes — Sujal's 6 + Nifty 50, Manali slice 1, Manali slice 2, Manali slice 3 + BCG — each
+cross-checking stockanalysis.com against Groww, Google Finance, Tickertape, IndMoney,
+5paisa, Dhan, Screener.in, or Business Standard's live market coverage; nseindia.com's own
+quote pages again returned 503 in every pass, so all figures rest on third-party
+aggregators cross-checked against each other). Day-change % below is computed against this
+log's own confirmed Thu 3 Sep close, consistent with prior entries:
+
+| Symbol | Close (₹) | Day chg vs Thu's logged close | Confidence | Note |
+|---|---|---|---|---|
+| Nifty 50 | 23,897.70 | +0.10% (+24.25 pts) | High (2-source exact match) | Sensex +362.57 (+0.48%) to 76,515.43 — both indices snapped a four-session losing streak. Metal shares led; Realty lagged. DIIs net bought (₹4,977cr), FIIs net sold (₹2,346cr) prior session. Improving global sentiment, easing yields, fading odds of a Sep Fed hike. |
+| IRFC | 83.40 | +0.87% | High (2-source exact match) | No dated catalyst; GST show-cause notice remains the only open item. |
+| TMPV | 311.50 | −0.16% | High (2-source exact match) | No dated catalyst found. |
+| ADANIGREEN | 1,300.85 | +1.34% | High (2-source, within ₹0.90) | Commissioned a new 139MW solar project at Khavda (dated today), lifting total operating renewable capacity to 20,280.80MW — plausible dated driver. Separately, secondary sources describe the 3 Sep EGM's independent-director reappointment resolution as having passed, but the primary BSE/NSE scrutinizer's filing wasn't retrievable — treated as Medium-confidence informational, not confirmed from the primary source; routine either way. |
+| ADANIPOWER | 207.10 | −0.57% | High (2-source, within ₹0.20) | No dated catalyst; Godda/Bangladesh dispatch disruption still unresolved but non-escalating; London/Abu Dhabi investor meetings (7–9 Sep) are context, not a same-day trigger. |
+| GOLDBEES | 127.30 | +0.88% | Medium (tight cluster ₹127.2–127.5, no single source nailed the exact post-close print) | Comex gold held above $4,500/oz on a weaker dollar, lower yields and fading Sep-hike odds, plus Janmashtami festive bullion demand. |
+| NIFTYBEES | 273.27 | +0.25% | High (2-source exact match) | Tracks the index's modest gain. |
+| RELIANCE | 1,322.00 | +1.50% | Medium-High (2-source match; a third source read ~0.5% higher, flagged not resolved) | No dated company-specific catalyst found; move consistent with the broad market's positive session. |
+| LT | 3,964.10 | −0.27% | Medium-High (2-source exact match; a third source read ~0.5% higher) | No dated catalyst found. |
+| ASIANPAINT | 2,527.30 | −0.66% | High (2-source, within ₹1.30) | No dated catalyst found. |
+| HDFCBANK | 712.10 | +0.62% | Medium-High (2-source exact match; a third source read ~0.4% higher) | No dated catalyst; CEO-succession search continues, unchanged. |
+| HAL | 4,856.00 | +1.80% | Medium-High (2-source exact match; a third source read ~0.6% higher) | **CCS approval for the ₹13,500cr IMRH helicopter program NOT confirmed today** — multiple dated-today sources still describe it as "expected soon"/"nearing," no Cabinet Committee on Security sign-off found. Today's rise reads as continued optimism (helped by the 26 Aug Safran Aravalli engine JV), not confirmation. |
+| GROWW | 194.00 | +1.98% | High (2-source, within ₹0.50) | No new block-deal news found; continues the stabilized read. |
+| TMCV | 458.20 | +0.46% | High (2-source, within ₹0.70) | No dated catalyst found. |
+| CLEAN | 836.15 | −1.85% | High (2-source, within ₹1.15) | No confirmed catalyst for this week's rally ever surfaced; today reads as a reversal — partly mechanical (went ex-dividend today, ₹4/share, ~0.47% of the move) and otherwise likely profit-taking, not a new negative trigger. |
+| MAZDOCK | 2,475.00 | +0.04% | High (2-source exact match) | **CCS sign-off for Project 75(I) NOT confirmed today** — still "targeted for September," not finalized. Today's essentially-flat print is itself informative: this stock has moved sharply (6%+) on genuine deal-progress news historically, so a flat day supports "no resolution yet." |
+| BEL | 405.35 | −0.77% | Medium (2-source agree at 405.35; a third, later-timestamped read showed 407.60, not resolved) | No dated catalyst found. |
+| DEEPAKNTR | 1,712.40 | −0.79% | High (2-source exact match) | No dated catalyst found. |
+| BAJFINANCE | 1,060.50 | +0.99% | High (2-source exact match) | No fresh RBI revolving-credit-proposal resolution found — still unfinalized (see below). |
+| BAJAJHFL | 83.09 | +0.12% | High (2-source, within ₹0.02) | Same RBI-draft overhang as BAJFINANCE, unresolved. |
+| DSSL | 1,053.10 | +4.69% | High (2-source exact match) | Day's standout mover; no news dated today found to explain it — only a routine AGM newspaper-notice filing (procedural). Flagged as **unexplained**, not attributed to stale contract-win news from June–Aug. |
+| BERGEPAINT | 485.13 | −1.06% | High (2-source, within ₹0.35) | No dated catalyst found. |
+| TCS | 2,309.00 | −1.07% | High (2-source exact match) | No dated catalyst; Tata Sons chairmanship succession story unchanged, board meeting still expected ~17 Sep. |
+| HINDCOPPER | 521.65 | +0.65% | High (2-source exact match) | Tracks a modest same-day rise in global copper prices (~+0.3%) amid ongoing supply-tightness narratives — macro tailwind, not company-specific. |
+| NEWGEN | 524.80 | +1.38% | High (2-source exact match) | No dated catalyst found beyond general market strength. |
+| SRF | 2,547.00 | −2.69% | High (2-source exact match) | Day's largest single-name decline in either book, and notably against the grain of an up market. No confirmed same-day catalyst — a bulk/block-deal report (~₹2,664/share, i.e. pre-drop) and a stale "Sell" technical call were found but neither is dated today; **cause unconfirmed**, price itself high-confidence. |
+| ABCAPITAL | 404.90 | +0.72% | High (2-source exact match) | No dated catalyst found. |
+| AWL | 187.29 | −1.70% | High (2-source exact match) | No update dated today on the Delhi HC/FSSAI case; next hearing confirmed still 5 Nov (re-verified). Litigation overhang is a plausible standing drag on an otherwise positive-market day, not a fresh trigger. |
+| NTPC | 332.50 | +0.50% | High (2-source exact match) | No dated catalyst found. |
+| ETERNAL | 322.75 | −0.63% | High (2-source exact match) | No dated catalyst found. |
+| NFL | 70.51 | +0.33% | High (2-source exact match) | No dated catalyst found. |
+| ITBEES | 34.09 | −0.58% | Medium-High (2-source exact match; a third source read ~0.4% higher) | No dated catalyst found. |
+| SILVERBEES | 222.78 | +1.32% | High (2-source exact match) | Silver tracked gold's rally, same weaker-dollar/easing-yields mechanism. |
+| BCG | 8.98 | −0.55% | High (2-source exact match) | For buy-and-hold benchmark only — not held after Day 1's exit. |
+
+**Data-quality note:** RELIANCE, LT, HDFCBANK, HAL, ITBEES and BEL each had a genuine
+(sub-1%) cross-source spread tonight — one aggregator (often Google Finance's 3:59pm
+snapshot) read consistently ~0.4–0.6% above stockanalysis.com/Groww, a pattern flagged
+across multiple symbols rather than resolved. The bolded/primary figures above use the
+2-source-agreement reading in each case. DSSL's +4.69% and SRF's −2.69% are both genuine,
+unexplained-by-dated-news outliers, logged as open questions rather than guessed at,
+consistent with the "never invent numbers" rule. Two items specifically re-checked and
+**still unconfirmed** as of tonight's close: HAL's IMRH CCS approval and MAZDOCK's Project
+75(I) CCS sign-off — both remain "nearing"/"expected soon," not signed off, for the entire
+10-day window.
+
+### Sujal's paper book — mark-to-market
+
+| | Value | Since Day 0 (₹36,182.70) |
+|---|---|---|
+| **Actual (traded) book** | **₹35,862.74** | **−₹319.96 (−0.88%)** |
+| Buy-and-hold benchmark (no trades) | ₹35,994.60 | −₹188.10 (−0.52%) |
+| Nifty 50-tracking benchmark | ₹35,654.10 | −₹528.60 (−1.46%) |
+
+Day's move: +₹103.23 (+0.29%) vs yesterday's ₹35,759.51 close — GOLDBEES (+0.88%) and IRFC
+(+0.87%) led, ADANIGREEN added +1.34% on today's dated Khavda solar-commissioning news,
+ADANIPOWER (−0.57%) was the lone drag. Buy-and-hold reconstructed from the original Day-0
+quantities (IRFC 30, TMPV 5, ADANIGREEN 6, ADANIPOWER 95, GOLDBEES 35, 0 cash) marked at
+today's same closes.
+
+**Reading it:** the cumulative actual-vs-buy-hold gap **narrowed to −₹131.86, from
+−₹187.29** — today's ADANIPOWER decline hurt buy-and-hold's larger 95-share stake more in
+rupee terms than the trimmed book's 55-share stake, and the trimmed book's NIFTYBEES
+position (which buy-and-hold doesn't hold) added a small extra gain. This is the final data
+point of the window: **the trimmed, actively-managed book ends the 10 days behind simple
+buy-and-hold by ₹131.86 (0.36 percentage points)** — the crash-day protection banked on
+Monday 24 Aug's Adani/MSCI selloff never fully offset the give-back on the subsequent Adani
+rebound sessions (2–3 Sep especially). Against the Nifty-tracking benchmark, though, the
+picture is unambiguous: the actual book's −0.88% comfortably beats the pure-index
+benchmark's −1.46%, a margin of ₹208.64 (0.58pp) — and buy-and-hold beats the index by even
+more (0.94pp). The clean read: **stock selection (staying concentrated in Adani
+Power/Green rather than the broad index) was this window's dominant source of return, not
+the trim** — the trim's diversification into NIFTYBEES was a modest drag on that
+stock-picking edge, not an addition to it.
+
+### Manali's paper book — mark-to-market
+
+| | Value | Since Day 0 (₹4,18,123.80) |
+|---|---|---|
+| **Actual (traded) book** | **₹4,08,762.63** | **−₹9,361.17 (−2.24%)** |
+| Buy-and-hold benchmark (no trades) | ₹4,08,902.17 | −₹9,221.63 (−2.21%) |
+| Nifty 50-tracking benchmark | ₹4,12,015.36 | −₹6,108.44 (−1.46%) |
+
+Day's move: −₹364.71 (−0.09%) vs yesterday's ₹4,09,127.34 close — TCS (−1.07%) and SRF
+(−2.69%, this book's largest single-name decline today, no confirmed catalyst) were the
+largest-weight drags, partly offset by HAL (+1.80%), BAJFINANCE (+0.99%), GROWW (+1.98%)
+and DSSL (+4.69%, small weight). Buy-and-hold reconstructed from the original Day-0
+quantities (today's 31 holdings plus BCG 230 reinstated, GOLDBEES 135, ADANIPOWER 53,
+BAJFINANCE 20, HAL 5, NIFTYBEES 90 — i.e. Day 1's trades reversed) marked at today's same
+closes, including BCG's ₹8.98 close.
+
+**Reading it:** the cumulative actual-vs-buy-hold gap **narrowed to −₹139.54, from
+−₹262.98** — the same ADANIPOWER mechanism as Sujal's book (buy-and-hold's larger 53-share
+stake lost more today than the trimmed 35-share stake), pulling the gap back toward
+noise-level. **Final tally: this book ends the window at −2.24% vs buy-and-hold's −2.21% —
+a gap of just ₹139.54, roughly 0.03% of book value, essentially a wash.** Ten sessions of
+evidence confirm what nearly every entry this window observed: on a 31-name, ₹4L+
+diversified book, the Day 1 trades (BCG exit, GOLDBEES/ADANIPOWER trims, BAJFINANCE/HAL/
+NIFTYBEES adds) were simply too small relative to the book's size to move the needle either
+way — day-to-day return here was overwhelmingly driven by the book's diversification, not
+by the trade thesis. Against the Nifty-tracking benchmark, the book (and buy-and-hold
+alike) trails by a wide, consistent margin all window — −2.24% actual vs −1.46% index, a
+gap of ~0.78pp (₹3,252.79) — this book's heavier tilt toward financials, paints and TCS
+lagged the index on most sessions, a structural feature of this book's composition rather
+than anything the Day 1 trades caused or could have fixed.
+
+**Watch items still open at window close, unresolved:** HAL's IMRH CCS approval (reported
+"nearing" throughout, never confirmed), MAZDOCK's Project 75(I) CCS sign-off (same,
+"expected soon" throughout, never confirmed), CLEAN's unexplained rally (never explained,
+partially reversed today), the RBI NBFC revolving-credit draft (comment window closed 28
+Aug, still unfinalized), AWL's Delhi HC/FSSAI hearing (still pending, next date 5 Nov, well
+past this window), and DSSL's unexplained +4.69% today. None of these escalated to an
+action trigger in the 10-day window; a human continuing this test past today should
+specifically watch for resolution on the CCS items and the RBI draft, since those are the
+most likely near-term genuine triggers under either framework.
+
+**Decisions today — Sujal:** (evening check-in — no new decisions, mark-to-market only,
+final day of the window)
+- HOLD: IRFC, TMPV, ADANIGREEN, ADANIPOWER, GOLDBEES, NIFTYBEES — today's gains (gold,
+  IRFC, ADANIGREEN's dated Khavda news) and ADANIPOWER's modest pullback are ordinary
+  single-day moves, not a reason to trade on the window's final session. No research
+  finding today changes any open thesis.
+
+**Decisions today — Manali:** (evening check-in — no new decisions, mark-to-market only,
+final day of the window)
+- HOLD: everything (all 31 remaining holdings) — today's modest decline was driven by
+  TCS and SRF (the latter unexplained) against gains in HAL, BAJFINANCE, GROWW and DSSL;
+  none of it relates to any open Day 1 call. HAL's and MAZDOCK's CCS items remain
+  unconfirmed at window close; CLEAN, the RBI NBFC draft and AWL's FSSAI case remain open,
+  non-escalating watch items carried forward unresolved.
+
+---
+
+## FINAL SUMMARY — 10-trading-day window (24 Aug – 4 Sep 2026)
+
+This closes the paper-trading test of the decision frameworks in `PROMPT.md` (Sujal:
+Core/Tactical) and `PROMPT_manali.md` (Manali: Compounder/Satellite/Index-Hedge). Ten
+trading days were checked twice daily (20 check-ins total); trades were made on exactly one
+of those ten days, Day 1 (Mon 24 Aug) — every other session, in both books, the research
+sweep found no confirmed, dated trigger material enough to act on.
+
+### Sujal's book — 6 positions, concentrated Adani/gold/IRFC/Tata book
+
+| | Final value | Total return (10 days) |
+|---|---|---|
+| **Actual (traded) book** | ₹35,862.74 | **−0.88% (−₹319.96)** |
+| Buy-and-hold (no trades) | ₹35,994.60 | −0.52% (−₹188.10) |
+| Nifty 50-tracking benchmark | ₹35,654.10 | −1.46% (−₹528.60) |
+
+**Trades made:** 3, all on Day 1 — trim 40 of 95 ADANIPOWER, trim 15 of 35 GOLDBEES, and buy
+36 NIFTYBEES (self-funded from the trim proceeds).
+
+**Did the framework earn its keep?** Not on this window's evidence. Buy-and-hold beat the
+actively-managed book by 0.36 percentage points (₹131.86) over the ten days. The trim's
+thesis — cut a dangerously concentrated single-name position (ADANIPOWER was 54% of the
+book alone before the trim) and diversify into a broad index — was directionally sound risk
+management and it *did* clearly earn its keep on exactly one session, Monday 24 Aug's
+Adani/MSCI-rebalancing crash (the single largest one-day swing of the window either way,
+where the trimmed book's cumulative gap vs. buy-and-hold went from negative to as much as
++₹289.44 ahead). But every session since has been a partial or full Adani-group rebound,
+and the give-back on those rebound days ultimately exceeded the crash-day benefit. The
+honest read: **the trim protected capital exactly when it was designed to, but this
+particular 10-day window happened to contain more rebound days than crash days after that
+one event, so the trade nets out slightly behind doing nothing.** This doesn't invalidate
+the framework's logic — it's a reminder that de-risking a concentrated winner is a bet on
+tail-risk protection being worth more than the expected-value cost on ordinary up-days, and
+a single 10-day sample with one crash event isn't enough data to score that trade-off
+either way. What the window does support clearly: **stock selection mattered far more than
+the trim decision** — both the actual book and buy-and-hold beat a passive Nifty allocation
+by roughly 0.6–0.9 percentage points, because staying in Adani Power/Green (even after the
+partial trim) captured single-name upside a pure index tracker never could.
+
+### Manali's book — 31 positions, diversified across financials/IT/PSU/paints/commodities
+
+| | Final value | Total return (10 days) |
+|---|---|---|
+| **Actual (traded) book** | ₹4,08,762.63 | **−2.24% (−₹9,361.17)** |
+| Buy-and-hold (no trades) | ₹4,08,902.17 | −2.21% (−₹9,221.63) |
+| Nifty 50-tracking benchmark | ₹4,12,015.36 | −1.46% (−₹6,108.44) |
+
+**Trades made:** 6, all on Day 1 — exit all 230 BCG (fraud-flagged, SEBI ASM stage-1
+surveillance), trim GOLDBEES (45 of 135) and ADANIPOWER (18 of 53), then buy BAJFINANCE (5),
+HAL (1) and NIFTYBEES (4) with the proceeds — a "fix undersized winners, remove a
+credibility risk" thesis rather than a market-timing call.
+
+**Did the framework earn its keep?** The numbers say essentially nothing either way: a
+0.03-percentage-point (₹139.54) gap against buy-and-hold on a book this size is pure noise,
+not a signal. That's not a failure of the framework so much as a mismatch between the test
+and what the framework was actually deciding — on a 31-name, ₹4.18 lakh book, six small
+trades (the largest single trade, BCG's exit, was worth only ~₹2,105 at Day 0 prices, about
+0.5% of the book) were never going to move a 10-day return by a measurable amount regardless
+of whether the underlying calls were right. The one call worth separating out on its own
+merits rather than its price impact is the **BCG exit**: it was justified by a confirmed
+SEBI fraud finding and active surveillance-stage flagging, not a valuation or momentum
+call, so it shouldn't be judged by whether BCG's price happened to rise or fall over these
+specific ten days (it drifted down slightly, ₹9.15 → ₹8.98, a mild vindication but not
+proof — a credibility-risk exit is validated by avoiding a future blowup, which this short,
+uneventful window simply didn't test). Against the Nifty-tracking benchmark, this book
+underperformed by a consistent ~0.75–0.78 percentage points nearly every session — a
+structural feature of its heavier financials/TCS/paints tilt versus the index, unrelated to
+the Day 1 trades and not something six small trades could have changed either way.
+
+### Overall verdict for Sujal
+
+This test does not clearly validate either framework as a source of extra return over the
+specific 10-day window tested, and a human should not conclude from it that the frameworks
+are broken, either. What it does show:
+
+1. **Buy-and-hold matched or beat the actively-managed book in both accounts.** That's a
+   real, unflattering result worth sitting with, not explaining away.
+2. **The one trade day in each book was probably right on risk-management logic**
+   (crash-day protection for Sujal, removing a fraud-flagged holding for Manali) even
+   though it didn't show up as extra return in this window — risk management and return
+   generation are different jobs, and a short, mostly-quiet window is a weak test of the
+   former.
+3. **Nine of ten days were HOLD-only in both books.** The frameworks mostly didn't get a
+   chance to prove or disprove themselves this window, because the research sweep
+   genuinely found nothing that crossed the action threshold on eight of the nine
+   non-trading days — several plausible near-triggers (HAL's CCS approval, MAZDOCK's CCS
+   sign-off, the RBI NBFC draft, CLEAN's unexplained rally, AWL's FSSAI case) all remained
+   open and unconfirmed at window close, still pending as this test ends.
+4. **Recommendation before trusting this with real capital:** extend the simulation past
+   ten days, ideally through a period likely to produce a confirmed catalyst (an earnings
+   season, one of the pending regulatory rulings above actually landing) — a framework that
+   is mostly tested by whether it correctly does nothing needs a period with more genuine
+   decision points before its real edge (or lack of one) can be assessed with confidence.
+
 
 **Self-check:** today's real date is Friday 4 Sep 2026 — the final scheduled
 day of the 24 Aug–4 Sep window, a weekday, no NSE/BSE trading holiday
