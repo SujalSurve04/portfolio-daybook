@@ -18,6 +18,11 @@ Never delete or rewrite past entries — only append above the marker.
 
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
+**Monday, 7 Sep 2026 (morning check-in) — skipped — today is after the simulation
+window (Mon 24 Aug – Fri 4 Sep 2026), which already completed with its Day 10 final
+summary below. No self-check trigger to resume; no ledgers, dashboard, or trades
+touched.**
+
 ## Day 10 — Friday, 4 Sep 2026 (evening check-in) — FINAL DAY, window complete
 
 **Self-check:** today's real date is Friday 4 Sep 2026 — the final scheduled day of the
