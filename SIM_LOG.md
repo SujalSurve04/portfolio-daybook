@@ -16,6 +16,13 @@ market close (~11:00pm IST). Outside this window, runs are a no-op.
 
 Never delete or rewrite past entries — only append above the marker.
 
+## 8 Sep 2026 — Evening — skipped
+
+skipped — 8 Sep 2026 is after the 10-day simulation window (24 Aug–4 Sep
+2026 closed with the Day 10 final summary on 4 Sep evening). No self-check
+override applies (date-based rule fires regardless of weekday). No ledgers,
+dashboard, or prices touched.
+
 ## 8 Sep 2026 — Morning — skipped
 
 skipped — 8 Sep 2026 is after the 10-day simulation window (24 Aug–4 Sep
