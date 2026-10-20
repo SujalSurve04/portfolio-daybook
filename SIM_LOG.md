@@ -16,6 +16,12 @@ market close (~11:00pm IST). Outside this window, runs are a no-op.
 
 Never delete or rewrite past entries — only append above the marker.
 
+## 20 Oct 2026 — Evening — skipped
+
+skipped — today (Tuesday, 20 Oct 2026) is after the simulation window end
+(Friday 4 Sep 2026). No research, no trades, no ledger changes. The
+simulation's final summary was already written on 4 Sep 2026 evening.
+
 ## 20 Oct 2026 — Morning — skipped
 
 skipped — 20 Oct 2026 is well after the 10-day simulation window (24 Aug–4
