@@ -16,6 +16,15 @@ market close (~11:00pm IST). Outside this window, runs are a no-op.
 
 Never delete or rewrite past entries — only append above the marker.
 
+## 6 Nov 2026 — Evening — skipped
+
+skipped — 6 Nov 2026 (Friday) is well after the 10-day simulation window
+(24 Aug–4 Sep 2026 closed with the Day 10 final summary on 4 Sep evening).
+No self-check override applies (date-based rule fires regardless of
+weekday). Read SIM_LOG.md and both sim ledgers first per the self-check;
+confirmed the window closed over two months ago and nothing has changed
+since the last skip. No ledgers, dashboard, or prices touched.
+
 ## 3 Nov 2026 — Evening — skipped
 
 skipped — 3 Nov 2026 (Tuesday) is well after the 10-day simulation window
