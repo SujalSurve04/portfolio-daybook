@@ -693,6 +693,17 @@ since this morning's skip (`sim_sujal.json` cash ₹223.92 / 3 trades,
 `sim_manali.json` cash ₹130.58 / 6 trades, both last touched 24 Aug 2026).
 No ledgers, dashboard, or prices touched.
 
+## 13 Nov 2026 — Morning — skipped
+
+skipped — 13 Nov 2026 (Friday) is well after the 10-day simulation window
+(24 Aug–4 Sep 2026 closed with the Day 10 final summary on 4 Sep evening).
+No self-check override applies (date-based rule fires regardless of
+weekday). Read SIM_LOG.md and both sim ledgers first per the self-check;
+confirmed the window closed over two months ago and nothing has changed
+since the 12 Nov evening skip (`sim_sujal.json` cash ₹223.92 / 3 trades,
+`sim_manali.json` cash ₹130.58 / 6 trades, both last touched 24 Aug 2026).
+No ledgers, dashboard, or prices touched.
+
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
 ## 7 Sep 2026 — Evening — skipped
