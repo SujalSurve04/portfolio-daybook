@@ -737,6 +737,15 @@ since this morning's skip (`sim_sujal.json` cash ₹223.92 / 3 trades,
 `sim_manali.json` cash ₹130.58 / 6 trades, both last touched 24 Aug 2026).
 No ledgers, dashboard, or prices touched.
 
+## 17 Nov 2026 — Morning — skipped
+
+skipped — 17 Nov 2026 (Tuesday) is well after the 10-day simulation window
+(24 Aug–4 Sep 2026 closed with the Day 10 final summary on 4 Sep evening).
+Self-check (today's real date vs. window) fires regardless of weekday.
+Nothing re-read in depth since the window has been closed for over two
+months and no change is possible without a real trading day in-window. No
+ledgers, dashboard, or prices touched; no real trade placed or suggested.
+
 <!-- NEW_ENTRY_INSERT_ABOVE -->
 
 ## 7 Sep 2026 — Evening — skipped
